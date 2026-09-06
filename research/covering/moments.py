@@ -27,4 +27,11 @@ def cover_obstruction(values):
         "excess": excess,
         "pair_overlap": pairs,
         "pair_slack": pairs - excess,
+        "triple_overlap": binomial_moment(values, 3),
     }
+
+
+def forced_core(b_values, modulus):
+    """Canonical common endpoint core C for all periodic bad sets."""
+    beta = min(b_values)
+    return set(range(beta)) | set(range(modulus - beta + 1, modulus))
