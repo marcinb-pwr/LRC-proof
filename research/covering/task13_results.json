@@ -1,0 +1,34 @@
+{
+  "status": "VERIFIED",
+  "exhaustive_scope": "all gcd-one subsets of {1,...,18}, sizes 2..18",
+  "exhaustive_count": 261565,
+  "eligible_unique_max_central": 17329,
+  "fringe_rule_failures": 0,
+  "smallest_both_fringe_populations": {
+    "velocities": [
+      1,
+      3,
+      4
+    ],
+    "q": 4,
+    "W": 12,
+    "minus_bad": [
+      1
+    ],
+    "plus_bad": [
+      3
+    ]
+  },
+  "smallest_mixed_fringe_with_other_safe_boundary": {
+    "velocities": [
+      1,
+      3,
+      4
+    ],
+    "q": 4,
+    "W": 12,
+    "safe_steps": [
+      3
+    ]
+  }
+}
