@@ -1,0 +1,1700 @@
+{
+  "claim_status": "VERIFIED (finite test suite only)",
+  "configurations": 72,
+  "covers_found": 0,
+  "minimum_multiplicity_seen": 0,
+  "records": [
+    {
+      "family": "consecutive",
+      "velocities": [
+        1,
+        2
+      ],
+      "q": 3,
+      "W": 2,
+      "M": 6,
+      "covers": false,
+      "total_membership": 5,
+      "excess": -1,
+      "pair_overlap": 1,
+      "pair_slack": 2,
+      "moments": {
+        "1": 5,
+        "2": 7,
+        "3": 11,
+        "4": 19
+      }
+    },
+    {
+      "family": "odd",
+      "velocities": [
+        1,
+        3
+      ],
+      "q": 3,
+      "W": 3,
+      "M": 9,
+      "covers": false,
+      "total_membership": 8,
+      "excess": -1,
+      "pair_overlap": 1,
+      "pair_slack": 2,
+      "moments": {
+        "1": 8,
+        "2": 10,
+        "3": 14,
+        "4": 22
+      }
+    },
+    {
+      "family": "powers2",
+      "velocities": [
+        1,
+        2
+      ],
+      "q": 3,
+      "W": 2,
+      "M": 6,
+      "covers": false,
+      "total_membership": 5,
+      "excess": -1,
+      "pair_overlap": 1,
+      "pair_slack": 2,
+      "moments": {
+        "1": 5,
+        "2": 7,
+        "3": 11,
+        "4": 19
+      }
+    },
+    {
+      "family": "translated",
+      "velocities": [
+        5,
+        6
+      ],
+      "q": 3,
+      "W": 30,
+      "M": 90,
+      "covers": false,
+      "total_membership": 109,
+      "excess": 19,
+      "pair_overlap": 33,
+      "pair_slack": 14,
+      "moments": {
+        "1": 109,
+        "2": 175,
+        "3": 307,
+        "4": 571
+      }
+    },
+    {
+      "family": "consecutive",
+      "velocities": [
+        1,
+        2,
+        3
+      ],
+      "q": 4,
+      "W": 6,
+      "M": 24,
+      "covers": false,
+      "total_membership": 30,
+      "excess": 6,
+      "pair_overlap": 11,
+      "pair_slack": 5,
+      "moments": {
+        "1": 30,
+        "2": 52,
+        "3": 114,
+        "4": 292
+      }
+    },
+    {
+      "family": "odd",
+      "velocities": [
+        1,
+        3,
+        5
+      ],
+      "q": 4,
+      "W": 15,
+      "M": 60,
+      "covers": false,
+      "total_membership": 81,
+      "excess": 21,
+      "pair_overlap": 35,
+      "pair_slack": 14,
+      "moments": {
+        "1": 81,
+        "2": 151,
+        "3": 321,
+        "4": 751
+      }
+    },
+    {
+      "family": "powers2",
+      "velocities": [
+        1,
+        2,
+        4
+      ],
+      "q": 4,
+      "W": 4,
+      "M": 16,
+      "covers": false,
+      "total_membership": 17,
+      "excess": 1,
+      "pair_overlap": 6,
+      "pair_slack": 5,
+      "moments": {
+        "1": 17,
+        "2": 29,
+        "3": 59,
+        "4": 137
+      }
+    },
+    {
+      "family": "translated",
+      "velocities": [
+        5,
+        6,
+        7
+      ],
+      "q": 4,
+      "W": 210,
+      "M": 840,
+      "covers": false,
+      "total_membership": 1242,
+      "excess": 402,
+      "pair_overlap": 607,
+      "pair_slack": 205,
+      "moments": {
+        "1": 1242,
+        "2": 2456,
+        "3": 5514,
+        "4": 13520
+      }
+    },
+    {
+      "family": "consecutive",
+      "velocities": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "q": 5,
+      "W": 12,
+      "M": 60,
+      "covers": false,
+      "total_membership": 86,
+      "excess": 26,
+      "pair_overlap": 47,
+      "pair_slack": 21,
+      "moments": {
+        "1": 86,
+        "2": 180,
+        "3": 500,
+        "4": 1656
+      }
+    },
+    {
+      "family": "odd",
+      "velocities": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "q": 5,
+      "W": 105,
+      "M": 525,
+      "covers": false,
+      "total_membership": 824,
+      "excess": 299,
+      "pair_overlap": 474,
+      "pair_slack": 175,
+      "moments": {
+        "1": 824,
+        "2": 1772,
+        "3": 4496,
+        "4": 13124
+      }
+    },
+    {
+      "family": "powers2",
+      "velocities": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "q": 5,
+      "W": 8,
+      "M": 40,
+      "covers": false,
+      "total_membership": 49,
+      "excess": 9,
+      "pair_overlap": 25,
+      "pair_slack": 16,
+      "moments": {
+        "1": 49,
+        "2": 99,
+        "3": 241,
+        "4": 675
+      }
+    },
+    {
+      "family": "translated",
+      "velocities": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "q": 5,
+      "W": 840,
+      "M": 4200,
+      "covers": false,
+      "total_membership": 6694,
+      "excess": 2494,
+      "pair_overlap": 4025,
+      "pair_slack": 1531,
+      "moments": {
+        "1": 6694,
+        "2": 14744,
+        "3": 37756,
+        "4": 109532
+      }
+    },
+    {
+      "family": "consecutive",
+      "velocities": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "q": 6,
+      "W": 60,
+      "M": 360,
+      "covers": false,
+      "total_membership": 585,
+      "excess": 225,
+      "pair_overlap": 393,
+      "pair_slack": 168,
+      "moments": {
+        "1": 585,
+        "2": 1371,
+        "3": 4527,
+        "4": 18495
+      }
+    },
+    {
+      "family": "odd",
+      "velocities": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "q": 6,
+      "W": 315,
+      "M": 1890,
+      "covers": false,
+      "total_membership": 3125,
+      "excess": 1235,
+      "pair_overlap": 2034,
+      "pair_slack": 799,
+      "moments": {
+        "1": 3125,
+        "2": 7193,
+        "3": 20549,
+        "4": 71681
+      }
+    },
+    {
+      "family": "powers2",
+      "velocities": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "q": 6,
+      "W": 16,
+      "M": 96,
+      "covers": false,
+      "total_membership": 129,
+      "excess": 33,
+      "pair_overlap": 86,
+      "pair_slack": 53,
+      "moments": {
+        "1": 129,
+        "2": 301,
+        "3": 849,
+        "4": 2749
+      }
+    },
+    {
+      "family": "translated",
+      "velocities": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "q": 6,
+      "W": 2520,
+      "M": 15120,
+      "covers": false,
+      "total_membership": 25165,
+      "excess": 10045,
+      "pair_overlap": 16647,
+      "pair_slack": 6602,
+      "moments": {
+        "1": 25165,
+        "2": 58459,
+        "3": 166039,
+        "4": 572935
+      }
+    },
+    {
+      "family": "consecutive",
+      "velocities": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "q": 7,
+      "W": 60,
+      "M": 420,
+      "covers": false,
+      "total_membership": 699,
+      "excess": 279,
+      "pair_overlap": 546,
+      "pair_slack": 267,
+      "moments": {
+        "1": 699,
+        "2": 1791,
+        "3": 6813,
+        "4": 32835
+      }
+    },
+    {
+      "family": "odd",
+      "velocities": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "q": 7,
+      "W": 3465,
+      "M": 24255,
+      "covers": false,
+      "total_membership": 41544,
+      "excess": 17289,
+      "pair_overlap": 29619,
+      "pair_slack": 12330,
+      "moments": {
+        "1": 41544,
+        "2": 100782,
+        "3": 318258,
+        "4": 1298730
+      }
+    },
+    {
+      "family": "powers2",
+      "velocities": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "q": 7,
+      "W": 32,
+      "M": 224,
+      "covers": false,
+      "total_membership": 321,
+      "excess": 97,
+      "pair_overlap": 263,
+      "pair_slack": 166,
+      "moments": {
+        "1": 321,
+        "2": 847,
+        "3": 2703,
+        "4": 9883
+      }
+    },
+    {
+      "family": "translated",
+      "velocities": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "q": 7,
+      "W": 2520,
+      "M": 17640,
+      "covers": false,
+      "total_membership": 30195,
+      "excess": 12555,
+      "pair_overlap": 22622,
+      "pair_slack": 10067,
+      "moments": {
+        "1": 30195,
+        "2": 75439,
+        "3": 242781,
+        "4": 997507
+      }
+    },
+    {
+      "family": "consecutive",
+      "velocities": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "q": 8,
+      "W": 420,
+      "M": 3360,
+      "covers": false,
+      "total_membership": 5852,
+      "excess": 2492,
+      "pair_overlap": 4984,
+      "pair_slack": 2492,
+      "moments": {
+        "1": 5852,
+        "2": 15820,
+        "3": 67088,
+        "4": 375148
+      }
+    },
+    {
+      "family": "odd",
+      "velocities": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "q": 8,
+      "W": 45045,
+      "M": 360360,
+      "covers": false,
+      "total_membership": 630581,
+      "excess": 270221,
+      "pair_overlap": 474723,
+      "pair_slack": 204502,
+      "moments": {
+        "1": 630581,
+        "2": 1580027,
+        "3": 5428097,
+        "4": 25532771
+      }
+    },
+    {
+      "family": "powers2",
+      "velocities": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "q": 8,
+      "W": 64,
+      "M": 512,
+      "covers": false,
+      "total_membership": 769,
+      "excess": 257,
+      "pair_overlap": 646,
+      "pair_slack": 389,
+      "moments": {
+        "1": 769,
+        "2": 2061,
+        "3": 6847,
+        "4": 26673
+      }
+    },
+    {
+      "family": "translated",
+      "velocities": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "q": 8,
+      "W": 27720,
+      "M": 221760,
+      "covers": false,
+      "total_membership": 388024,
+      "excess": 166264,
+      "pair_overlap": 306646,
+      "pair_slack": 140382,
+      "moments": {
+        "1": 388024,
+        "2": 1001316,
+        "3": 3544048,
+        "4": 17084556
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        5,
+        6
+      ],
+      "q": 3,
+      "W": 30,
+      "M": 90,
+      "covers": false,
+      "total_membership": 109,
+      "excess": 19,
+      "pair_overlap": 33,
+      "pair_slack": 14,
+      "moments": {
+        "1": 109,
+        "2": 175,
+        "3": 307,
+        "4": 571
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        4,
+        5
+      ],
+      "q": 3,
+      "W": 20,
+      "M": 60,
+      "covers": false,
+      "total_membership": 71,
+      "excess": 11,
+      "pair_overlap": 21,
+      "pair_slack": 10,
+      "moments": {
+        "1": 71,
+        "2": 113,
+        "3": 197,
+        "4": 365
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        2
+      ],
+      "q": 3,
+      "W": 2,
+      "M": 6,
+      "covers": false,
+      "total_membership": 5,
+      "excess": -1,
+      "pair_overlap": 1,
+      "pair_slack": 2,
+      "moments": {
+        "1": 5,
+        "2": 7,
+        "3": 11,
+        "4": 19
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        9,
+        10
+      ],
+      "q": 3,
+      "W": 90,
+      "M": 270,
+      "covers": false,
+      "total_membership": 341,
+      "excess": 71,
+      "pair_overlap": 107,
+      "pair_slack": 36,
+      "moments": {
+        "1": 341,
+        "2": 555,
+        "3": 983,
+        "4": 1839
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        2
+      ],
+      "q": 3,
+      "W": 2,
+      "M": 6,
+      "covers": false,
+      "total_membership": 5,
+      "excess": -1,
+      "pair_overlap": 1,
+      "pair_slack": 2,
+      "moments": {
+        "1": 5,
+        "2": 7,
+        "3": 11,
+        "4": 19
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        10
+      ],
+      "q": 3,
+      "W": 10,
+      "M": 30,
+      "covers": false,
+      "total_membership": 29,
+      "excess": -1,
+      "pair_overlap": 7,
+      "pair_slack": 8,
+      "moments": {
+        "1": 29,
+        "2": 43,
+        "3": 71,
+        "4": 127
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        4
+      ],
+      "q": 3,
+      "W": 4,
+      "M": 12,
+      "covers": false,
+      "total_membership": 11,
+      "excess": -1,
+      "pair_overlap": 3,
+      "pair_slack": 4,
+      "moments": {
+        "1": 11,
+        "2": 17,
+        "3": 29,
+        "4": 53
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        5,
+        12
+      ],
+      "q": 3,
+      "W": 60,
+      "M": 180,
+      "covers": false,
+      "total_membership": 223,
+      "excess": 43,
+      "pair_overlap": 69,
+      "pair_slack": 26,
+      "moments": {
+        "1": 223,
+        "2": 361,
+        "3": 637,
+        "4": 1189
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        2,
+        3,
+        11
+      ],
+      "q": 4,
+      "W": 66,
+      "M": 264,
+      "covers": false,
+      "total_membership": 380,
+      "excess": 116,
+      "pair_overlap": 183,
+      "pair_slack": 67,
+      "moments": {
+        "1": 380,
+        "2": 746,
+        "3": 1604,
+        "4": 3698
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        4,
+        11
+      ],
+      "q": 4,
+      "W": 44,
+      "M": 176,
+      "covers": false,
+      "total_membership": 248,
+      "excess": 72,
+      "pair_overlap": 113,
+      "pair_slack": 41,
+      "moments": {
+        "1": 248,
+        "2": 474,
+        "3": 992,
+        "4": 2226
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        4,
+        7,
+        11
+      ],
+      "q": 4,
+      "W": 308,
+      "M": 1232,
+      "covers": false,
+      "total_membership": 1826,
+      "excess": 594,
+      "pair_overlap": 907,
+      "pair_slack": 313,
+      "moments": {
+        "1": 1826,
+        "2": 3640,
+        "3": 8642,
+        "4": 22768
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        2,
+        3,
+        6
+      ],
+      "q": 4,
+      "W": 6,
+      "M": 24,
+      "covers": false,
+      "total_membership": 25,
+      "excess": 1,
+      "pair_overlap": 8,
+      "pair_slack": 7,
+      "moments": {
+        "1": 25,
+        "2": 41,
+        "3": 79,
+        "4": 173
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        4,
+        6
+      ],
+      "q": 4,
+      "W": 12,
+      "M": 48,
+      "covers": false,
+      "total_membership": 61,
+      "excess": 13,
+      "pair_overlap": 24,
+      "pair_slack": 11,
+      "moments": {
+        "1": 61,
+        "2": 109,
+        "3": 223,
+        "4": 505
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        5,
+        8
+      ],
+      "q": 4,
+      "W": 40,
+      "M": 160,
+      "covers": false,
+      "total_membership": 226,
+      "excess": 66,
+      "pair_overlap": 113,
+      "pair_slack": 47,
+      "moments": {
+        "1": 226,
+        "2": 452,
+        "3": 1006,
+        "4": 2420
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        7,
+        8,
+        9
+      ],
+      "q": 4,
+      "W": 504,
+      "M": 2016,
+      "covers": false,
+      "total_membership": 3000,
+      "excess": 984,
+      "pair_overlap": 1481,
+      "pair_slack": 497,
+      "moments": {
+        "1": 3000,
+        "2": 5962,
+        "3": 13308,
+        "4": 32266
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        3,
+        4,
+        6
+      ],
+      "q": 4,
+      "W": 12,
+      "M": 48,
+      "covers": false,
+      "total_membership": 59,
+      "excess": 11,
+      "pair_overlap": 24,
+      "pair_slack": 13,
+      "moments": {
+        "1": 59,
+        "2": 107,
+        "3": 221,
+        "4": 503
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        3,
+        4,
+        9
+      ],
+      "q": 5,
+      "W": 36,
+      "M": 180,
+      "covers": false,
+      "total_membership": 271,
+      "excess": 91,
+      "pair_overlap": 134,
+      "pair_slack": 43,
+      "moments": {
+        "1": 271,
+        "2": 539,
+        "3": 1303,
+        "4": 3683
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        9,
+        10,
+        12
+      ],
+      "q": 5,
+      "W": 180,
+      "M": 900,
+      "covers": false,
+      "total_membership": 1408,
+      "excess": 508,
+      "pair_overlap": 813,
+      "pair_slack": 305,
+      "moments": {
+        "1": 1408,
+        "2": 3034,
+        "3": 7810,
+        "4": 23062
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        7,
+        8,
+        9
+      ],
+      "q": 5,
+      "W": 504,
+      "M": 2520,
+      "covers": false,
+      "total_membership": 4007,
+      "excess": 1487,
+      "pair_overlap": 2320,
+      "pair_slack": 833,
+      "moments": {
+        "1": 4007,
+        "2": 8647,
+        "3": 23867,
+        "4": 77047
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "q": 5,
+      "W": 840,
+      "M": 4200,
+      "covers": false,
+      "total_membership": 6697,
+      "excess": 2497,
+      "pair_overlap": 3990,
+      "pair_slack": 1493,
+      "moments": {
+        "1": 6697,
+        "2": 14677,
+        "3": 38245,
+        "4": 113221
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        4,
+        7,
+        12
+      ],
+      "q": 5,
+      "W": 84,
+      "M": 420,
+      "covers": false,
+      "total_membership": 648,
+      "excess": 228,
+      "pair_overlap": 349,
+      "pair_slack": 121,
+      "moments": {
+        "1": 648,
+        "2": 1346,
+        "3": 3246,
+        "4": 8870
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        5,
+        9,
+        10,
+        11
+      ],
+      "q": 5,
+      "W": 990,
+      "M": 4950,
+      "covers": false,
+      "total_membership": 7885,
+      "excess": 2935,
+      "pair_overlap": 4898,
+      "pair_slack": 1963,
+      "moments": {
+        "1": 7885,
+        "2": 17681,
+        "3": 45517,
+        "4": 130217
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        3,
+        7,
+        10,
+        12
+      ],
+      "q": 5,
+      "W": 420,
+      "M": 2100,
+      "covers": false,
+      "total_membership": 3328,
+      "excess": 1228,
+      "pair_overlap": 1843,
+      "pair_slack": 615,
+      "moments": {
+        "1": 3328,
+        "2": 7014,
+        "3": 17542,
+        "4": 49722
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        2,
+        3,
+        11,
+        12
+      ],
+      "q": 5,
+      "W": 132,
+      "M": 660,
+      "covers": false,
+      "total_membership": 1028,
+      "excess": 368,
+      "pair_overlap": 575,
+      "pair_slack": 207,
+      "moments": {
+        "1": 1028,
+        "2": 2178,
+        "3": 5222,
+        "4": 14046
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        2,
+        5,
+        8,
+        9,
+        10
+      ],
+      "q": 6,
+      "W": 360,
+      "M": 2160,
+      "covers": false,
+      "total_membership": 3566,
+      "excess": 1406,
+      "pair_overlap": 2303,
+      "pair_slack": 897,
+      "moments": {
+        "1": 3566,
+        "2": 8172,
+        "3": 23546,
+        "4": 81492
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "q": 6,
+      "W": 60,
+      "M": 360,
+      "covers": false,
+      "total_membership": 585,
+      "excess": 225,
+      "pair_overlap": 393,
+      "pair_slack": 168,
+      "moments": {
+        "1": 585,
+        "2": 1371,
+        "3": 4527,
+        "4": 18495
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        2,
+        4,
+        7,
+        8,
+        11
+      ],
+      "q": 6,
+      "W": 616,
+      "M": 3696,
+      "covers": false,
+      "total_membership": 6128,
+      "excess": 2432,
+      "pair_overlap": 4371,
+      "pair_slack": 1939,
+      "moments": {
+        "1": 6128,
+        "2": 14870,
+        "3": 44612,
+        "4": 156734
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "q": 6,
+      "W": 168,
+      "M": 1008,
+      "covers": false,
+      "total_membership": 1652,
+      "excess": 644,
+      "pair_overlap": 1193,
+      "pair_slack": 549,
+      "moments": {
+        "1": 1652,
+        "2": 4038,
+        "3": 12140,
+        "4": 43398
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        3,
+        6,
+        11,
+        12
+      ],
+      "q": 6,
+      "W": 132,
+      "M": 792,
+      "covers": false,
+      "total_membership": 1287,
+      "excess": 495,
+      "pair_overlap": 889,
+      "pair_slack": 394,
+      "moments": {
+        "1": 1287,
+        "2": 3065,
+        "3": 8841,
+        "4": 29621
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        8,
+        10,
+        11,
+        12
+      ],
+      "q": 6,
+      "W": 1320,
+      "M": 7920,
+      "covers": false,
+      "total_membership": 13158,
+      "excess": 5238,
+      "pair_overlap": 8653,
+      "pair_slack": 3415,
+      "moments": {
+        "1": 13158,
+        "2": 30464,
+        "3": 89046,
+        "4": 310784
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        3,
+        4,
+        7,
+        8,
+        11
+      ],
+      "q": 6,
+      "W": 1848,
+      "M": 11088,
+      "covers": false,
+      "total_membership": 18447,
+      "excess": 7359,
+      "pair_overlap": 12853,
+      "pair_slack": 5494,
+      "moments": {
+        "1": 18447,
+        "2": 44153,
+        "3": 134397,
+        "4": 484637
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        3,
+        6,
+        8,
+        10,
+        11
+      ],
+      "q": 6,
+      "W": 1320,
+      "M": 7920,
+      "covers": false,
+      "total_membership": 13162,
+      "excess": 5242,
+      "pair_overlap": 9229,
+      "pair_slack": 3987,
+      "moments": {
+        "1": 13162,
+        "2": 31620,
+        "3": 93430,
+        "4": 323580
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        2,
+        8,
+        10,
+        11,
+        12
+      ],
+      "q": 7,
+      "W": 1320,
+      "M": 9240,
+      "covers": false,
+      "total_membership": 15796,
+      "excess": 6556,
+      "pair_overlap": 11493,
+      "pair_slack": 4937,
+      "moments": {
+        "1": 15796,
+        "2": 38782,
+        "3": 125734,
+        "4": 513826
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        3,
+        4,
+        5,
+        8,
+        12
+      ],
+      "q": 7,
+      "W": 120,
+      "M": 840,
+      "covers": false,
+      "total_membership": 1407,
+      "excess": 567,
+      "pair_overlap": 1040,
+      "pair_slack": 473,
+      "moments": {
+        "1": 1407,
+        "2": 3487,
+        "3": 11457,
+        "4": 47299
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "q": 7,
+      "W": 27720,
+      "M": 194040,
+      "covers": false,
+      "total_membership": 332594,
+      "excess": 138554,
+      "pair_overlap": 246028,
+      "pair_slack": 107474,
+      "moments": {
+        "1": 332594,
+        "2": 824650,
+        "3": 2761274,
+        "4": 11570626
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        9
+      ],
+      "q": 7,
+      "W": 630,
+      "M": 4410,
+      "covers": false,
+      "total_membership": 7530,
+      "excess": 3120,
+      "pair_overlap": 5500,
+      "pair_slack": 2380,
+      "moments": {
+        "1": 7530,
+        "2": 18530,
+        "3": 61878,
+        "4": 268178
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        2,
+        5,
+        6,
+        8,
+        9
+      ],
+      "q": 7,
+      "W": 360,
+      "M": 2520,
+      "covers": false,
+      "total_membership": 4289,
+      "excess": 1769,
+      "pair_overlap": 3138,
+      "pair_slack": 1369,
+      "moments": {
+        "1": 4289,
+        "2": 10565,
+        "3": 35183,
+        "4": 150977
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        3,
+        4,
+        5,
+        8,
+        9
+      ],
+      "q": 7,
+      "W": 360,
+      "M": 2520,
+      "covers": false,
+      "total_membership": 4290,
+      "excess": 1770,
+      "pair_overlap": 3232,
+      "pair_slack": 1462,
+      "moments": {
+        "1": 4290,
+        "2": 10754,
+        "3": 36726,
+        "4": 158738
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        4,
+        5,
+        7,
+        9,
+        10,
+        12
+      ],
+      "q": 7,
+      "W": 1260,
+      "M": 8820,
+      "covers": false,
+      "total_membership": 15073,
+      "excess": 6253,
+      "pair_overlap": 11142,
+      "pair_slack": 4889,
+      "moments": {
+        "1": 15073,
+        "2": 37357,
+        "3": 118675,
+        "4": 475057
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        2,
+        5,
+        8,
+        10,
+        11
+      ],
+      "q": 7,
+      "W": 440,
+      "M": 3080,
+      "covers": false,
+      "total_membership": 5243,
+      "excess": 2163,
+      "pair_overlap": 3914,
+      "pair_slack": 1751,
+      "moments": {
+        "1": 5243,
+        "2": 13071,
+        "3": 41801,
+        "4": 168411
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "q": 8,
+      "W": 2520,
+      "M": 20160,
+      "covers": false,
+      "total_membership": 35234,
+      "excess": 15074,
+      "pair_overlap": 27366,
+      "pair_slack": 12292,
+      "moments": {
+        "1": 35234,
+        "2": 89966,
+        "3": 332978,
+        "4": 1675862
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "q": 8,
+      "W": 2520,
+      "M": 20160,
+      "covers": false,
+      "total_membership": 35237,
+      "excess": 15077,
+      "pair_overlap": 27659,
+      "pair_slack": 12582,
+      "moments": {
+        "1": 35237,
+        "2": 90555,
+        "3": 344537,
+        "4": 1750827
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        4,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "q": 8,
+      "W": 5544,
+      "M": 44352,
+      "covers": false,
+      "total_membership": 77559,
+      "excess": 33207,
+      "pair_overlap": 67279,
+      "pair_slack": 34072,
+      "moments": {
+        "1": 77559,
+        "2": 212117,
+        "3": 768423,
+        "4": 3600893
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        2,
+        3,
+        4,
+        8,
+        10,
+        11,
+        12
+      ],
+      "q": 8,
+      "W": 1320,
+      "M": 10560,
+      "covers": false,
+      "total_membership": 18430,
+      "excess": 7870,
+      "pair_overlap": 15507,
+      "pair_slack": 7637,
+      "moments": {
+        "1": 18430,
+        "2": 49444,
+        "3": 185362,
+        "4": 901828
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        3,
+        5,
+        6,
+        8,
+        11,
+        12
+      ],
+      "q": 8,
+      "W": 1320,
+      "M": 10560,
+      "covers": false,
+      "total_membership": 18434,
+      "excess": 7874,
+      "pair_overlap": 15178,
+      "pair_slack": 7304,
+      "moments": {
+        "1": 18434,
+        "2": 48790,
+        "3": 177290,
+        "4": 843262
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        10,
+        12
+      ],
+      "q": 8,
+      "W": 120,
+      "M": 960,
+      "covers": false,
+      "total_membership": 1634,
+      "excess": 674,
+      "pair_overlap": 1379,
+      "pair_slack": 705,
+      "moments": {
+        "1": 1634,
+        "2": 4392,
+        "3": 16622,
+        "4": 81960
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        11,
+        12
+      ],
+      "q": 8,
+      "W": 9240,
+      "M": 73920,
+      "covers": false,
+      "total_membership": 129312,
+      "excess": 55392,
+      "pair_overlap": 96426,
+      "pair_slack": 41034,
+      "moments": {
+        "1": 129312,
+        "2": 322164,
+        "3": 1140360,
+        "4": 5500908
+      }
+    },
+    {
+      "family": "random",
+      "velocities": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        10,
+        12
+      ],
+      "q": 8,
+      "W": 420,
+      "M": 3360,
+      "covers": false,
+      "total_membership": 5837,
+      "excess": 2477,
+      "pair_overlap": 4799,
+      "pair_slack": 2322,
+      "moments": {
+        "1": 5837,
+        "2": 15435,
+        "3": 57365,
+        "4": 278883
+      }
+    }
+  ]
+}

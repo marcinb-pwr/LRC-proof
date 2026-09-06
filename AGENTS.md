@@ -1651,3 +1651,29 @@ Proceed in exactly this order:
 
 Only after that foundation is secure should the project develop the 2-adic and Structure/Pseudorandomness machinery.
 
+
+---
+
+# 44. Iterative task protocol
+
+When a numbered `TASKn.md` is present and the user asks to continue the
+research program:
+
+1. read the entire current task before changing files;
+2. attempt its stated outcomes with the strongest appropriate tools available,
+   including exact symbolic derivations, integer-arithmetic computation, and
+   reproducible exhaustive/random tests where useful;
+3. distinguish `PROVED`, `VERIFIED`, `KNOWN`, `CONJECTURED`, `HEURISTIC`,
+   `OPEN`, and `DISPROVED` exactly as required above;
+4. save implementation and research artifacts in the task's requested layout;
+5. after completing the audit, identify the narrowest unresolved barrier and
+   write the next numbered task as `TASK(n+1).md`;
+6. ensure that next task requests a genuinely new theorem, counterexample, or
+   obstruction rather than merely another equivalent reformulation;
+7. run the relevant checks, review the generated evidence, and commit the
+   changes before creating the pull request.
+
+“Best tools” never means replacing proof by computation: computer algebra,
+exhaustive enumeration, optimization, and literature search are discovery and
+verification tools unless a finite exhaustive argument and its scope are
+proved explicitly.
