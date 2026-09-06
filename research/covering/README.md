@@ -68,3 +68,57 @@ python3 research/covering/task14_experiments.py
 `step_clearance.py` stores every bad-step condition as a compact affine
 modular arc and derives the canonical period `q*v_star`. The deterministic
 output is `task14_results.json`.
+
+For TASK 15, run:
+
+```bash
+python3 research/covering/test_two_direction.py
+python3 research/covering/task15_experiments.py
+```
+
+`two_direction.py` selects the canonical active second label, computes the period lattice/SNF invariants and modular strips, and evaluates exact labelled gcd intersections. `task15_results.json` checks all 19 TASK 14 obstructions and the exhaustive normalized range `{1,...,15}` without scanning `M=qW`.
+
+For TASK 16, run:
+
+```bash
+python3 research/covering/test_covering_certificates.py
+python3 research/covering/task16_experiments.py
+```
+
+`covering_certificates.py` computes generalized-CRT intersections, the exact maximum-spanning-tree bound, and the third Bonferroni bound. The deterministic `task16_results.json` separates theorem status from exhaustive and seeded verification.
+
+For TASK 17, run:
+
+```bash
+python3 research/covering/test_interval_components.py
+python3 research/covering/task17_experiments.py
+```
+
+`interval_components.py` performs the exact labelled endpoint recursion on the cyclic lcm grid. The audit also checks common-scale invariance and records two centered-arc systems with equal first three intersection moments but different coverage.
+
+For TASK 18, run:
+
+```bash
+python3 research/covering/test_multiplier_fragmentation.py
+python3 research/covering/task18_experiments.py
+```
+
+`multiplier_fragmentation.py` derives the reduced unit, inverse multiplier, multiplicative order, Euclidean continued fraction, and exact component count of every labelled strip. The experiment audits all TASK 14 obstructions and seeded configurations without scanning `qW`.
+
+For TASK 19, run:
+
+```bash
+python3 research/covering/test_pairwise_alignment.py
+python3 research/covering/task19_experiments.py
+```
+
+`pairwise_alignment.py` computes exact four-state local transitions, labelled joint transition tables by CRT/gcd histograms, and two-strip safe-component counts. The audit preserves the distinction between complete labelled tables and insufficient aggregate summaries.
+
+For TASK 20, run:
+
+```bash
+python3 research/covering/test_triple_alignment.py
+python3 research/covering/task20_experiments.py
+```
+
+`triple_alignment.py` constructs the full 8-by-8 before/after table for three labels by generalized CRT and computes the exact component change when the third strip is inserted. The phase-reconstruction result is distinguished from the still-open uniform gap inequality.

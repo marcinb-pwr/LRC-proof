@@ -896,3 +896,587 @@ settle LRC universally. The narrowest next problem is to add a second
 arithmetically natural direction \(x=W+h b_*+k b^\dagger\), where
 \(b^\dagger\) must be chosen from the labelled divisor poset, and determine
 whether the resulting two-dimensional finite torus has an uncovered point.
+
+---
+
+# TASK 15 audit: the two-direction quotient
+
+## Definition 28 (canonical second label) — **PROVED well-defined under a covered word**
+
+Assume the one-direction word is covered. Call a noncentral runner *active* when its bad set in $\mathbb Z/(qv_*)\mathbb Z$ is nonempty. Among the active labels choose the numerically least divisor $b_i=W/v_i$ (equivalently, the largest active velocity), and call it $b^\dagger=W/v^\dagger$. This rule uses the labelled divisor poset and the already known word; it never examines a two-direction safe point.
+
+There is an active noncentral label: the central runner is safe at every $h\not\equiv0\pmod q$, so it cannot cover a covered word alone. Thus the definition is well-defined. The least numerical element is in particular minimal in the divisibility order (although that order can have incomparable minimal elements).
+
+## Theorem 29 (period lattice and Smith form) — **PROVED**
+
+Put $M=qW$, $d=\gcd(b_*,b^\dagger)$, and $L=M/d$. The exact period lattice of
+
+$$
+ (h,k)\longmapsto W+h b_*+k b^\dagger\pmod M
+$$
+
+is
+
+$$
+ K_2=\{(h,k)\in\mathbb Z^2:M\mid h b_*+k b^\dagger\}. \tag{33}
+$$
+
+Moreover
+
+$$
+ \boxed{\mathbb Z^2/K_2\cong\mathbb Z/L\mathbb Z,\qquad
+ \operatorname{SNF}(K_2\hookrightarrow\mathbb Z^2)=\operatorname{diag}(1,L)}. \tag{34}
+$$
+
+Writing $\ell=\operatorname{lcm}(v_*,v^\dagger)$, one has $d=W/\ell$, $L=q\ell$, and the apparent two-dimensional torus is the cyclic orbit
+
+$$
+ \boxed{x_z=W+zd\pmod M,\quad z\in\mathbb Z/L\mathbb Z}. \tag{35}
+$$
+
+**Proof.** Equation (33) is the kernel definition. Bézout gives $\langle b_*,b^\dagger\rangle=d\mathbb Z$, so the image modulo $M$ is $d\mathbb Z/M\mathbb Z$, of order $L$. The first isomorphism theorem proves (34); a rank-two sublattice with cyclic quotient of order $L$ has Smith invariants $1,L$. Finally $\gcd(W/a,W/b)=W/\operatorname{lcm}(a,b)$ for $a,b\mid W$. □
+
+This rank collapse is the precise higher-dimensional obstruction exposed by TASK 15: scalar directions in one residue circle never create a genuine rank-two quotient.
+
+## Theorem 30 (exact affine modular strips) — **PROVED**
+
+For runner $i$, put $m_i=qb_i$, $g_i=\gcd(d,m_i)$, and $H_i=m_i/g_i$. Its bad strip is
+
+$$
+ \mathcal A_i=\{(h,k)+K_2:\operatorname{dist}_{\mathbb Z/m_i\mathbb Z}
+ (W+h b_*+k b^\dagger,0)\le b_i-1\}. \tag{36}
+$$
+
+Under (35), this is the lift to $\mathbb Z/L\mathbb Z$ of
+
+$$
+ A_i=\{z\bmod H_i:zd\equiv-W+u\pmod {m_i},\ |u|\le b_i-1\}. \tag{37}
+$$
+
+**Proof.** Badness is membership in the centered closed residue arc of radius $b_i-1$. Multiplication by $d$ modulo $m_i$ has kernel period $H_i$, giving (37); (35) gives the identification. □
+
+## Theorem 31 (labelled union and gcd-intersection certificates) — **PROVED**
+
+Let $\widetilde A_i$ lift (37) to $\mathbb Z/L\mathbb Z$. An uncovered point exists iff $\bigcup_i\widetilde A_i\ne\mathbb Z/L\mathbb Z$. For two labels,
+
+$$
+ |\widetilde A_i\cap\widetilde A_j|
+ ={L\over\operatorname{lcm}(H_i,H_j)}
+ \#\{(a,b)\in A_i\times A_j:a\equiv b\pmod{\gcd(H_i,H_j)}\}. \tag{38}
+$$
+
+For every spanning tree $T$ on the labels,
+
+$$
+ \boxed{\sum_i |A_i|{L\over H_i}
+ -\sum_{ij\in E(T)}|\widetilde A_i\cap\widetilde A_j|<L} \tag{39}
+$$
+
+certifies a safe point and hence LRC.
+
+**Proof.** Generalized CRT gives the compatibility condition in (38), after which there are $L/\operatorname{lcm}(H_i,H_j)$ lifts. To prove (39), root $T$ and add its sets one vertex at a time. The increase in the union is at most the size of the new set minus its intersection with its parent. Strict inequality leaves a class uncovered. □
+
+## Proposition 32 (exact strip Fourier transform) — **PROVED**
+
+With $\widehat f(n)=L^{-1}\sum_{z\bmod L}f(z)e^{-2\pi inz/L}$ and $f_i=1_{\widetilde A_i}$,
+
+$$
+ \widehat f_i(n)=0\quad\text{unless }n={L\over H_i}s,
+$$
+
+and then
+
+$$
+ \boxed{\widehat f_i((L/H_i)s)
+ ={1\over H_i}\sum_{a\in A_i}e^{-2\pi isa/H_i}.} \tag{40}
+$$
+
+**Proof.** Write every lift as $a+rH_i$ and sum the geometric progression in $r$. □
+
+The phase is linear: no inverse phase or Kloosterman sum appears.
+
+## Computational audit — **VERIFIED**
+
+The canonical rule resolves all 19 TASK 14 full-period obstructions. A separate exhaustive audit of all 18,969 gcd-one subsets of $\{1,\ldots,15\}$ whose centre $W$ is covered found no covered canonical two-direction quotient. Hence there is **no smallest covered configuration in that finite scope**. This is not a universal theorem. The scripts use periods $q\operatorname{lcm}(v_*,v^\dagger)$, never scan $M=qW$, and independently check (35) and (38) on seeded random inputs.
+
+## TASK 15 outcome and narrow barrier
+
+The second label clears every known TASK 14 obstruction. But Theorem 29 disproves the premise that it creates a genuinely two-dimensional torus. The narrow open question is
+
+$$
+ \boxed{\textbf{OPEN: }\text{must the canonical two-label lcm grid contain a safe class?}} \tag{41}
+$$
+
+Neither (39) nor computation proves (41). A counterexample or a proof using the exact gcd intersections is required before adding further labels.
+
+---
+
+# TASK 16 audit: optimized intersection certificates
+
+## Theorem 33 (optimal tree certificate) — **PROVED**
+
+For the lifted bad sets $B_i=\widetilde A_i\subseteq\mathbb Z/L\mathbb Z$, assign the complete labelled graph the weights
+
+$$
+ w_{ij}=|B_i\cap B_j|,
+$$
+
+computed exactly by (38). If $T_{\max}$ is a maximum-weight spanning tree, then
+
+$$
+ \boxed{|\bigcup_iB_i|\le U_T:=\sum_i|B_i|-\sum_{ij\in T_{\max}}w_{ij}.} \tag{42}
+$$
+
+Moreover $U_T$ is the smallest upper bound obtainable from (39) by choosing a spanning tree. Thus $U_T<L$ is the optimal certificate in this precisely delimited pairwise-tree class.
+
+**Proof.** The proof of (39) applies to every tree. Its vertex term is independent of the tree, so minimizing the right side is exactly maximizing the sum of edge weights. Kruskal's algorithm returns a maximum-weight spanning tree: when it accepts an edge joining two current components, any spanning tree must cross that cut, and the standard exchange replaces such a crossing edge by the no-lighter greedy edge without destroying a spanning tree. Iteration proves optimality. □
+
+This is an optimization only within the tree certificates; it is not claimed optimal among every inequality using pairwise data.
+
+## Theorem 34 (arbitrary labelled intersections and third Bonferroni bound) — **PROVED**
+
+For a nonempty label set $J$, let $H_J=\operatorname{lcm}_{j\in J}H_j$. Then
+
+$$
+ \boxed{|\bigcap_{j\in J}B_j|={L\over H_J}
+ \#\{z\bmod H_J:z\bmod H_j\in A_j\ \forall j\in J\}.} \tag{43}
+$$
+
+In particular, writing $S_r=\sum_{|J|=r}|\bigcap_{j\in J}B_j|$, the third Bonferroni inequality gives
+
+$$
+ \boxed{|\bigcup_iB_i|\le U_3:=S_1-S_2+S_3.} \tag{44}
+$$
+
+Hence $U_3<L$ certifies a safe class.
+
+**Proof.** All periods divide $L$. A compatible class modulo their lcm has exactly $L/H_J$ lifts, proving (43). Pointwise, if a point belongs to $r$ sets, its contribution to the right side of (44) is
+$r-\binom r2+\binom r3=1+\binom{r-1}{3}\ge1$ (with the binomial interpreted as zero for $r<4$). Summing proves (44). □
+
+## Finite obstruction to low-order certificates — **DISPROVED**
+
+Neither optimized pairwise trees nor the third Bonferroni truncation universally certify even the tested safe grids. For $V=(1,2,3,5)$, $L=75$, the exact union has six safe classes, but $U_T=77\ge75$; the third-order bound succeeds with $U_3=74$. More sharply, for
+
+$$
+ \boxed{V=(1,3,4,5),\quad L=100,}
+$$
+
+the exact safe classes include $24,25,35,36$, while
+
+$$
+ U_T=108,\qquad U_3=103.
+$$
+
+Thus the statements “the optimized tree bound always proves (41)” and “the third Bonferroni bound always proves (41)” are **DISPROVED**. This does not disprove (41).
+
+## Computational audit — **VERIFIED**
+
+Among all 2,432 gcd-one subsets of $\{1,\ldots,12\}$ for which $W$ is covered, the optimized tree certifies 196 and the third Bonferroni bound certifies 685; every canonical two-label grid nevertheless has a safe class. A separate seeded sample checked 324 admissible configurations with velocities at most 40 and found no covered grid. Exact tests compare all implemented pair/triple intersections and both upper bounds with direct sets on 64 random inputs. These finite results are not promoted to a theorem.
+
+## TASK 16 outcome and narrow barrier
+
+Assertion (41) remains **OPEN**. TASK 16 proves the best bound in the tree class and a rigorously signed higher-order extension, then supplies the smallest failures in the audited ordering. Full inclusion-exclusion would merely compute the already finite union and offers no uniform argument.
+
+The narrow missing statement is now an interval-sensitive intersection theorem: exploit that every $A_i$ is the inverse image of one centered modular arc, rather than an arbitrary periodic set, to bound the uncovered complement after the third-order estimate fails. Any such theorem must distinguish $(1,3,4,5)$ from a genuine cover and cannot depend only on $S_1,S_2,S_3$ through (44).
+
+---
+
+# TASK 17 audit: scaling and interval-sensitive components
+
+## Theorem 35 (common scaling is exactly neutral) — **PROVED**
+
+For every positive integer $c$,
+
+$$
+ V=(v_1,\ldots,v_N)\text{ satisfies LRC}
+ \iff cV=(cv_1,\ldots,cv_N)\text{ satisfies LRC}. \tag{45}
+$$
+
+More precisely, $t$ for $V$ corresponds to $t/c$ for $cV$. If $W'=cW$, then
+
+$$
+ b_i'={W'\over cv_i}=b_i,
+$$
+
+so every primitive bad period $qb_i$, every centered arc, and every normalized lattice problem is unchanged. In the unnormalized residue circle $qW'=cqW$, all blocks are merely repeated $c$ times. The absolute number of integer representatives grows by $c$, but their density and the existence of a safe class do not change.
+
+**Proof.** The identity $\|(t/c)(cv_i)\|=\|tv_i\|$ proves (45) including the exact threshold. The displayed equality of the $b_i$ proves invariance of the finite periods. Equivalently, gcd normalization sends $cV$ back to $V$. □
+
+Thus multiplying all velocities to “create more lattice points” cannot strengthen the attack: it creates $c$ copies of the same quotient information. Multiplying only selected velocities is not this invariance; it changes the LRC instance and needs a separate reduction, which is presently unavailable.
+
+## Theorem 36 (exact cyclic-component recursion) — **PROVED**
+
+For $C\subseteq\mathbb Z/L\mathbb Z$, define its canonical components by their starts
+
+$$
+ \partial^-C=\{z\in C:z-1\notin C\} \tag{46}
+$$
+
+and, for each start $s$, the unique maximal length $\lambda_s$ such that
+$s,s+1,\ldots,s+\lambda_s-1\in C$. The empty and full-circle cases are treated separately. These pairs $(s,\lambda_s)$ uniquely and disjointly encode $C$.
+
+Choose two labelled strips $B_i,B_j$ and initialize
+
+$$
+ C_2=(\mathbb Z/L\mathbb Z)\setminus(B_i\cup B_j). \tag{47}
+$$
+
+After adding runner $r$, the exact update is
+
+$$
+ C_{m+1}=C_m\setminus B_r,\qquad
+ \partial^-C_{m+1}=\{z\in C_m:z\notin B_r, z-1\notin C_m\setminus B_r\}. \tag{48}
+$$
+
+On a component $(s,\lambda_s)$ its surviving endpoints are therefore exactly the transitions of
+
+$$
+ 1_{C_m}(s+a)\bigl(1-1_{A_r}((s+a)\bmod H_r)\bigr),\quad 0\le a<\lambda_s. \tag{49}
+$$
+
+Equations (37) and (49) are the requested endpoint formula: the second factor is not arbitrary, but the inverse image of the single centered arc
+$zd\equiv-W+[-(b_r-1),b_r-1]\pmod{qb_r}$.
+
+**Proof.** Every nonempty proper cyclic subset has a unique predecessor gap before each maximal consecutive run, proving (46). Set subtraction gives (48), and restricting its indicator to a run gives (49). Induction retains every runner label and ends with exactly the safe set. □
+
+This is an exact M-free decision procedure on $L=q\operatorname{lcm}(v_*,v^\dagger)$, not by itself a uniform LRC proof. A crucial obstruction is that multiplication by the unit induced by $d$ can permute a centered arc into many separated positions in the $z$ ordering; ordinary interval connectedness is not preserved by the quotient parametrization.
+
+## Proposition 37 (three intersection moments cannot decide arc coverage) — **DISPROVED criterion**
+
+Even for four genuine centered cyclic arcs, $(S_1,S_2,S_3)$ does not determine coverage. On $\mathbb Z/8\mathbb Z$, consider
+
+$$
+ \begin{aligned}
+ \mathcal C&=(\{0\},\{5,6,7,0,1,2,3\},\{5,6,7\},\{4,5,6,7,0\}),\\
+ \mathcal U&=(\{0\},\{0,1,2\},\{4,5,6,7,0\},\{4,5,6,7,0,1,2\}).
+ \end{aligned} \tag{50}
+$$
+
+Both have
+
+$$
+ (S_1,S_2,S_3)=(16,12,4), \tag{51}
+$$
+
+but $\bigcup\mathcal C=\mathbb Z/8\mathbb Z$, whereas $3\notin\bigcup\mathcal U$.
+
+**Proof.** Every displayed set is a centered cyclic arc (with the displayed center and radius respectively $(0,0),(0,3),(6,1),(6,2)$ and $(0,0),(1,1),(6,2),(7,3)$). Direct finite intersection counting gives (51), and the two union assertions are visible from (50). This is a complete finite proof, not sampling. □
+
+Therefore no theorem depending only on the first three aggregate intersection moments can settle coverage, even before the extra LRC arithmetic constraints are imposed.
+
+## Computational audit — **VERIFIED**
+
+The component recursion reproduces the four safe classes $24,25,35,36$ for $(1,3,4,5)$ and nonempty safe components for all 19 TASK 14 obstructions. Independent tests compare its expanded output with direct safe classes and verify common-scale invariance on 53 seeded admissible configurations. The exact arc pair (50) is stored and rechecked computationally. These checks support the implementation; Theorems 35–37 have independent proofs.
+
+## TASK 17 outcome and narrow barrier
+
+The suggested common-scaling mechanism is conclusively neutral, while the component recursion supplies an exact interval-sensitive algorithm. Proposition 37 shows why the first three aggregate moments cannot be upgraded into a universal criterion. The canonical two-label assertion and LRC remain **OPEN**.
+
+The narrow next barrier is to control the ordering produced by the modular multiplier in (49) using the special divisibility relations $b_i=W/v_i$. One needs either a uniform bound on the fragmentation of the surviving components that forces a gap, or an exact covered canonical grid. Arbitrary cyclic-arc inequalities are now known to be insufficient unless they retain this labelled multiplier/divisor information.
+
+---
+
+# TASK 18 audit: modular-multiplier fragmentation
+
+## Theorem 38 (reduced labelled multiplier) — **PROVED**
+
+Retain the canonical grid $x=W+zd$ of (35). For runner $i$ set
+
+$$
+ m_i=qb_i,\qquad g_i=\gcd(d,m_i),qquad H_i=m_i/g_i,qquad
+ a_i=d/g_i. \tag{52}
+$$
+
+Then $\gcd(a_i,H_i)=1$, and with
+
+$$
+ \rho_i=\left\lfloor{b_i-1\over g_i}\right\rfloor,qquad
+ c_i=-{W\over g_i}a_i^{-1}\pmod {H_i}, \tag{53}
+$$
+
+the bad strip is exactly the modular arithmetic progression
+
+$$
+ \boxed{A_i=\{c_i+a_i^{-1}y\pmod {H_i}:-\rho_i\le y\le\rho_i\}.} \tag{54}
+$$
+
+Its cardinality is $s_i=\min(H_i,2\rho_i+1)$. Thus the relevant permutation multiplier is $a_i^{-1}\pmod {H_i}$; its multiplicative order and the Euclidean continued fraction of $a_i/H_i$ are exact finite invariants of the labelled strip.
+
+**Proof.** The congruence $dz\equiv-W+u\pmod {m_i}$ is soluble exactly when $g_i\mid u$, because $g_i\mid W$. Write $u=g_iy$ and divide by $g_i$. The resulting coefficient $a_i$ is a unit modulo $H_i$ by the definition of the gcd. Its inverse gives (54), while the allowed integral values of $y$ give (53) and the cardinality. □
+
+Unlike a generic unit model, every quantity in (52)–(54) is constrained by
+
+$$
+ d={W\over\operatorname{lcm}(v_*,v^\dagger)},qquad b_i={W\over v_i}. \tag{55}
+$$
+
+This is the exact divisor information that must be retained in any structural estimate.
+
+## Theorem 39 (exact fragmentation formula) — **PROVED**
+
+Assume $0<s_i<H_i$, and let $r_i$ be the least residue of $a_i$ in $\{1,\ldots,H_i-1\}$. The number $\kappa_i$ of ordinary consecutive cyclic components of $A_i$ in the $z$ ordering is
+
+$$
+ \boxed{\kappa_i=s_i-\max(0,s_i-r_i)-\max(0,s_i-(H_i-r_i)).} \tag{56}
+$$
+
+In particular
+
+$$
+ 1\le\kappa_i\le\min(s_i,H_i-s_i). \tag{57}
+$$
+
+The empty and full cases have respectively zero and one component.
+
+**Proof.** Under (54), two bad $z$-classes are consecutive exactly when their arc coordinates differ by $a_i$ modulo $H_i$. A cyclic interval of length $s_i$ overlaps its translate by $r_i$ in
+
+$$
+ E_i=\max(0,s_i-r_i)+\max(0,s_i-(H_i-r_i))
+$$
+
+points. These are precisely the directed adjacency edges $z\to z+1$ inside $A_i$. A proper subset of a cycle is a disjoint union of paths, so vertices minus internal edges equals its number of components, proving (56). The first bound in (57) is immediate. Applying the same transition count to the complement shows that a proper cyclic binary word has equally many one-runs and zero-runs, whence $\kappa_i\le H_i-s_i$; also $\kappa_i\le s_i$. □
+
+Formula (56) is stronger than a generic component bound: after substitution from (52), it computes fragmentation directly from $W/v_i$, the canonical lcm direction, and their gcd. However, summing the individual $\kappa_i$ and $s_i$ does not presently control how components of different labels align.
+
+## Computational audit — **VERIFIED**
+
+The implementation computes $a_i$, $a_i^{-1}$, its multiplicative order, the Euclidean continued fraction of $a_i/H_i$, and both sides of (56) using integer arithmetic. Independent tests verify (54)–(56) on 116 admissible inputs, including $(1,3,4,5)$, the smallest TASK 14 obstruction, powers of two with $q$-divisible member, consecutive and odd examples when they meet the central-cover hypothesis, translated examples, and seeded random configurations. Consecutive families not containing a multiple of $q=N+1$ are explicitly outside the hypotheses of this central-grid construction, rather than failed tests.
+
+All 19 TASK 14 obstructions again have safe canonical grids. A seeded adversarial audit checks 434 admissible configurations with velocities at most 50 and finds no covered grid. This is `VERIFIED` only; it proves neither universal grid success nor LRC.
+
+## TASK 18 outcome and narrow barrier
+
+TASK 18 completely determines single-strip fragmentation. The hoped-for conclusion “individual fragmentation plus total strip length forces a surviving gap” remains **OPEN**, because (56) contains no cross-label phase/alignment information. No covered canonical grid was found, so there is no counterexample to certify.
+
+The narrow new problem is pairwise fragmentation alignment: derive an exact or useful bound for transitions shared by two progressions (54), using the gcd relations among $(a_i,H_i)$ and $(a_j,H_j)$. This is strictly finer than intersection cardinality and strictly finer than treating the strips as arbitrary arcs.
+
+---
+
+# TASK 19 audit: pairwise fragmentation alignment
+
+## Theorem 40 (local transition classes) — **PROVED**
+
+Let $I_i=[-\rho_i,\rho_i]\subseteq\mathbb Z/H_i\mathbb Z$ be the centered arc from (54), and define
+
+$$
+ y_i(z)=a_i z+{W\over g_i}\pmod {H_i}. \tag{58}
+$$
+
+For $(\epsilon,\eta)\in\{0,1\}^2$, the exact local transition class is
+
+$$
+ \boxed{T_i^{\epsilon\eta}=\{z\bmod H_i:
+ 1_{I_i}(y_i(z))=\epsilon,
+ 1_{I_i}(y_i(z)+a_i)=\eta\}.} \tag{59}
+$$
+
+The four classes partition $\mathbb Z/H_i\mathbb Z$. In particular,
+$T_i^{01}$ and $T_i^{10}$ are respectively the entry and exit boundaries of
+the fragmented bad strip in the canonical $z$ ordering.
+
+**Proof.** By the divided congruence in Theorem 38, $z\in A_i$ exactly when
+$y_i(z)\in I_i$. Replacing $z$ by $z+1$ adds $a_i$ to $y_i$, proving (59).
+The four possible pairs of indicator values are disjoint and exhaustive. □
+
+## Theorem 41 (exact labelled joint-transition table) — **PROVED**
+
+For two labels $i,j$, put $G_{ij}=\gcd(H_i,H_j)$ and
+$H_{ij}=\operatorname{lcm}(H_i,H_j)$. For states
+$s,t\in\{0,1\}^2$, the number of $z\bmod L$ having transition $s$ for
+runner $i$ and transition $t$ for runner $j$ is
+
+$$
+ \boxed{Q_{ij}(s,t)={L\over H_{ij}}
+ \#\{(u,v)\in T_i^s\times T_j^t:u\equiv v\pmod {G_{ij}}\}.} \tag{60}
+$$
+
+Thus the complete $4\times4$ table is computable from centered-arc endpoints,
+the reduced multipliers, and one pairwise gcd. It strictly refines ordinary
+intersection cardinality: for example
+$|B_i\cap B_j|=\sum_{s_0=t_0=1}Q_{ij}(s,t)$, while the other cells retain
+entry/exit alignment.
+
+**Proof.** The simultaneous residue conditions $z\equiv u\pmod {H_i}$ and
+$z\equiv v\pmod {H_j}$ are compatible precisely under the congruence modulo
+$G_{ij}$. Each compatible pair has $L/H_{ij}$ lifts because both periods
+divide $L$. Summation proves (60). □
+
+## Corollary 42 (two-strip safe-component count) — **PROVED**
+
+If the complement of $B_i\cup B_j$ is neither empty nor the whole circle, its
+number of cyclic components is
+
+$$
+ \boxed{K_{ij}=\sum_{\substack{s_0\lor t_0=1\\s_1=t_1=0}}Q_{ij}(s,t).} \tag{61}
+$$
+
+The empty and full cases have zero and one component respectively.
+
+**Proof.** A safe component starts at $z+1$ exactly when at least one runner is
+bad at $z$ and both are safe at $z+1$. These are precisely the cells summed
+in (61). □
+
+This gives exact pairwise fragmentation alignment, not merely a bound. It can
+be evaluated by histograms modulo $G_{ij}$ without scanning $qW$.
+
+## Proposition 43 (aggregate pair-transition summaries do not decide coverage) — **DISPROVED criterion**
+
+Even centered arcs with the same aggregate single-label transition counts and
+the same aggregate $4\times4$ pair-transition table can have different
+coverage. On $\mathbb Z/8\mathbb Z$ take
+
+$$
+ \begin{aligned}
+ \mathcal U&=(\{0\},\{1\},\{5,6,7\},\{0,1,2,4,5,6,7\}),\\
+ \mathcal C&=(\{0\},\{3\},\{2,3,4\},\{1,2,3,4,5,6,7\}).
+ \end{aligned} \tag{62}
+$$
+
+Both aggregate individual tables, in state order $00,01,10,11$, equal
+
+$$
+ (16,4,4,8), \tag{63}
+$$
+
+and summing $Q_{ij}(s,t)$ over all six unordered label pairs gives the same
+$4\times4$ table for both systems. Nevertheless
+$|\bigcup\mathcal U|=7$ and $|\bigcup\mathcal C|=8$.
+
+**Proof.** The four sets in each row of (62) are centered cyclic arcs, with
+center-radius data $(0,0),(1,0),(6,1),(7,3)$ and
+$(0,0),(3,0),(3,1),(4,3)$. Direct enumeration of the eight possible starts
+gives (63), the common pair table stored in `task19_results.json`, and the
+displayed union sizes. This is a finite exhaustive proof. □
+
+Proposition 43 concerns **aggregate** pair-transition data. It does not show
+that the complete collection of labelled tables $Q_{ij}$ is insufficient;
+that stronger question remains open and must not be silently inferred.
+
+## Computational audit — **VERIFIED**
+
+Independent direct-period and gcd-histogram implementations of (60) agree on
+106 seeded admissible configurations. Formula (61) agrees with direct cyclic
+component decomposition for up to six pairs per input. The audit records all
+pairs for $(1,3,4,5)$ and all 19 TASK 14 obstructions, and exactly reproduces
+the two systems (62). Required standard families are covered through the
+TASK 18 suite whenever the central-cover hypothesis applies; TASK 19 adds no
+claim outside that hypothesis.
+
+## TASK 19 outcome and narrow barrier
+
+Pairwise transition alignment is now exact, and is strictly richer than the
+intersection counts of TASK 16. Aggregate transition statistics still fail to
+decide coverage. No theorem currently converts all labelled tables $Q_{ij}$
+into a forced global gap, and no covered canonical two-label grid is known.
+
+The narrow next problem is whether the **complete labelled** pair-transition
+tables, together with the divisor-compatible phases (58), control triple gap
+destruction. This requires either a reconstruction/inequality theorem or two
+valid LRC-derived strip systems with identical labelled pair data and different
+coverage. Arbitrary relabelling or aggregation is no longer sufficient.
+
+---
+
+# TASK 20 audit: labelled triple transitions
+
+## Theorem 44 (exact eight-state transition table) — **PROVED**
+
+For three distinct labels $i,j,k$, let a global before-state and after-state be
+
+$$
+ u=(u_i,u_j,u_k),\qquad v=(v_i,v_j,v_k)\in\{0,1\}^3. \tag{64}
+$$
+
+Thus there are eight states at each endpoint and an $8\times8$ transition
+table. Put $H_{ijk}=\operatorname{lcm}(H_i,H_j,H_k)$. Its exact entry is
+
+$$
+ \boxed{R_{ijk}(u,v)={L\over H_{ijk}}\#\left\{
+ (r_i,r_j,r_k)\in T_i^{u_iv_i}\times T_j^{u_jv_j}\times T_k^{u_kv_k}:
+ r_p\equiv r_q\pmod{\gcd(H_p,H_q)}\ \forall p,q
+ \right\}.} \tag{65}
+$$
+
+**Proof.** The generalized CRT for three congruences is soluble exactly when
+every pair is compatible modulo the gcd of its moduli. Every compatible triple
+then determines one class modulo $H_{ijk}$ and hence $L/H_{ijk}$ classes
+modulo $L$. The transition restrictions are exactly those defining the three
+local sets $T_p^{u_pv_p}$. □
+
+Formula (65) retains all 64 before/after cells; calling it merely an
+“eight-state count” must not collapse the two endpoints.
+
+## Theorem 45 (exact triple gap-destruction identity) — **PROVED**
+
+Let $0=(0,0,0)$. If the set safe for all three labels is a nonempty proper
+subset of the cyclic grid, its component count is
+
+$$
+ \boxed{K_{ijk}=\sum_{u\ne0}R_{ijk}(u,0).} \tag{66}
+$$
+
+Consequently, outside the separately handled empty/full cases, inserting
+runner $k$ after the pair $(i,j)$ changes the number of surviving components
+by the exact signed quantity
+
+$$
+ \boxed{\Delta K=\sum_{u\ne0}R_{ijk}(u,0)-K_{ij}.} \tag{67}
+$$
+
+This identity includes both destruction of whole pairwise gaps and splitting
+of a pairwise gap into several smaller gaps.
+
+**Proof.** A safe component starts at $z+1$ precisely when the before-state is
+not all-safe and the after-state is all-safe. Summing exactly those cells gives
+(66). Subtract Corollary 42 to obtain (67). □
+
+## Proposition 46 (phase data reconstructs the full system) — **PROVED / limitation identified**
+
+The complete labelled phase records
+
+$$
+ (H_i,a_i,c_i,\rho_i)_{i=1}^N \tag{68}
+$$
+
+already determine every bad set by (54), hence determine their union, every
+higher transition table, and coverage exactly. Therefore the complete labelled
+pair tables together with (68) do control triple gap destruction—constructively
+through (59) and (65).
+
+**Proof.** Substitute each record into (54) to reconstruct $A_i$, lift it to
+$L$, and apply set union or (65). No choices remain. □
+
+This resolves a logical ambiguity in TASK 20. It is impossible to produce two
+systems with identical records (68) but different coverage: they are the same
+labelled subsets. On the other hand, reconstruction is an exact finite
+algorithm, not a uniform inequality proving that the reconstructed union is
+proper. Complete labelled pair tables *without* (68) may still lose higher
+correlations; no claim of sufficiency is made for that reduced data.
+
+## Computational audit — **VERIFIED**
+
+An implementation of (65) over $H_{ijk}$ is independently compared with a
+direct scan over the canonical period $L$, never $qW$. All 64 cells agree on
+92 admissible inputs: 87 seeded cases plus the critical configuration, a
+TASK 14 obstruction, powers of two, odd integers, and a consecutive/translated
+interval satisfying the central-cover hypothesis. Formulae (66)–(67) agree
+with direct cyclic-component decomposition.
+
+For $(1,3,4,5)$ the four triples have component changes $1,0,0,0$ and none
+covers the grid. Across all 19 TASK 14 obstructions, no three-label subset
+covers its canonical grid; observed component changes range from $0$ to $14$.
+These are finite `VERIFIED` statements, not universal bounds.
+
+## TASK 20 outcome and narrow barrier
+
+Triple gap destruction is now exactly dualized by generalized CRT. The phase
+records trivially-but-rigorously reconstruct all higher data, while no
+nontrivial inequality extracted from pair tables is known to force a gap.
+Neither a covered canonical grid nor an LRC-derived collision of reduced
+labelled pair summaries was found. Universal canonical-grid success and LRC
+remain **OPEN**.
+
+The narrow next task is no longer another exact table. It is to compress (65)
+without losing the sign relevant to $R_{ijk}(u,0)$: prove a quantitative bound
+on triple all-safe entries from the divisor-compatible centered arcs, or find
+a concrete canonical grid where all-safe mass vanishes.

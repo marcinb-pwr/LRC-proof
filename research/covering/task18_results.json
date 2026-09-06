@@ -1,0 +1,2242 @@
+{
+  "status": "VERIFIED",
+  "task14_obstructions": [
+    {
+      "velocities": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        18
+      ],
+      "grid_order": 882,
+      "safe_count": 22,
+      "strips": [
+        {
+          "velocity": 1,
+          "period": 882,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            882
+          ],
+          "size": 251,
+          "components": 1
+        },
+        {
+          "velocity": 3,
+          "period": 294,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            294
+          ],
+          "size": 83,
+          "components": 1
+        },
+        {
+          "velocity": 4,
+          "period": 441,
+          "multiplier": 2,
+          "inverse_multiplier": 221,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            220,
+            2
+          ],
+          "size": 125,
+          "components": 2
+        },
+        {
+          "velocity": 5,
+          "period": 882,
+          "multiplier": 5,
+          "inverse_multiplier": 353,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            176,
+            2,
+            2
+          ],
+          "size": 251,
+          "components": 5
+        },
+        {
+          "velocity": 7,
+          "period": 126,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            126
+          ],
+          "size": 35,
+          "components": 1
+        },
+        {
+          "velocity": 18,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        1,
+        4,
+        6,
+        7,
+        10,
+        11
+      ],
+      "grid_order": 539,
+      "safe_count": 10,
+      "strips": [
+        {
+          "velocity": 1,
+          "period": 539,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            539
+          ],
+          "size": 153,
+          "components": 1
+        },
+        {
+          "velocity": 4,
+          "period": 539,
+          "multiplier": 4,
+          "inverse_multiplier": 135,
+          "order": 105,
+          "continued_fraction": [
+            0,
+            134,
+            1,
+            3
+          ],
+          "size": 153,
+          "components": 4
+        },
+        {
+          "velocity": 6,
+          "period": 539,
+          "multiplier": 6,
+          "inverse_multiplier": 90,
+          "order": 70,
+          "continued_fraction": [
+            0,
+            89,
+            1,
+            5
+          ],
+          "size": 153,
+          "components": 6
+        },
+        {
+          "velocity": 7,
+          "period": 77,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            77
+          ],
+          "size": 21,
+          "components": 1
+        },
+        {
+          "velocity": 10,
+          "period": 539,
+          "multiplier": 10,
+          "inverse_multiplier": 54,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            53,
+            1,
+            9
+          ],
+          "size": 153,
+          "components": 10
+        },
+        {
+          "velocity": 11,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        1,
+        5,
+        7,
+        8,
+        9,
+        13
+      ],
+      "grid_order": 637,
+      "safe_count": 34,
+      "strips": [
+        {
+          "velocity": 1,
+          "period": 637,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            637
+          ],
+          "size": 181,
+          "components": 1
+        },
+        {
+          "velocity": 5,
+          "period": 637,
+          "multiplier": 5,
+          "inverse_multiplier": 255,
+          "order": 84,
+          "continued_fraction": [
+            0,
+            127,
+            2,
+            2
+          ],
+          "size": 181,
+          "components": 5
+        },
+        {
+          "velocity": 7,
+          "period": 91,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            91
+          ],
+          "size": 25,
+          "components": 1
+        },
+        {
+          "velocity": 8,
+          "period": 637,
+          "multiplier": 8,
+          "inverse_multiplier": 239,
+          "order": 28,
+          "continued_fraction": [
+            0,
+            79,
+            1,
+            1,
+            1,
+            2
+          ],
+          "size": 181,
+          "components": 8
+        },
+        {
+          "velocity": 9,
+          "period": 637,
+          "multiplier": 9,
+          "inverse_multiplier": 354,
+          "order": 21,
+          "continued_fraction": [
+            0,
+            70,
+            1,
+            3,
+            2
+          ],
+          "size": 181,
+          "components": 9
+        },
+        {
+          "velocity": 13,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        1,
+        6,
+        7,
+        15,
+        16,
+        18
+      ],
+      "grid_order": 882,
+      "safe_count": 58,
+      "strips": [
+        {
+          "velocity": 1,
+          "period": 882,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            882
+          ],
+          "size": 251,
+          "components": 1
+        },
+        {
+          "velocity": 6,
+          "period": 147,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            147
+          ],
+          "size": 41,
+          "components": 1
+        },
+        {
+          "velocity": 7,
+          "period": 126,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            126
+          ],
+          "size": 35,
+          "components": 1
+        },
+        {
+          "velocity": 15,
+          "period": 294,
+          "multiplier": 5,
+          "inverse_multiplier": 59,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            58,
+            1,
+            4
+          ],
+          "size": 83,
+          "components": 5
+        },
+        {
+          "velocity": 16,
+          "period": 441,
+          "multiplier": 8,
+          "inverse_multiplier": 386,
+          "order": 14,
+          "continued_fraction": [
+            0,
+            55,
+            8
+          ],
+          "size": 125,
+          "components": 8
+        },
+        {
+          "velocity": 18,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        1,
+        7,
+        8,
+        10,
+        17,
+        18
+      ],
+      "grid_order": 882,
+      "safe_count": 52,
+      "strips": [
+        {
+          "velocity": 1,
+          "period": 882,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            882
+          ],
+          "size": 251,
+          "components": 1
+        },
+        {
+          "velocity": 7,
+          "period": 126,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            126
+          ],
+          "size": 35,
+          "components": 1
+        },
+        {
+          "velocity": 8,
+          "period": 441,
+          "multiplier": 4,
+          "inverse_multiplier": 331,
+          "order": 21,
+          "continued_fraction": [
+            0,
+            110,
+            4
+          ],
+          "size": 125,
+          "components": 4
+        },
+        {
+          "velocity": 10,
+          "period": 441,
+          "multiplier": 5,
+          "inverse_multiplier": 353,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            88,
+            5
+          ],
+          "size": 125,
+          "components": 5
+        },
+        {
+          "velocity": 17,
+          "period": 882,
+          "multiplier": 17,
+          "inverse_multiplier": 467,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            51,
+            1,
+            7,
+            2
+          ],
+          "size": 251,
+          "components": 17
+        },
+        {
+          "velocity": 18,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        2,
+        5,
+        6,
+        7,
+        11,
+        16
+      ],
+      "grid_order": 784,
+      "safe_count": 54,
+      "strips": [
+        {
+          "velocity": 2,
+          "period": 392,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            392
+          ],
+          "size": 111,
+          "components": 1
+        },
+        {
+          "velocity": 5,
+          "period": 784,
+          "multiplier": 5,
+          "inverse_multiplier": 157,
+          "order": 84,
+          "continued_fraction": [
+            0,
+            156,
+            1,
+            4
+          ],
+          "size": 223,
+          "components": 5
+        },
+        {
+          "velocity": 6,
+          "period": 392,
+          "multiplier": 3,
+          "inverse_multiplier": 131,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            130,
+            1,
+            2
+          ],
+          "size": 111,
+          "components": 3
+        },
+        {
+          "velocity": 7,
+          "period": 112,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            112
+          ],
+          "size": 31,
+          "components": 1
+        },
+        {
+          "velocity": 11,
+          "period": 784,
+          "multiplier": 11,
+          "inverse_multiplier": 499,
+          "order": 84,
+          "continued_fraction": [
+            0,
+            71,
+            3,
+            1,
+            2
+          ],
+          "size": 223,
+          "components": 11
+        },
+        {
+          "velocity": 16,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        2,
+        5,
+        7,
+        8,
+        9,
+        13
+      ],
+      "grid_order": 637,
+      "safe_count": 30,
+      "strips": [
+        {
+          "velocity": 2,
+          "period": 637,
+          "multiplier": 2,
+          "inverse_multiplier": 319,
+          "order": 84,
+          "continued_fraction": [
+            0,
+            318,
+            2
+          ],
+          "size": 181,
+          "components": 2
+        },
+        {
+          "velocity": 5,
+          "period": 637,
+          "multiplier": 5,
+          "inverse_multiplier": 255,
+          "order": 84,
+          "continued_fraction": [
+            0,
+            127,
+            2,
+            2
+          ],
+          "size": 181,
+          "components": 5
+        },
+        {
+          "velocity": 7,
+          "period": 91,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            91
+          ],
+          "size": 25,
+          "components": 1
+        },
+        {
+          "velocity": 8,
+          "period": 637,
+          "multiplier": 8,
+          "inverse_multiplier": 239,
+          "order": 28,
+          "continued_fraction": [
+            0,
+            79,
+            1,
+            1,
+            1,
+            2
+          ],
+          "size": 181,
+          "components": 8
+        },
+        {
+          "velocity": 9,
+          "period": 637,
+          "multiplier": 9,
+          "inverse_multiplier": 354,
+          "order": 21,
+          "continued_fraction": [
+            0,
+            70,
+            1,
+            3,
+            2
+          ],
+          "size": 181,
+          "components": 9
+        },
+        {
+          "velocity": 13,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        2,
+        6,
+        7,
+        8,
+        10,
+        13
+      ],
+      "grid_order": 637,
+      "safe_count": 8,
+      "strips": [
+        {
+          "velocity": 2,
+          "period": 637,
+          "multiplier": 2,
+          "inverse_multiplier": 319,
+          "order": 84,
+          "continued_fraction": [
+            0,
+            318,
+            2
+          ],
+          "size": 181,
+          "components": 2
+        },
+        {
+          "velocity": 6,
+          "period": 637,
+          "multiplier": 6,
+          "inverse_multiplier": 531,
+          "order": 84,
+          "continued_fraction": [
+            0,
+            106,
+            6
+          ],
+          "size": 181,
+          "components": 6
+        },
+        {
+          "velocity": 7,
+          "period": 91,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            91
+          ],
+          "size": 25,
+          "components": 1
+        },
+        {
+          "velocity": 8,
+          "period": 637,
+          "multiplier": 8,
+          "inverse_multiplier": 239,
+          "order": 28,
+          "continued_fraction": [
+            0,
+            79,
+            1,
+            1,
+            1,
+            2
+          ],
+          "size": 181,
+          "components": 8
+        },
+        {
+          "velocity": 10,
+          "period": 637,
+          "multiplier": 10,
+          "inverse_multiplier": 446,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            63,
+            1,
+            2,
+            3
+          ],
+          "size": 181,
+          "components": 10
+        },
+        {
+          "velocity": 13,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        2,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "grid_order": 588,
+      "safe_count": 20,
+      "strips": [
+        {
+          "velocity": 2,
+          "period": 294,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            294
+          ],
+          "size": 83,
+          "components": 1
+        },
+        {
+          "velocity": 7,
+          "period": 84,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            84
+          ],
+          "size": 23,
+          "components": 1
+        },
+        {
+          "velocity": 9,
+          "period": 196,
+          "multiplier": 3,
+          "inverse_multiplier": 131,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            65,
+            3
+          ],
+          "size": 55,
+          "components": 3
+        },
+        {
+          "velocity": 10,
+          "period": 294,
+          "multiplier": 5,
+          "inverse_multiplier": 59,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            58,
+            1,
+            4
+          ],
+          "size": 83,
+          "components": 5
+        },
+        {
+          "velocity": 11,
+          "period": 588,
+          "multiplier": 11,
+          "inverse_multiplier": 107,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            53,
+            2,
+            5
+          ],
+          "size": 167,
+          "components": 11
+        },
+        {
+          "velocity": 12,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        2,
+        7,
+        9,
+        13,
+        15,
+        16
+      ],
+      "grid_order": 784,
+      "safe_count": 62,
+      "strips": [
+        {
+          "velocity": 2,
+          "period": 392,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            392
+          ],
+          "size": 111,
+          "components": 1
+        },
+        {
+          "velocity": 7,
+          "period": 112,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            112
+          ],
+          "size": 31,
+          "components": 1
+        },
+        {
+          "velocity": 9,
+          "period": 784,
+          "multiplier": 9,
+          "inverse_multiplier": 697,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            87,
+            9
+          ],
+          "size": 223,
+          "components": 9
+        },
+        {
+          "velocity": 13,
+          "period": 784,
+          "multiplier": 13,
+          "inverse_multiplier": 181,
+          "order": 28,
+          "continued_fraction": [
+            0,
+            60,
+            3,
+            4
+          ],
+          "size": 223,
+          "components": 13
+        },
+        {
+          "velocity": 15,
+          "period": 784,
+          "multiplier": 15,
+          "inverse_multiplier": 575,
+          "order": 14,
+          "continued_fraction": [
+            0,
+            52,
+            3,
+            1,
+            3
+          ],
+          "size": 223,
+          "components": 15
+        },
+        {
+          "velocity": 16,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        3,
+        5,
+        7,
+        9,
+        12,
+        15
+      ],
+      "grid_order": 735,
+      "safe_count": 38,
+      "strips": [
+        {
+          "velocity": 3,
+          "period": 245,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            245
+          ],
+          "size": 69,
+          "components": 1
+        },
+        {
+          "velocity": 5,
+          "period": 147,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            147
+          ],
+          "size": 41,
+          "components": 1
+        },
+        {
+          "velocity": 7,
+          "period": 105,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            105
+          ],
+          "size": 29,
+          "components": 1
+        },
+        {
+          "velocity": 9,
+          "period": 245,
+          "multiplier": 3,
+          "inverse_multiplier": 82,
+          "order": 84,
+          "continued_fraction": [
+            0,
+            81,
+            1,
+            2
+          ],
+          "size": 69,
+          "components": 3
+        },
+        {
+          "velocity": 12,
+          "period": 245,
+          "multiplier": 4,
+          "inverse_multiplier": 184,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            61,
+            4
+          ],
+          "size": 69,
+          "components": 4
+        },
+        {
+          "velocity": 15,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        3,
+        5,
+        7,
+        11,
+        12,
+        17
+      ],
+      "grid_order": 833,
+      "safe_count": 40,
+      "strips": [
+        {
+          "velocity": 3,
+          "period": 833,
+          "multiplier": 3,
+          "inverse_multiplier": 278,
+          "order": 336,
+          "continued_fraction": [
+            0,
+            277,
+            1,
+            2
+          ],
+          "size": 237,
+          "components": 3
+        },
+        {
+          "velocity": 5,
+          "period": 833,
+          "multiplier": 5,
+          "inverse_multiplier": 500,
+          "order": 336,
+          "continued_fraction": [
+            0,
+            166,
+            1,
+            1,
+            2
+          ],
+          "size": 237,
+          "components": 5
+        },
+        {
+          "velocity": 7,
+          "period": 119,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            119
+          ],
+          "size": 33,
+          "components": 1
+        },
+        {
+          "velocity": 11,
+          "period": 833,
+          "multiplier": 11,
+          "inverse_multiplier": 303,
+          "order": 336,
+          "continued_fraction": [
+            0,
+            75,
+            1,
+            2,
+            1,
+            2
+          ],
+          "size": 237,
+          "components": 11
+        },
+        {
+          "velocity": 12,
+          "period": 833,
+          "multiplier": 12,
+          "inverse_multiplier": 486,
+          "order": 336,
+          "continued_fraction": [
+            0,
+            69,
+            2,
+            2,
+            2
+          ],
+          "size": 237,
+          "components": 12
+        },
+        {
+          "velocity": 17,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        3,
+        7,
+        8,
+        11,
+        13,
+        15
+      ],
+      "grid_order": 735,
+      "safe_count": 52,
+      "strips": [
+        {
+          "velocity": 3,
+          "period": 245,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            245
+          ],
+          "size": 69,
+          "components": 1
+        },
+        {
+          "velocity": 7,
+          "period": 105,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            105
+          ],
+          "size": 29,
+          "components": 1
+        },
+        {
+          "velocity": 8,
+          "period": 735,
+          "multiplier": 8,
+          "inverse_multiplier": 92,
+          "order": 28,
+          "continued_fraction": [
+            0,
+            91,
+            1,
+            7
+          ],
+          "size": 209,
+          "components": 8
+        },
+        {
+          "velocity": 11,
+          "period": 735,
+          "multiplier": 11,
+          "inverse_multiplier": 401,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            66,
+            1,
+            4,
+            2
+          ],
+          "size": 209,
+          "components": 11
+        },
+        {
+          "velocity": 13,
+          "period": 735,
+          "multiplier": 13,
+          "inverse_multiplier": 622,
+          "order": 28,
+          "continued_fraction": [
+            0,
+            56,
+            1,
+            1,
+            6
+          ],
+          "size": 209,
+          "components": 13
+        },
+        {
+          "velocity": 15,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        3,
+        7,
+        8,
+        11,
+        15,
+        18
+      ],
+      "grid_order": 882,
+      "safe_count": 30,
+      "strips": [
+        {
+          "velocity": 3,
+          "period": 294,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            294
+          ],
+          "size": 83,
+          "components": 1
+        },
+        {
+          "velocity": 7,
+          "period": 126,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            126
+          ],
+          "size": 35,
+          "components": 1
+        },
+        {
+          "velocity": 8,
+          "period": 441,
+          "multiplier": 4,
+          "inverse_multiplier": 331,
+          "order": 21,
+          "continued_fraction": [
+            0,
+            110,
+            4
+          ],
+          "size": 125,
+          "components": 4
+        },
+        {
+          "velocity": 11,
+          "period": 882,
+          "multiplier": 11,
+          "inverse_multiplier": 401,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            80,
+            5,
+            2
+          ],
+          "size": 251,
+          "components": 11
+        },
+        {
+          "velocity": 15,
+          "period": 294,
+          "multiplier": 5,
+          "inverse_multiplier": 59,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            58,
+            1,
+            4
+          ],
+          "size": 83,
+          "components": 5
+        },
+        {
+          "velocity": 18,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        3,
+        7,
+        10,
+        11,
+        13,
+        16
+      ],
+      "grid_order": 784,
+      "safe_count": 52,
+      "strips": [
+        {
+          "velocity": 3,
+          "period": 784,
+          "multiplier": 3,
+          "inverse_multiplier": 523,
+          "order": 84,
+          "continued_fraction": [
+            0,
+            261,
+            3
+          ],
+          "size": 223,
+          "components": 3
+        },
+        {
+          "velocity": 7,
+          "period": 112,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            112
+          ],
+          "size": 31,
+          "components": 1
+        },
+        {
+          "velocity": 10,
+          "period": 392,
+          "multiplier": 5,
+          "inverse_multiplier": 157,
+          "order": 42,
+          "continued_fraction": [
+            0,
+            78,
+            2,
+            2
+          ],
+          "size": 111,
+          "components": 5
+        },
+        {
+          "velocity": 11,
+          "period": 784,
+          "multiplier": 11,
+          "inverse_multiplier": 499,
+          "order": 84,
+          "continued_fraction": [
+            0,
+            71,
+            3,
+            1,
+            2
+          ],
+          "size": 223,
+          "components": 11
+        },
+        {
+          "velocity": 13,
+          "period": 784,
+          "multiplier": 13,
+          "inverse_multiplier": 181,
+          "order": 28,
+          "continued_fraction": [
+            0,
+            60,
+            3,
+            4
+          ],
+          "size": 223,
+          "components": 13
+        },
+        {
+          "velocity": 16,
+          "period": 49,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            49
+          ],
+          "size": 13,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13
+      ],
+      "grid_order": 832,
+      "safe_count": 14,
+      "strips": [
+        {
+          "velocity": 1,
+          "period": 832,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            832
+          ],
+          "size": 207,
+          "components": 1
+        },
+        {
+          "velocity": 5,
+          "period": 832,
+          "multiplier": 5,
+          "inverse_multiplier": 333,
+          "order": 16,
+          "continued_fraction": [
+            0,
+            166,
+            2,
+            2
+          ],
+          "size": 207,
+          "components": 5
+        },
+        {
+          "velocity": 6,
+          "period": 416,
+          "multiplier": 3,
+          "inverse_multiplier": 139,
+          "order": 24,
+          "continued_fraction": [
+            0,
+            138,
+            1,
+            2
+          ],
+          "size": 103,
+          "components": 3
+        },
+        {
+          "velocity": 7,
+          "period": 832,
+          "multiplier": 7,
+          "inverse_multiplier": 119,
+          "order": 24,
+          "continued_fraction": [
+            0,
+            118,
+            1,
+            6
+          ],
+          "size": 207,
+          "components": 7
+        },
+        {
+          "velocity": 8,
+          "period": 104,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            104
+          ],
+          "size": 25,
+          "components": 1
+        },
+        {
+          "velocity": 11,
+          "period": 832,
+          "multiplier": 11,
+          "inverse_multiplier": 227,
+          "order": 48,
+          "continued_fraction": [
+            0,
+            75,
+            1,
+            1,
+            1,
+            3
+          ],
+          "size": 207,
+          "components": 11
+        },
+        {
+          "velocity": 13,
+          "period": 64,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            64
+          ],
+          "size": 15,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        2,
+        7,
+        8,
+        9,
+        11,
+        13,
+        15
+      ],
+      "grid_order": 960,
+      "safe_count": 36,
+      "strips": [
+        {
+          "velocity": 2,
+          "period": 480,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            480
+          ],
+          "size": 119,
+          "components": 1
+        },
+        {
+          "velocity": 7,
+          "period": 960,
+          "multiplier": 7,
+          "inverse_multiplier": 823,
+          "order": 8,
+          "continued_fraction": [
+            0,
+            137,
+            7
+          ],
+          "size": 239,
+          "components": 7
+        },
+        {
+          "velocity": 8,
+          "period": 120,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            120
+          ],
+          "size": 29,
+          "components": 1
+        },
+        {
+          "velocity": 9,
+          "period": 320,
+          "multiplier": 3,
+          "inverse_multiplier": 107,
+          "order": 16,
+          "continued_fraction": [
+            0,
+            106,
+            1,
+            2
+          ],
+          "size": 79,
+          "components": 3
+        },
+        {
+          "velocity": 11,
+          "period": 960,
+          "multiplier": 11,
+          "inverse_multiplier": 611,
+          "order": 16,
+          "continued_fraction": [
+            0,
+            87,
+            3,
+            1,
+            2
+          ],
+          "size": 239,
+          "components": 11
+        },
+        {
+          "velocity": 13,
+          "period": 960,
+          "multiplier": 13,
+          "inverse_multiplier": 517,
+          "order": 16,
+          "continued_fraction": [
+            0,
+            73,
+            1,
+            5,
+            2
+          ],
+          "size": 239,
+          "components": 13
+        },
+        {
+          "velocity": 15,
+          "period": 64,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            64
+          ],
+          "size": 15,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        1,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        16,
+        17
+      ],
+      "grid_order": 2057,
+      "safe_count": 18,
+      "strips": [
+        {
+          "velocity": 1,
+          "period": 2057,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            2057
+          ],
+          "size": 373,
+          "components": 1
+        },
+        {
+          "velocity": 4,
+          "period": 2057,
+          "multiplier": 4,
+          "inverse_multiplier": 1543,
+          "order": 220,
+          "continued_fraction": [
+            0,
+            514,
+            4
+          ],
+          "size": 373,
+          "components": 4
+        },
+        {
+          "velocity": 6,
+          "period": 2057,
+          "multiplier": 6,
+          "inverse_multiplier": 343,
+          "order": 880,
+          "continued_fraction": [
+            0,
+            342,
+            1,
+            5
+          ],
+          "size": 373,
+          "components": 6
+        },
+        {
+          "velocity": 7,
+          "period": 2057,
+          "multiplier": 7,
+          "inverse_multiplier": 294,
+          "order": 880,
+          "continued_fraction": [
+            0,
+            293,
+            1,
+            6
+          ],
+          "size": 373,
+          "components": 7
+        },
+        {
+          "velocity": 9,
+          "period": 2057,
+          "multiplier": 9,
+          "inverse_multiplier": 1600,
+          "order": 40,
+          "continued_fraction": [
+            0,
+            228,
+            1,
+            1,
+            4
+          ],
+          "size": 373,
+          "components": 9
+        },
+        {
+          "velocity": 10,
+          "period": 2057,
+          "multiplier": 10,
+          "inverse_multiplier": 1440,
+          "order": 176,
+          "continued_fraction": [
+            0,
+            205,
+            1,
+            2,
+            3
+          ],
+          "size": 373,
+          "components": 10
+        },
+        {
+          "velocity": 11,
+          "period": 187,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            187
+          ],
+          "size": 33,
+          "components": 1
+        },
+        {
+          "velocity": 13,
+          "period": 2057,
+          "multiplier": 13,
+          "inverse_multiplier": 633,
+          "order": 220,
+          "continued_fraction": [
+            0,
+            158,
+            4,
+            3
+          ],
+          "size": 373,
+          "components": 13
+        },
+        {
+          "velocity": 16,
+          "period": 2057,
+          "multiplier": 16,
+          "inverse_multiplier": 900,
+          "order": 110,
+          "continued_fraction": [
+            0,
+            128,
+            1,
+            1,
+            3,
+            2
+          ],
+          "size": 373,
+          "components": 16
+        },
+        {
+          "velocity": 17,
+          "period": 121,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            121
+          ],
+          "size": 21,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        1,
+        4,
+        6,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        18
+      ],
+      "grid_order": 2178,
+      "safe_count": 74,
+      "strips": [
+        {
+          "velocity": 1,
+          "period": 2178,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            2178
+          ],
+          "size": 395,
+          "components": 1
+        },
+        {
+          "velocity": 4,
+          "period": 1089,
+          "multiplier": 2,
+          "inverse_multiplier": 545,
+          "order": 330,
+          "continued_fraction": [
+            0,
+            544,
+            2
+          ],
+          "size": 197,
+          "components": 2
+        },
+        {
+          "velocity": 6,
+          "period": 363,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            363
+          ],
+          "size": 65,
+          "components": 1
+        },
+        {
+          "velocity": 10,
+          "period": 1089,
+          "multiplier": 5,
+          "inverse_multiplier": 218,
+          "order": 330,
+          "continued_fraction": [
+            0,
+            217,
+            1,
+            4
+          ],
+          "size": 197,
+          "components": 5
+        },
+        {
+          "velocity": 11,
+          "period": 198,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            198
+          ],
+          "size": 35,
+          "components": 1
+        },
+        {
+          "velocity": 12,
+          "period": 363,
+          "multiplier": 2,
+          "inverse_multiplier": 182,
+          "order": 110,
+          "continued_fraction": [
+            0,
+            181,
+            2
+          ],
+          "size": 65,
+          "components": 2
+        },
+        {
+          "velocity": 14,
+          "period": 1089,
+          "multiplier": 7,
+          "inverse_multiplier": 778,
+          "order": 330,
+          "continued_fraction": [
+            0,
+            155,
+            1,
+            1,
+            3
+          ],
+          "size": 197,
+          "components": 7
+        },
+        {
+          "velocity": 15,
+          "period": 726,
+          "multiplier": 5,
+          "inverse_multiplier": 581,
+          "order": 110,
+          "continued_fraction": [
+            0,
+            145,
+            5
+          ],
+          "size": 131,
+          "components": 5
+        },
+        {
+          "velocity": 16,
+          "period": 1089,
+          "multiplier": 8,
+          "inverse_multiplier": 953,
+          "order": 110,
+          "continued_fraction": [
+            0,
+            136,
+            8
+          ],
+          "size": 197,
+          "components": 8
+        },
+        {
+          "velocity": 18,
+          "period": 121,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            121
+          ],
+          "size": 21,
+          "components": 1
+        }
+      ]
+    }
+  ],
+  "task14_all_safe": true,
+  "standard_families": [
+    {
+      "velocities": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "grid_order": 100,
+      "safe_count": 4,
+      "strips": [
+        {
+          "velocity": 1,
+          "period": 100,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            100
+          ],
+          "size": 39,
+          "components": 1
+        },
+        {
+          "velocity": 3,
+          "period": 100,
+          "multiplier": 3,
+          "inverse_multiplier": 67,
+          "order": 20,
+          "continued_fraction": [
+            0,
+            33,
+            3
+          ],
+          "size": 39,
+          "components": 3
+        },
+        {
+          "velocity": 4,
+          "period": 25,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            25
+          ],
+          "size": 9,
+          "components": 1
+        },
+        {
+          "velocity": 5,
+          "period": 20,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            20
+          ],
+          "size": 7,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        1,
+        3,
+        5,
+        8
+      ],
+      "grid_order": 200,
+      "safe_count": 16,
+      "strips": [
+        {
+          "velocity": 1,
+          "period": 200,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            200
+          ],
+          "size": 79,
+          "components": 1
+        },
+        {
+          "velocity": 3,
+          "period": 200,
+          "multiplier": 3,
+          "inverse_multiplier": 67,
+          "order": 20,
+          "continued_fraction": [
+            0,
+            66,
+            1,
+            2
+          ],
+          "size": 79,
+          "components": 3
+        },
+        {
+          "velocity": 5,
+          "period": 40,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            40
+          ],
+          "size": 15,
+          "components": 1
+        },
+        {
+          "velocity": 8,
+          "period": 25,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            25
+          ],
+          "size": 9,
+          "components": 1
+        }
+      ]
+    },
+    {
+      "velocities": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "grid_order": 100,
+      "safe_count": 14,
+      "strips": [
+        {
+          "velocity": 2,
+          "period": 50,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            50
+          ],
+          "size": 19,
+          "components": 1
+        },
+        {
+          "velocity": 3,
+          "period": 100,
+          "multiplier": 3,
+          "inverse_multiplier": 67,
+          "order": 20,
+          "continued_fraction": [
+            0,
+            33,
+            3
+          ],
+          "size": 39,
+          "components": 3
+        },
+        {
+          "velocity": 4,
+          "period": 25,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            25
+          ],
+          "size": 9,
+          "components": 1
+        },
+        {
+          "velocity": 5,
+          "period": 20,
+          "multiplier": 1,
+          "inverse_multiplier": 1,
+          "order": 1,
+          "continued_fraction": [
+            0,
+            20
+          ],
+          "size": 7,
+          "components": 1
+        }
+      ]
+    }
+  ],
+  "random_seed": 1802,
+  "random_requested": 500,
+  "random_admissible_checked": 434,
+  "random_velocity_limit": 50,
+  "random_covered": 0,
+  "first_random_covered": null
+}
