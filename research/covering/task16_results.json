@@ -1,0 +1,27 @@
+{
+  "status": "VERIFIED",
+  "exhaustive_scope": "gcd-one subsets of {1,...,12} whose W is covered",
+  "audited_count": 2432,
+  "tree_certified": 196,
+  "bonferroni3_certified": 685,
+  "first_tree_failure": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "first_bonferroni3_failure": [
+    1,
+    3,
+    4,
+    5
+  ],
+  "covered_tori": 0,
+  "smallest_covered_torus": null,
+  "random_seed": 1602,
+  "random_requested": 400,
+  "random_admissible_checked": 324,
+  "random_velocity_limit": 40,
+  "random_covered_tori": 0,
+  "first_random_covered_torus": null
+}

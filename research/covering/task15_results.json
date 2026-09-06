@@ -1,0 +1,268 @@
+{
+  "status": "VERIFIED",
+  "selection_rule": "least active noncentral b_i (largest active velocity)",
+  "task14_obstructions": [
+    {
+      "velocities": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        18
+      ],
+      "v_dagger": 18,
+      "torus_order": 882,
+      "first_safe_class": 273
+    },
+    {
+      "velocities": [
+        1,
+        4,
+        6,
+        7,
+        10,
+        11
+      ],
+      "v_dagger": 11,
+      "torus_order": 539,
+      "first_safe_class": 126
+    },
+    {
+      "velocities": [
+        1,
+        5,
+        7,
+        8,
+        9,
+        13
+      ],
+      "v_dagger": 13,
+      "torus_order": 637,
+      "first_safe_class": 14
+    },
+    {
+      "velocities": [
+        1,
+        6,
+        7,
+        15,
+        16,
+        18
+      ],
+      "v_dagger": 18,
+      "torus_order": 882,
+      "first_safe_class": 59
+    },
+    {
+      "velocities": [
+        1,
+        7,
+        8,
+        10,
+        17,
+        18
+      ],
+      "v_dagger": 18,
+      "torus_order": 882,
+      "first_safe_class": 63
+    },
+    {
+      "velocities": [
+        2,
+        5,
+        6,
+        7,
+        11,
+        16
+      ],
+      "v_dagger": 16,
+      "torus_order": 784,
+      "first_safe_class": 68
+    },
+    {
+      "velocities": [
+        2,
+        5,
+        7,
+        8,
+        9,
+        13
+      ],
+      "v_dagger": 13,
+      "torus_order": 637,
+      "first_safe_class": 14
+    },
+    {
+      "velocities": [
+        2,
+        6,
+        7,
+        8,
+        10,
+        13
+      ],
+      "v_dagger": 13,
+      "torus_order": 637,
+      "first_safe_class": 46
+    },
+    {
+      "velocities": [
+        2,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "v_dagger": 12,
+      "torus_order": 588,
+      "first_safe_class": 56
+    },
+    {
+      "velocities": [
+        2,
+        7,
+        9,
+        13,
+        15,
+        16
+      ],
+      "v_dagger": 16,
+      "torus_order": 784,
+      "first_safe_class": 18
+    },
+    {
+      "velocities": [
+        3,
+        5,
+        7,
+        9,
+        12,
+        15
+      ],
+      "v_dagger": 15,
+      "torus_order": 735,
+      "first_safe_class": 70
+    },
+    {
+      "velocities": [
+        3,
+        5,
+        7,
+        11,
+        12,
+        17
+      ],
+      "v_dagger": 17,
+      "torus_order": 833,
+      "first_safe_class": 280
+    },
+    {
+      "velocities": [
+        3,
+        7,
+        8,
+        11,
+        13,
+        15
+      ],
+      "v_dagger": 15,
+      "torus_order": 735,
+      "first_safe_class": 17
+    },
+    {
+      "velocities": [
+        3,
+        7,
+        8,
+        11,
+        15,
+        18
+      ],
+      "v_dagger": 18,
+      "torus_order": 882,
+      "first_safe_class": 59
+    },
+    {
+      "velocities": [
+        3,
+        7,
+        10,
+        11,
+        13,
+        16
+      ],
+      "v_dagger": 16,
+      "torus_order": 784,
+      "first_safe_class": 18
+    },
+    {
+      "velocities": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13
+      ],
+      "v_dagger": 13,
+      "torus_order": 832,
+      "first_safe_class": 288
+    },
+    {
+      "velocities": [
+        2,
+        7,
+        8,
+        9,
+        11,
+        13,
+        15
+      ],
+      "v_dagger": 15,
+      "torus_order": 960,
+      "first_safe_class": 37
+    },
+    {
+      "velocities": [
+        1,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        16,
+        17
+      ],
+      "v_dagger": 17,
+      "torus_order": 2057,
+      "first_safe_class": 244
+    },
+    {
+      "velocities": [
+        1,
+        4,
+        6,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        18
+      ],
+      "v_dagger": 18,
+      "torus_order": 2178,
+      "first_safe_class": 55
+    }
+  ],
+  "task14_obstructions_resolved": 19,
+  "exhaustive_scope": "gcd-one subsets of {1,...,15} whose W is covered",
+  "audited_count": 18969,
+  "covered_tori": 0,
+  "smallest_covered_torus": null
+}
