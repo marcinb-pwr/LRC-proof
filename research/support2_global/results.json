@@ -1,0 +1,1173 @@
+[
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2
+    ],
+    "enumerated": true,
+    "q": 3,
+    "W": 2,
+    "M": 6,
+    "sum_T_pairs": "0",
+    "axis_lines": [
+      "1",
+      "0"
+    ],
+    "F_axis": "0",
+    "F2": "0",
+    "F_le2": "0",
+    "safe_count_min": 0,
+    "safe_count_max": 1,
+    "safe_count_histogram": {
+      "0": 5,
+      "1": 1
+    }
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3
+    ],
+    "enumerated": true,
+    "q": 3,
+    "W": 3,
+    "M": 9,
+    "sum_T_pairs": "0",
+    "axis_lines": [
+      "8/9",
+      "0"
+    ],
+    "F_axis": "-1/9",
+    "F2": "1/9",
+    "F_le2": "0",
+    "safe_count_min": 0,
+    "safe_count_max": 1,
+    "safe_count_histogram": {
+      "0": 7,
+      "1": 2
+    }
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2
+    ],
+    "enumerated": true,
+    "q": 3,
+    "W": 2,
+    "M": 6,
+    "sum_T_pairs": "0",
+    "axis_lines": [
+      "1",
+      "0"
+    ],
+    "F_axis": "0",
+    "F2": "0",
+    "F_le2": "0",
+    "safe_count_min": 0,
+    "safe_count_max": 1,
+    "safe_count_histogram": {
+      "0": 5,
+      "1": 1
+    }
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8
+    ],
+    "enumerated": true,
+    "q": 3,
+    "W": 56,
+    "M": 168,
+    "sum_T_pairs": "48/49",
+    "axis_lines": [
+      "1",
+      "48/49"
+    ],
+    "F_axis": "48/49",
+    "F2": "0",
+    "F_le2": "48/49",
+    "safe_count_min": 0,
+    "safe_count_max": 2,
+    "safe_count_histogram": {
+      "0": 85,
+      "1": 69,
+      "2": 14
+    }
+  },
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2,
+      3
+    ],
+    "enumerated": true,
+    "q": 4,
+    "W": 6,
+    "M": 24,
+    "sum_T_pairs": "65/27",
+    "axis_lines": [
+      "1",
+      "1",
+      "1"
+    ],
+    "F_axis": "1",
+    "F2": "-16/27",
+    "F_le2": "11/27",
+    "safe_count_min": 0,
+    "safe_count_max": 2,
+    "safe_count_histogram": {
+      "0": 5,
+      "1": 8,
+      "2": 11
+    }
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3,
+      5
+    ],
+    "enumerated": true,
+    "q": 4,
+    "W": 15,
+    "M": 60,
+    "sum_T_pairs": "2212/675",
+    "axis_lines": [
+      "1",
+      "1",
+      "1"
+    ],
+    "F_axis": "1",
+    "F2": "187/675",
+    "F_le2": "862/675",
+    "safe_count_min": 0,
+    "safe_count_max": 3,
+    "safe_count_histogram": {
+      "0": 9,
+      "1": 26,
+      "2": 20,
+      "3": 5
+    }
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2,
+      4
+    ],
+    "enumerated": true,
+    "q": 4,
+    "W": 4,
+    "M": 16,
+    "sum_T_pairs": "5/4",
+    "axis_lines": [
+      "1",
+      "1",
+      "1"
+    ],
+    "F_axis": "1",
+    "F2": "-7/4",
+    "F_le2": "-3/4",
+    "safe_count_min": 0,
+    "safe_count_max": 2,
+    "safe_count_histogram": {
+      "0": 3,
+      "1": 9,
+      "2": 4
+    }
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8,
+      9
+    ],
+    "enumerated": true,
+    "q": 4,
+    "W": 504,
+    "M": 2016,
+    "sum_T_pairs": "7057/2352",
+    "axis_lines": [
+      "1",
+      "1",
+      "1"
+    ],
+    "F_axis": "1",
+    "F2": "1/2352",
+    "F_le2": "2353/2352",
+    "safe_count_min": 0,
+    "safe_count_max": 3,
+    "safe_count_histogram": {
+      "0": 245,
+      "1": 794,
+      "2": 725,
+      "3": 252
+    }
+  },
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "enumerated": true,
+    "q": 5,
+    "W": 12,
+    "M": 60,
+    "sum_T_pairs": "22855/4374",
+    "axis_lines": [
+      "1",
+      "1",
+      "1",
+      "80/81"
+    ],
+    "F_axis": "80/81",
+    "F2": "-3227/4374",
+    "F_le2": "1093/4374",
+    "safe_count_min": 0,
+    "safe_count_max": 3,
+    "safe_count_histogram": {
+      "0": 7,
+      "1": 2,
+      "2": 21,
+      "3": 30
+    }
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "enumerated": true,
+    "q": 5,
+    "W": 105,
+    "M": 525,
+    "sum_T_pairs": "3265408/535815",
+    "axis_lines": [
+      "99224/99225",
+      "11024/11025",
+      "3968/3969",
+      "2024/2025"
+    ],
+    "F_axis": "4721/4725",
+    "F2": "259394/2679075",
+    "F_le2": "2936201/2679075",
+    "safe_count_min": 0,
+    "safe_count_max": 4,
+    "safe_count_histogram": {
+      "0": 31,
+      "1": 28,
+      "2": 242,
+      "3": 164,
+      "4": 60
+    }
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "enumerated": true,
+    "q": 5,
+    "W": 8,
+    "M": 40,
+    "sum_T_pairs": "40/9",
+    "axis_lines": [
+      "1",
+      "1",
+      "1",
+      "8/9"
+    ],
+    "F_axis": "8/9",
+    "F2": "-11/9",
+    "F_le2": "-1/3",
+    "safe_count_min": 0,
+    "safe_count_max": 4,
+    "safe_count_histogram": {
+      "0": 3,
+      "1": 7,
+      "2": 18,
+      "3": 10,
+      "4": 2
+    }
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "enumerated": true,
+    "q": 5,
+    "W": 2520,
+    "M": 12600,
+    "sum_T_pairs": "231373537/38578680",
+    "axis_lines": [
+      "1",
+      "893024/893025",
+      "1",
+      "1"
+    ],
+    "F_axis": "893024/893025",
+    "F2": "-492067/192893400",
+    "F_le2": "192401117/192893400",
+    "safe_count_min": 0,
+    "safe_count_max": 4,
+    "safe_count_histogram": {
+      "0": 651,
+      "1": 836,
+      "2": 5685,
+      "3": 3712,
+      "4": 1716
+    }
+  },
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "enumerated": true,
+    "q": 6,
+    "W": 60,
+    "M": 360,
+    "sum_T_pairs": "2861/300",
+    "axis_lines": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "F_axis": "1",
+    "F2": "-139/300",
+    "F_le2": "161/300",
+    "safe_count_min": 0,
+    "safe_count_max": 4,
+    "safe_count_histogram": {
+      "0": 25,
+      "1": 6,
+      "2": 10,
+      "3": 117,
+      "4": 202
+    }
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3,
+      5,
+      7,
+      9
+    ],
+    "enumerated": true,
+    "q": 6,
+    "W": 315,
+    "M": 1890,
+    "sum_T_pairs": "1331101/132300",
+    "axis_lines": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "F_axis": "1",
+    "F2": "8101/132300",
+    "F_le2": "140401/132300",
+    "safe_count_min": 0,
+    "safe_count_max": 5,
+    "safe_count_histogram": {
+      "0": 71,
+      "1": 20,
+      "2": 110,
+      "3": 938,
+      "4": 534,
+      "5": 217
+    }
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "enumerated": true,
+    "q": 6,
+    "W": 16,
+    "M": 96,
+    "sum_T_pairs": "18177/2048",
+    "axis_lines": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "F_axis": "1",
+    "F2": "-2303/2048",
+    "F_le2": "-255/2048",
+    "safe_count_min": 0,
+    "safe_count_max": 5,
+    "safe_count_histogram": {
+      "0": 3,
+      "1": 5,
+      "2": 24,
+      "3": 26,
+      "4": 32,
+      "5": 6
+    }
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "enumerated": false,
+    "M": 166320
+  },
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "enumerated": true,
+    "q": 7,
+    "W": 60,
+    "M": 420,
+    "sum_T_pairs": "12256559/843750",
+    "axis_lines": [
+      "1",
+      "1",
+      "1",
+      "5624/5625",
+      "1",
+      "1"
+    ],
+    "F_axis": "5624/5625",
+    "F2": "-398941/843750",
+    "F_le2": "444659/843750",
+    "safe_count_min": 0,
+    "safe_count_max": 5,
+    "safe_count_histogram": {
+      "0": 21,
+      "1": 4,
+      "2": 6,
+      "3": 31,
+      "4": 120,
+      "5": 238
+    }
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "enumerated": true,
+    "q": 7,
+    "W": 3465,
+    "M": 24255,
+    "sum_T_pairs": "2306338912/153140625",
+    "axis_lines": [
+      "300155624/300155625",
+      "33350624/33350625",
+      "12006224/12006225",
+      "6125624/6125625",
+      "3705624/3705625",
+      "2480624/2480625"
+    ],
+    "F_axis": "27286849/27286875",
+    "F2": "150761021/2501296875",
+    "F_le2": "7956166538/7503890625",
+    "safe_count_min": 0,
+    "safe_count_max": 6,
+    "safe_count_histogram": {
+      "0": 631,
+      "1": 140,
+      "2": 220,
+      "3": 1660,
+      "4": 12556,
+      "5": 6158,
+      "6": 2890
+    }
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "enumerated": true,
+    "q": 7,
+    "W": 32,
+    "M": 224,
+    "sum_T_pairs": "34503/2500",
+    "axis_lines": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "24/25"
+    ],
+    "F_axis": "24/25",
+    "F2": "-2497/2500",
+    "F_le2": "-97/2500",
+    "safe_count_min": 0,
+    "safe_count_max": 6,
+    "safe_count_histogram": {
+      "0": 3,
+      "1": 5,
+      "2": 30,
+      "3": 36,
+      "4": 62,
+      "5": 52,
+      "6": 36
+    }
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "enumerated": false,
+    "M": 194040
+  },
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "enumerated": true,
+    "q": 8,
+    "W": 420,
+    "M": 3360,
+    "sum_T_pairs": "15823813/765450",
+    "axis_lines": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "F_axis": "1",
+    "F2": "-250637/765450",
+    "F_le2": "514813/765450",
+    "safe_count_min": 0,
+    "safe_count_max": 6,
+    "safe_count_histogram": {
+      "0": 121,
+      "1": 20,
+      "2": 28,
+      "3": 42,
+      "4": 211,
+      "5": 1062,
+      "6": 1876
+    }
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "enumerated": false,
+    "M": 360360
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "enumerated": true,
+    "q": 8,
+    "W": 64,
+    "M": 512,
+    "sum_T_pairs": "208249/10368",
+    "axis_lines": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "F_axis": "1",
+    "F2": "-9479/10368",
+    "F_le2": "889/10368",
+    "safe_count_min": 0,
+    "safe_count_max": 7,
+    "safe_count_histogram": {
+      "0": 3,
+      "1": 5,
+      "2": 28,
+      "3": 44,
+      "4": 92,
+      "5": 124,
+      "6": 132,
+      "7": 84
+    }
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "enumerated": false,
+    "M": 2882880
+  },
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "enumerated": true,
+    "q": 9,
+    "W": 840,
+    "M": 7560,
+    "sum_T_pairs": "162549431/5882450",
+    "axis_lines": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "540224/540225"
+    ],
+    "F_axis": "540224/540225",
+    "F2": "-3886367/10588410",
+    "F_le2": "11170039/17647350",
+    "safe_count_min": 0,
+    "safe_count_max": 7,
+    "safe_count_histogram": {
+      "0": 211,
+      "1": 30,
+      "2": 40,
+      "3": 56,
+      "4": 295,
+      "5": 210,
+      "6": 2530,
+      "7": 4188
+    }
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "enumerated": false,
+    "M": 405405
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "enumerated": true,
+    "q": 9,
+    "W": 128,
+    "M": 1152,
+    "sum_T_pairs": "66410919/2458624",
+    "axis_lines": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "48/49"
+    ],
+    "F_axis": "48/49",
+    "F2": "-2079321/2458624",
+    "F_le2": "329127/2458624",
+    "safe_count_min": 0,
+    "safe_count_max": 8,
+    "safe_count_histogram": {
+      "0": 3,
+      "1": 5,
+      "2": 14,
+      "3": 52,
+      "4": 104,
+      "5": 198,
+      "6": 292,
+      "7": 306,
+      "8": 178
+    }
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "enumerated": false,
+    "M": 3243240
+  },
+  {
+    "family": "random",
+    "V": [
+      31,
+      39
+    ],
+    "enumerated": true,
+    "q": 3,
+    "W": 1209,
+    "M": 3627,
+    "sum_T_pairs": "486400/487227",
+    "axis_lines": [
+      "1520/1521",
+      "960/961"
+    ],
+    "F_axis": "1459199/1461681",
+    "F2": "1/1461681",
+    "F_le2": "486400/487227",
+    "safe_count_min": 0,
+    "safe_count_max": 2,
+    "safe_count_histogram": {
+      "0": 1659,
+      "1": 1588,
+      "2": 380
+    }
+  },
+  {
+    "family": "random",
+    "V": [
+      14,
+      51
+    ],
+    "enumerated": true,
+    "q": 3,
+    "W": 714,
+    "M": 2142,
+    "sum_T_pairs": "42464/42483",
+    "axis_lines": [
+      "2600/2601",
+      "1"
+    ],
+    "F_axis": "2600/2601",
+    "F2": "-8/127449",
+    "F_le2": "42464/42483",
+    "safe_count_min": 0,
+    "safe_count_max": 2,
+    "safe_count_histogram": {
+      "0": 995,
+      "1": 931,
+      "2": 216
+    }
+  },
+  {
+    "family": "random",
+    "V": [
+      20,
+      62
+    ],
+    "enumerated": true,
+    "q": 3,
+    "W": 620,
+    "M": 1860,
+    "sum_T_pairs": "960/961",
+    "axis_lines": [
+      "960/961",
+      "1"
+    ],
+    "F_axis": "960/961",
+    "F2": "0",
+    "F_le2": "960/961",
+    "safe_count_min": 0,
+    "safe_count_max": 2,
+    "safe_count_histogram": {
+      "0": 882,
+      "1": 798,
+      "2": 180
+    }
+  },
+  {
+    "family": "random",
+    "V": [
+      3,
+      9,
+      12
+    ],
+    "enumerated": true,
+    "q": 4,
+    "W": 36,
+    "M": 144,
+    "sum_T_pairs": "115/36",
+    "axis_lines": [
+      "1",
+      "1",
+      "1"
+    ],
+    "F_axis": "1",
+    "F2": "7/36",
+    "F_le2": "43/36",
+    "safe_count_min": 0,
+    "safe_count_max": 2,
+    "safe_count_histogram": {
+      "0": 27,
+      "1": 42,
+      "2": 75
+    }
+  },
+  {
+    "family": "random",
+    "V": [
+      8,
+      38,
+      52
+    ],
+    "enumerated": true,
+    "q": 4,
+    "W": 1976,
+    "M": 7904,
+    "sum_T_pairs": "731141/244036",
+    "axis_lines": [
+      "1",
+      "1",
+      "1"
+    ],
+    "F_axis": "1",
+    "F2": "-967/244036",
+    "F_le2": "243069/244036",
+    "safe_count_min": 0,
+    "safe_count_max": 3,
+    "safe_count_histogram": {
+      "0": 1014,
+      "1": 2982,
+      "2": 2948,
+      "3": 960
+    }
+  },
+  {
+    "family": "random",
+    "V": [
+      29,
+      67,
+      69
+    ],
+    "enumerated": false,
+    "M": 536268
+  },
+  {
+    "family": "random",
+    "V": [
+      14,
+      23,
+      36,
+      47
+    ],
+    "enumerated": false,
+    "M": 1362060
+  },
+  {
+    "family": "random",
+    "V": [
+      4,
+      28,
+      34,
+      35
+    ],
+    "enumerated": true,
+    "q": 5,
+    "W": 2380,
+    "M": 11900,
+    "sum_T_pairs": "3824693/637245",
+    "axis_lines": [
+      "3186224/3186225",
+      "65024/65025",
+      "1",
+      "1"
+    ],
+    "F_axis": "127447/127449",
+    "F2": "179/91035",
+    "F_le2": "638488/637245",
+    "safe_count_min": 0,
+    "safe_count_max": 4,
+    "safe_count_histogram": {
+      "0": 353,
+      "1": 1859,
+      "2": 4032,
+      "3": 4088,
+      "4": 1568
+    }
+  },
+  {
+    "family": "random",
+    "V": [
+      22,
+      25,
+      38,
+      40
+    ],
+    "enumerated": false,
+    "M": 209000
+  },
+  {
+    "family": "random",
+    "V": [
+      12,
+      44,
+      48,
+      50,
+      65
+    ],
+    "enumerated": false,
+    "M": 1029600
+  },
+  {
+    "family": "random",
+    "V": [
+      12,
+      23,
+      32,
+      36,
+      61
+    ],
+    "enumerated": false,
+    "M": 2424384
+  },
+  {
+    "family": "random",
+    "V": [
+      1,
+      38,
+      39,
+      40,
+      66
+    ],
+    "enumerated": false,
+    "M": 1956240
+  },
+  {
+    "family": "random",
+    "V": [
+      25,
+      37,
+      53,
+      55,
+      56,
+      58
+    ],
+    "enumerated": false,
+    "M": 6130478200
+  },
+  {
+    "family": "random",
+    "V": [
+      6,
+      11,
+      21,
+      30,
+      34,
+      40
+    ],
+    "enumerated": false,
+    "M": 1099560
+  },
+  {
+    "family": "random",
+    "V": [
+      6,
+      19,
+      36,
+      44,
+      60,
+      61
+    ],
+    "enumerated": false,
+    "M": 16063740
+  },
+  {
+    "family": "random",
+    "V": [
+      9,
+      12,
+      26,
+      36,
+      53,
+      57,
+      69
+    ],
+    "enumerated": false,
+    "M": 86714784
+  },
+  {
+    "family": "random",
+    "V": [
+      13,
+      26,
+      42,
+      46,
+      54,
+      56,
+      67
+    ],
+    "enumerated": false,
+    "M": 242319168
+  },
+  {
+    "family": "random",
+    "V": [
+      8,
+      16,
+      30,
+      31,
+      36,
+      43,
+      60
+    ],
+    "enumerated": false,
+    "M": 7678080
+  },
+  {
+    "family": "random",
+    "V": [
+      4,
+      6,
+      23,
+      38,
+      45,
+      46,
+      59,
+      65
+    ],
+    "enumerated": false,
+    "M": 542989980
+  },
+  {
+    "family": "random",
+    "V": [
+      3,
+      10,
+      37,
+      42,
+      62,
+      66,
+      68,
+      69
+    ],
+    "enumerated": false,
+    "M": 18647673660
+  },
+  {
+    "family": "random",
+    "V": [
+      9,
+      10,
+      17,
+      25,
+      38,
+      53,
+      57,
+      67
+    ],
+    "enumerated": false,
+    "M": 4645240650
+  }
+]

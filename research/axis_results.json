@@ -1,0 +1,884 @@
+[
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2
+    ],
+    "axis_truncated": 0.18943053086129774,
+    "genuine_truncated": -0.3118292109860366,
+    "counts": {
+      "axis": 3,
+      "genuine": 4,
+      "odd_genuine": 2
+    },
+    "axis_exact": "0"
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3
+    ],
+    "axis_truncated": 0.18943053086129774,
+    "genuine_truncated": 0.18478768058431805,
+    "counts": {
+      "axis": 3,
+      "genuine": 4,
+      "odd_genuine": 2
+    },
+    "axis_exact": "-1/9"
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2
+    ],
+    "axis_truncated": 0.18943053086129774,
+    "genuine_truncated": -0.3118292109860366,
+    "counts": {
+      "axis": 3,
+      "genuine": 4,
+      "odd_genuine": 2
+    },
+    "axis_exact": "0"
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 0.0,
+    "counts": {
+      "axis": 1,
+      "genuine": 0,
+      "odd_genuine": 0
+    },
+    "axis_exact": "48/49"
+  },
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2,
+      3
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.9980531025258788,
+    "counts": {
+      "axis": 1,
+      "genuine": 16,
+      "odd_genuine": 10
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3,
+      5
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 1.270304060091294,
+    "counts": {
+      "axis": 1,
+      "genuine": 8,
+      "odd_genuine": 0
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2,
+      4
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.7518962390317032,
+    "counts": {
+      "axis": 1,
+      "genuine": 10,
+      "odd_genuine": 6
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8,
+      9
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 0.5325626743274764,
+    "counts": {
+      "axis": 1,
+      "genuine": 2,
+      "odd_genuine": 0
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.984167952796712,
+    "counts": {
+      "axis": 1,
+      "genuine": 82,
+      "odd_genuine": 42
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 2.0954529993523514,
+    "counts": {
+      "axis": 1,
+      "genuine": 48,
+      "odd_genuine": 0
+    },
+    "axis_exact": "4721/4725"
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.6310976037017003,
+    "counts": {
+      "axis": 1,
+      "genuine": 38,
+      "odd_genuine": 20
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 1.1544228203743234,
+    "counts": {
+      "axis": 1,
+      "genuine": 26,
+      "odd_genuine": 10
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.979780370726169,
+    "counts": {
+      "axis": 1,
+      "genuine": 426,
+      "odd_genuine": 210
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3,
+      5,
+      7,
+      9
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 3.4083802391639137,
+    "counts": {
+      "axis": 1,
+      "genuine": 246,
+      "odd_genuine": 0
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.5103360865104052,
+    "counts": {
+      "axis": 1,
+      "genuine": 136,
+      "odd_genuine": 68
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 1.9449215183996007,
+    "counts": {
+      "axis": 1,
+      "genuine": 158,
+      "odd_genuine": 76
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.962322104395453,
+    "counts": {
+      "axis": 1,
+      "genuine": 2340,
+      "odd_genuine": 1170
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 5.543617353838174,
+    "counts": {
+      "axis": 1,
+      "genuine": 1316,
+      "odd_genuine": 0
+    },
+    "axis_exact": "245581849/245581875"
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.4368712130468358,
+    "counts": {
+      "axis": 1,
+      "genuine": 480,
+      "odd_genuine": 240
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 2.8814890382975475,
+    "counts": {
+      "axis": 1,
+      "genuine": 962,
+      "odd_genuine": 486
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.9761805935043546,
+    "counts": {
+      "axis": 1,
+      "genuine": 13332,
+      "odd_genuine": 6682
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 9.05087772218029,
+    "counts": {
+      "axis": 1,
+      "genuine": 7366,
+      "odd_genuine": 0
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.3729855119762834,
+    "counts": {
+      "axis": 1,
+      "genuine": 1688,
+      "odd_genuine": 844
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 3.919819577252865,
+    "counts": {
+      "axis": 1,
+      "genuine": 5924,
+      "odd_genuine": 2968
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "consecutive",
+    "V": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.9787769601297278,
+    "counts": {
+      "axis": 1,
+      "genuine": 77720,
+      "odd_genuine": 38852
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "odd",
+    "V": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 14.852922383328933,
+    "counts": {
+      "axis": 1,
+      "genuine": 42452,
+      "odd_genuine": 0
+    },
+    "axis_exact": "40266537435989/40266537436125"
+  },
+  {
+    "family": "powers_two",
+    "V": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.3259810985892811,
+    "counts": {
+      "axis": 1,
+      "genuine": 5930,
+      "odd_genuine": 2966
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "translated",
+    "V": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 5.054065454219097,
+    "counts": {
+      "axis": 1,
+      "genuine": 36936,
+      "odd_genuine": 18446
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      18,
+      73
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 0.0,
+    "counts": {
+      "axis": 1,
+      "genuine": 0,
+      "odd_genuine": 0
+    },
+    "axis_exact": "5328/5329"
+  },
+  {
+    "family": "random",
+    "V": [
+      9,
+      33
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 0.0,
+    "counts": {
+      "axis": 1,
+      "genuine": 0,
+      "odd_genuine": 0
+    },
+    "axis_exact": "9671/9801"
+  },
+  {
+    "family": "random",
+    "V": [
+      16,
+      64
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 0.0,
+    "counts": {
+      "axis": 1,
+      "genuine": 0,
+      "odd_genuine": 0
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      49,
+      58,
+      61
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 0.0,
+    "counts": {
+      "axis": 1,
+      "genuine": 0,
+      "odd_genuine": 0
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      13,
+      27,
+      63
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 0.0,
+    "counts": {
+      "axis": 1,
+      "genuine": 0,
+      "odd_genuine": 0
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      4,
+      50,
+      56
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.02958681524041537,
+    "counts": {
+      "axis": 1,
+      "genuine": 2,
+      "odd_genuine": 2
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      1,
+      35,
+      58,
+      78
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.003301919136055653,
+    "counts": {
+      "axis": 1,
+      "genuine": 2,
+      "odd_genuine": 2
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      14,
+      30,
+      41,
+      76
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.012970479399466106,
+    "counts": {
+      "axis": 1,
+      "genuine": 2,
+      "odd_genuine": 2
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      2,
+      3,
+      4,
+      70
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.20023999629998684,
+    "counts": {
+      "axis": 1,
+      "genuine": 10,
+      "odd_genuine": 6
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      4,
+      28,
+      49,
+      55,
+      68
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 0.14279349478020287,
+    "counts": {
+      "axis": 1,
+      "genuine": 28,
+      "odd_genuine": 18
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      29,
+      30,
+      57,
+      64,
+      71
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 0.15311219662081804,
+    "counts": {
+      "axis": 1,
+      "genuine": 18,
+      "odd_genuine": 12
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      29,
+      30,
+      38,
+      45,
+      59
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.6006447480358312,
+    "counts": {
+      "axis": 1,
+      "genuine": 38,
+      "odd_genuine": 22
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      3,
+      13,
+      24,
+      38,
+      54,
+      72
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.020261124549996876,
+    "counts": {
+      "axis": 1,
+      "genuine": 228,
+      "odd_genuine": 112
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      16,
+      25,
+      43,
+      55,
+      65,
+      77
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 0.16271151332216133,
+    "counts": {
+      "axis": 1,
+      "genuine": 174,
+      "odd_genuine": 98
+    },
+    "axis_exact": "2189225407509765624/2189225407509765625"
+  },
+  {
+    "family": "random",
+    "V": [
+      37,
+      39,
+      51,
+      64,
+      65,
+      76
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.19758651997810345,
+    "counts": {
+      "axis": 1,
+      "genuine": 190,
+      "odd_genuine": 90
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      5,
+      23,
+      32,
+      52,
+      54,
+      62,
+      76
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.21675626534040474,
+    "counts": {
+      "axis": 1,
+      "genuine": 1252,
+      "odd_genuine": 644
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      12,
+      14,
+      47,
+      48,
+      57,
+      66,
+      71
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.5401885376047316,
+    "counts": {
+      "axis": 1,
+      "genuine": 1196,
+      "odd_genuine": 598
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      4,
+      21,
+      48,
+      51,
+      61,
+      63,
+      67
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.49417662165662435,
+    "counts": {
+      "axis": 1,
+      "genuine": 1232,
+      "odd_genuine": 604
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      6,
+      22,
+      40,
+      51,
+      65,
+      74,
+      75,
+      76
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.11944325958019096,
+    "counts": {
+      "axis": 1,
+      "genuine": 6938,
+      "odd_genuine": 3456
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      2,
+      26,
+      30,
+      52,
+      66,
+      70,
+      71,
+      79
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": 0.2833311343842614,
+    "counts": {
+      "axis": 1,
+      "genuine": 7176,
+      "odd_genuine": 3604
+    },
+    "axis_exact": "1"
+  },
+  {
+    "family": "random",
+    "V": [
+      1,
+      35,
+      45,
+      46,
+      50,
+      59,
+      71,
+      74
+    ],
+    "axis_truncated": 1.0,
+    "genuine_truncated": -0.6223441087936877,
+    "counts": {
+      "axis": 1,
+      "genuine": 7534,
+      "odd_genuine": 3784
+    },
+    "axis_exact": "1"
+  }
+]
