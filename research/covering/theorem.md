@@ -164,3 +164,159 @@ sequence with (M-\Delta) ones and (\Delta) twos attains equality. Any
 successful moment route must therefore exploit the arithmetic pair formula,
 higher intersections, or pointwise restrictions peculiar to these periodic
 blocks. This sharply identifies the next step.
+
+---
+
+# TASK 9 audit: closed overlaps, localization, and the moment barrier
+
+## Theorem 5 (closed centered pair formula) — `PROVED`
+
+Put (b_i=W/v_i, b_j=W/v_j), (d=gcd(b_i,b_j)), (Q=qd),
+(A=b_i-1), and (B=b_j-1).  Then
+
+\[
+ \boxed{|B_i\cap B_j|={W\over\operatorname{lcm}(b_i,b_j)}
+ \sum_{t=-\lfloor(A+B)/Q\rfloor}^{\lfloor(A+B)/Q\rfloor}
+ \bigl(\min(A,B+tQ)-\max(-A,-B+tQ)+1\bigr)_+.}       \tag{4}
+\]
+
+This removes the scan through a common period in Theorem 3.  Equivalently,
+with (J=[-B,B]\cap\mathbb Z), its inner count can be written with floors as
+
+\[
+ \sum_{u=-A}^{A}\left(
+ \left\lfloor{B-u\over Q}\right\rfloor-
+ \left\lceil{-B-u\over Q}\right\rceil+1\right).       \tag{5}
+\]
+
+**Proof.**  Represent the first endpoint block by (0,1,\ldots,b_i-1)
+and the second, without duplicating zero, by
+(-b_i+1,\ldots,-1); together these are exactly ([-A,A]).  Do the
+same for (j).  The four left-left, left-right, right-left, and right-right
+block pairs are therefore the four sign choices for ((u,v)), with the zero
+assigned only to the nonnegative block.  CRT says that ((u,v)) gives one
+class modulo (q\operatorname{lcm}(b_i,b_j)) exactly when
+(u\equiv v\pmod{qd}).  Writing (u-v=tQ), the allowed (u)'s form
+([-A,A]\cap[-B+tQ,B+tQ]), whose integer cardinality is the summand in
+(4).  Only the displayed range of (t) can intersect.  Finally the common
+period repeats (W/\operatorname{lcm}(b_i,b_j)) times modulo (qW).
+This proves (4), all four block counts, and (5). □
+
+Thus (d) alone does **not** determine the answer: after writing
+(b_i=dr,b_j=ds), the coprime lengths (r,s), and the lift multiplicity
+(W/(drs)), remain necessary.  For example, (4) changes when either (r)
+or (s) changes with (d=1).
+
+## Corollary 6 (normalized estimate) — `PROVED`
+
+For (b_i=dr,b_j=ds), (gcd(r,s)=1), let (C_q(d;r,s)) denote the sum
+in (4).  Then
+
+\[
+ \left|C_q(d;r,s)-{(2dr-1)(2ds-1)\over qd}\right|
+ <\min(2dr-1,2ds-1).                                  \tag{6}
+\]
+
+Consequently (6), multiplied by (W/(drs)), bounds the global
+intersection.  The primitive error is independent of (W).
+
+**Proof.**  For each fixed integer (u\in[-A,A]), the number of integers
+(v\in[-B,B]) in one specified class modulo (Q) differs from
+((2B+1)/Q) by less than one.  Sum over (u).  Interchanging (i,j) and
+taking the better estimate proves (6).  Strict endpoints are already encoded
+by (A=b_i-1,B=b_j-1); no endpoint correction is suppressed. □
+
+This coarse estimate does not identify universal extremizers; that
+optimization remains `OPEN`.  Formula (4), rather than a claimed false
+extremal statement, is implemented in `intersections.py` and checked against
+the common-period count.
+
+## Theorem 7 (triple identity and its exact limitation) — `PROVED`
+
+For
+
+\[
+ T=\sum_{i<j<\ell}|B_i\cap B_j\cap B_\ell|
+   =\sum_k\binom{m(k)}3,
+\]
+
+a common-period formula is obtained exactly as in Theorem 3: use period
+(q\operatorname{lcm}(b_i,b_j,b_\ell)), test the three endpoint blocks,
+and multiply by (W/\operatorname{lcm}(b_i,b_j,b_\ell)).
+If the sets cover and (E=P-\Delta), then
+
+\[
+ \boxed{{3\over N}T\le E\le T,\qquad E=0\Longleftrightarrow T=0.} \tag{7}
+\]
+
+**Proof.**  Under a cover, Theorem 4 gives
+(E=\sum_k\binom{m(k)-1}{2}).  For (m\ge3),
+(\binom{m-1}{2}=3\binom m3/m), while both sides vanish for (m<3).
+Since (3\le m\le N), summation proves (7). □
+
+Hence (P>\Delta) forces a triple point, but the third moment supplies no
+contradiction by itself: its exact pointwise relation to the pair slack is
+already (7).  No stronger periodic lower bound was established; such a bound
+is `OPEN`.
+
+## Theorem 8 (canonical forced core) — `PROVED`
+
+Let β= \(\min_i b_i\) and
+
+\[
+ C=\{0,1,\ldots,\beta-1\}\cup
+   \{M-\beta+1,\ldots,M-1\}.
+\]
+
+Then (C\subseteq B_i) for every (i),  \(|C|=2\beta-1\), and
+
+\[
+ P=\binom N2(2\beta-1)+P_{\rm off},
+ \quad
+ P_{\rm off}=\sum_{i<j}|(B_i\cap B_j)\setminus C|.       \tag{8}
+\]
+
+**Proof.**  If (0\le k<\beta\le b_i), then (k/(qb_i)<1/q); the negative
+residues are identical by symmetry.  The two ranges meet only at zero.
+Every core point has multiplicity (N), yielding (8). □
+
+This isolates a major defect in raw (P): it always includes
+(\binom N2(2\beta-1)), overlap forced at residues that are already bad for
+every runner.  Any useful pair obstruction must subtract or otherwise use
+this localization.
+
+## Exhaustive audit — `VERIFIED`; universal pair premise — `DISPROVED`
+
+`experiments.py` checks the centered formula against the independent
+common-period algorithm, checks the forced core, and records triple and
+off-core statistics.  It also exhausts all normalized subsets of
+\(\{1,\ldots,10\}\) of sizes 2 through 6 having (M\le200000): 806
+configurations.  Among them, 797 satisfy (\Delta\ge0\) and (P\ge\Delta\).
+The lexicographically first is
+
+\[
+ V=(2,3),\quad q=3,\quad W=6,\quad P=5,\quad\Delta=1.
+\]
+
+Yet its bad sets do not cover (direct exact enumeration finds safe residues).
+Thus both implications
+
+\[
+ \text{LRC}\Longrightarrow P<\Delta,
+ \qquad P\ge\Delta\Longrightarrow\text{cover}
+\]
+
+are `DISPROVED`.  The maximal recorded slack is 10711 for
+(V=(4,5,7,8,9,10)).  These are finite exact computations, not proofs beyond
+the stated finite range.
+
+## TASK 9 outcome and narrow barrier
+
+TASK 9 achieves outcomes 4 and 5.  Raw pair overlap is not merely
+occasionally too weak: it passes its necessary-cover threshold in 797/806
+of the audited cases.  Triple mass is algebraically coupled to its slack by
+(7), and the canonical core (8) explains part of the excess.  Therefore
+another unlocalized polynomial in the moments is not justified.  The
+narrowest surviving question is whether the **off-core spatial distribution**
+of uncovered residues and endpoint-block intersections obeys a new arithmetic
+inequality.  This is the subject of `TASK10.md`.
