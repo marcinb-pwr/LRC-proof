@@ -320,3 +320,148 @@ another unlocalized polynomial in the moments is not justified.  The
 narrowest surviving question is whether the **off-core spatial distribution**
 of uncovered residues and endpoint-block intersections obeys a new arithmetic
 inequality.  This is the subject of `TASK10.md`.
+
+---
+
+# TASK 10 audit: endpoint localization and exact gap geometry
+
+Throughout this section the velocities are gcd-normalized.  Put
+\(p_i=qb_i\), \(r_i=b_i-1\), and \(D=(\mathbb Z/M\mathbb Z)\setminus C\).
+
+## Theorem 9 (off-core block decomposition) — `PROVED`
+
+In the standard representatives \(0,\ldots,M-1\), the cyclic core \(C\) is
+one cyclic interval and its complement is the single (possibly empty) maximal
+interval
+
+\[
+ D=[\beta,M-\beta]\cap\mathbb Z.                         \tag{9}
+\]
+
+For every \(i\), before clipping to (9),
+
+\[
+ B_i=\bigcup_{j=0}^{v_i-1}
+ \bigl([jp_i-r_i,jp_i+r_i]+M\mathbb Z\bigr).             \tag{10}
+\]
+
+Thus \(B_i\setminus C\) is obtained explicitly by intersecting each
+translated block in (10) with \([\beta,M-\beta]\); empty intersections are
+discarded.  The surviving linear intervals are disjoint.
+
+**Proof.**  The description of \(C\) in Theorem 8 joins through residue zero,
+so deleting it leaves exactly (9), including both endpoints.  Theorem 2 says
+that in each period \(p_i\), bad residues are precisely the centered integers
+\(-r_i,\ldots,r_i\).  There are \(M/p_i=v_i\) periods, giving (10).  Since
+\(2r_i+1=2b_i-1<p_i\) for \(q\ge3\), distinct blocks do not meet.  Clipping
+preserves disjointness. \(\square\)
+
+## Definition 10 (exact localized statistics)
+
+Let \(m_D(k)=\sum_i1_{B_i\setminus C}(k)\).  The endpoint sweep partitions
+\(D\) into maximal integer intervals on which \(m_D\) is constant.  Define
+
+* \(G\): the greatest length of a segment having multiplicity zero (the
+  **longest safe run**);
+* \(d_{\min},d_{\max}\): the least and greatest distances between starting
+  points of consecutive constant-multiplicity segments (zero when there is
+  no pair);
+* \(A_D=\sum_{k\in D}m_D(k)\), and
+  \(P_D=\sum_{k\in D}\binom{m_D(k)}2\), the off-core membership and overlap.
+
+These quantities are independent of runner ordering and reflection
+\(k\mapsto-k\).  Gcd normalization makes them invariant under common scaling
+\(V\mapsto hV\): both inputs normalize to the same \(V/\gcd(V)\).  They are
+not asserted to be invariant if one deliberately works on a nonprimitive,
+repeated modulus; normalization is essential.  These assertions are
+`PROVED`, directly from (9), (10), and uniqueness of the maximal constant
+segments.
+
+## Theorem 11 (endpoint decision algorithm) — `PROVED`
+
+Create events \(+1\) at every clipped block's left endpoint and \(-1\) one
+past its right endpoint, combine coincident events, sort, and take prefix
+sums.  Then the bad sets cover precisely when every emitted segment has
+positive prefix sum.  This decides covering without visiting all \(M\)
+residues and simultaneously computes Definition 10.
+
+If \(E\le2\sum_i(v_i+1)+2\) is the number of events before coalescing (the
+extra block per runner allows its centered block to split at residue zero), the
+algorithm uses \(O(E\log E)\) comparisons and \(O(E)\) storage.  On a bit
+model where all inputs and endpoints have \(O(\log M)\) bits, its bit cost is
+\(O(E\log E\log M)\) with standard comparison/addition bounds, apart from the
+cost of computing \(W\).  Iterated gcd/lcm computes \(W\) in polynomial bit
+time in the input lengths.  Correctness follows because an interval indicator
+changes only at its two events, and the prefix sum is exactly \(m_D\) between
+successive event coordinates. \(\square\)
+
+## Theorem 12 (localized pair certificate) — `PROVED`
+
+Let \(n_D=|D|=M-2\beta+1\).  Then
+
+\[
+ \boxed{N A_D-2P_D<Nn_D\quad\Longrightarrow\quad G>0,}   \tag{11}
+\]
+
+so (11) proves LRC.  This is genuinely off-core: all forced
+\(\binom N2|C|\) pair mass has disappeared.
+
+**Proof.**  Write \(R_D=\sum_{k\in D}(m_D(k)-1)_+\).  Pointwise, for
+\(0\le m\le N\),
+
+\[
+ \binom m2={m\over2}(m-1)\le {N\over2}(m-1)_+.
+\]
+
+Hence \(R_D\ge2P_D/N\).  The covered portion of \(D\) has exact size
+\(A_D-R_D\), and therefore at most \(A_D-2P_D/N\).  Inequality (11) makes
+this less than \(n_D\), leaving a safe residue. \(\square\)
+
+The criterion is nonvacuous beyond the ordinary union bound.  For
+\(V=(2,5)\), one has \((M,n_D,A_D,P_D)=(30,27,27,6)\).  Thus \(S=33>M\),
+so the union bound says nothing, while (11) gives \(42<54\).  By the proved
+scaling invariance, the same certificate applies to every velocity family
+\((2h,5h)\), \(h\ge1\), an infinite class.  This does not claim these are
+arithmetically inequivalent after normalization.
+
+The weaker necessary-cover condition \(P_D\ge A_D-n_D\) has no converse.
+The smallest audited nontrivial example is again \((2,5)\): it satisfies
+\(A_D=n_D\) and \(P_D=6\), but has a safe run of length three.  Thus that
+candidate converse is `DISPROVED`.
+
+## Exact collision and limitation — `VERIFIED`
+
+The configurations \((1,4,12)\) and \((2,3,12)\) have the same
+
+\[
+ (M,S,P,T,P_D)=(48,55,18,1,15),
+\]
+
+but their endpoint partitions have respectively 28 and 20 changes, and
+maximum change distances 3 and 4.  Both have longest safe run 3 and neither
+covers.  This exact finite collision proves that those five global statistics
+do not determine the localized geometry; it does **not** provide different
+covering behavior (none was found and claiming one here would amount to a
+small LRC counterexample).
+
+## Computational audit — `VERIFIED`
+
+`task10_experiments.py` exhausts all 3,221 gcd-one subsets of
+\(\{1,\ldots,12\}\) of sizes 2 through 7.  It also checks 36 standard
+consecutive, odd, powers-of-two, and translated families through \(N=10\),
+and 289 deterministic sliding subsets of the divisors of
+\(60,120,360,840\).  Exactly 315 audited records satisfy (11), no audited
+cover occurs, and the collision above is reproduced.  `test_localization.py`
+independently compares endpoint output with residue-by-residue construction on
+180 seeded random cases.  These finite claims are evidence against coding
+errors, not general proofs.
+
+## TASK 10 outcome and narrow barrier
+
+The sweep gives an exact sublinear-in-\(M\) decision procedure, and (11) is a
+proved localized sufficient inequality covering a scalable class missed by
+the union bound.  However, it certifies only 315 of 3,546 audited records.
+The collision shows that \((M,S,P,T,P_D)\) cannot recover even endpoint
+geometry.  The narrowest remaining barrier is to use the **ordered signed
+endpoint word** itself—rather than finitely many aggregate moments—to force a
+zero prefix sum.  This is posed in `TASK11.md`.
