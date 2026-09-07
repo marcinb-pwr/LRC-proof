@@ -104,12 +104,29 @@ no covered grid, but universal grid success and LRC remain **OPEN**.
 ## TASK 17 scaling and component update
 
 Common multiplication of every velocity is **PROVED** to be exactly neutral:
-it only repeats the same primitive bad blocks, so the apparent increase in
-lattice points supplies no new density or existence information. An exact
+the raw scaled time grid does contain more real time coordinates, but their
+simultaneous runner-phase image only repeats the same primitive bad blocks.
+Thus the apparent increase in lattice points supplies no new phase-space
+density or existence information. An exact
 interval-sensitive component recursion is now available. However, two explicit
 systems of centered cyclic arcs have identical first three intersection moments
 and different coverage, proving that those aggregate moments cannot decide the
 problem. The remaining canonical-grid and global LRC assertions are **OPEN**.
+
+Keeping the velocities fixed while refining the time mesh genuinely adds new
+phase vectors, but it is also **PROVED** to be existentially neutral: every
+nonempty feasible component has an endpoint on the original $1/(qW)$ mesh.
+Such refinement may support measure or averaging estimates, but cannot reveal
+a safe configuration that the exact endpoint mesh missed.
+
+For the margin $\Delta(V)=\max_t\min_i\|tv_i\|-1/q$, refinement does give
+quantitative information: the best value on the $1/(cqW)$ mesh is within
+$v_{\max}/(2cqW)$ of the continuous optimum. Positive computed margin is
+therefore rigorous. A universal strictly positive margin is impossible,
+because $V=(1,2)$ has optimum exactly zero; a successful margin program must
+separate or classify such equality cases. More strongly, its refined-grid
+optimum is exactly zero for every refinement $c\ge1$, since $t=1/3$ is always
+on the mesh and no real time has positive margin.
 
 ## TASK 18 fragmentation update
 
@@ -140,3 +157,69 @@ but this finite reconstruction does not provide a uniform inequality forcing a
 gap. Tests cover the required applicable families and all TASK 14 obstructions;
 no triple covers the canonical grid there. Universal grid success and LRC
 remain **OPEN**.
+
+## TASK 21 quantitative triple update
+
+Triple all-safe mass is now **PROVED** to satisfy explicit one-strip and
+pair-corrected lower bounds. If the three reduced gcds divide their labelled
+divisors and $q\ge7$, every such triple leaves more than $L(1-6/q)$ canonical
+classes safe. An exhaustive audit of 442 normalized inputs, together with
+$(1,3,4,5)$ and all 19 TASK 14 obstructions, finds no zero-safe triple. This
+does not control coverage by the remaining runners: the missing theorem is a
+strict restricted-multiplicity bound on their incidences inside a triple-safe
+set. Universal canonical-grid success and LRC remain **OPEN**.
+
+## TASK 22 restricted-incidence update
+
+Every incidence of a fourth bad strip inside a triple-safe set now has an
+exact four-label CRT expansion, and summing over all triples gives exact
+pointwise weights ${N-m(z)\choose3}$ and $m(z){N-m(z)\choose3}$. The natural
+rule selecting the three largest bad masses is **DISPROVED** by
+$V=(1,4,5,6,9)$, where the triple $(1,4,5)$ has safe mass 24 and the two
+remaining restricted incidences are 12 and 12. The example is not an LRC
+counterexample. A phase-sensitive multiplicity-surplus theorem remains
+**OPEN**, as do canonical-grid success and LRC.
+
+## TASK 23 multiplicity-surplus update
+
+The all-triple surplus is now **PROVED** to be an explicit linear combination
+of bad-strip intersection moments through order four. Its histogram form
+separates a negative contribution from multiplicity-zero classes, no
+contribution from multiplicity one, and positive low-overlap contributions.
+Universal negativity under divisor alignment is **DISPROVED** by
+$V=(1,2,3,4,5,7)$, whose histogram is $(6,136,80,6,4,4,9)$ and whose surplus
+is 212 despite all reduced gcds dividing their labelled divisors. The example
+has six safe classes and is not an LRC counterexample. A phase-sensitive
+localized statistic remains **OPEN**, as do canonical-grid success and LRC.
+
+## TASK 24 localized-certificate update
+
+The largest-mass anchor's four transition fibers support a quadratic statistic
+$Q(E)=\sum_{z\in E}(1-m(z))(N-m(z))$ whose positivity is **PROVED** to force a
+safe class and whose computation needs shifted-arc intersections only through
+order four. Universal success of this certificate is **DISPROVED** already by
+$V=(1,3,4,5)$: it has four safe classes, but its four values are
+$-20,0,-2,-22$. The criterion certifies 289 of 442 exhaustive canonical grids
+and misses 153. A bounded-complexity phase refinement remains **OPEN**, as do
+canonical-grid success and LRC.
+
+## TASK 25 bounded-refinement update
+
+Joint before/after states of $k$ fixed largest-mass anchors give at most
+$4^k$ phase fibers, and the localized quadratic on them has an exact CRT
+expansion through order $2k+2$. This is **PROVED**. The up-to-four-anchor rule
+is **VERIFIED** on all 442 exhaustive inputs and 148 larger seeded inputs; it
+is not a universal theorem. Four anchors are necessary for the audited TASK 23
+record under this rule. Short-word and coarse-bin alternatives have explicit
+small failures. Universal four-anchor success, canonical-grid success, and
+LRC remain **OPEN**.
+
+## TASK 26 four-anchor update
+
+Every four-anchor fiber quadratic now has a direct expansion in shifted
+centered-arc CRT intersections through order ten. Universal positivity is
+**DISPROVED** already by the seven-label TASK 14 obstruction
+$(1,5,6,7,8,11,13)$: it has 14 safe canonical classes, but the maximum
+quadratic among its 40 realized four-anchor fibers is zero. Five anchors
+certify this example, so the open issue is whether any
+absolute anchor bound exists. Canonical-grid success and LRC remain **OPEN**.
