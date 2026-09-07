@@ -96,6 +96,22 @@ python3 research/covering/task17_experiments.py
 
 `interval_components.py` performs the exact labelled endpoint recursion on the cyclic lcm grid. The audit also checks common-scale invariance and records two centered-arc systems with equal first three intersection moments but different coverage.
 
+The resolution distinction in Theorem 35 has an additional raw,
+non-normalizing regression check:
+
+```bash
+python3 research/covering/test_scale_invariance.py
+```
+
+It verifies separately that scaling creates more real time coordinates while
+repeating, rather than refining, the simultaneous runner-phase word. It also
+holds the velocities fixed and genuinely refines the time mesh, checking that
+the refined and exact endpoint grids have equivalent safe-point existence.
+It also computes the best margin exactly as a rational number and checks the
+monotone nested-grid approximation at refinements 1, 2, and 4. The sharp
+configuration `(1, 2)` is checked through refinement 100: its optimum remains
+exactly zero on every grid.
+
 For TASK 18, run:
 
 ```bash
@@ -122,3 +138,71 @@ python3 research/covering/task20_experiments.py
 ```
 
 `triple_alignment.py` constructs the full 8-by-8 before/after table for three labels by generalized CRT and computes the exact component change when the third strip is inserted. The phase-reconstruction result is distinguished from the still-open uniform gap inequality.
+
+For TASK 21, run:
+
+```bash
+python3 research/covering/test_triple_safe.py
+python3 research/covering/task21_experiments.py
+```
+
+`triple_safe.py` computes exact all-safe mass on the lcm quotient and the
+one-strip and pair-corrected quantitative lower bounds. The experiment tests
+all TASK 14 obstructions and an exhaustive normalized range without scanning
+`qW`.
+
+For TASK 22, run:
+
+```bash
+python3 research/covering/test_restricted_incidence.py
+python3 research/covering/task22_experiments.py
+```
+
+`restricted_incidence.py` expands restricted incidences into CRT
+intersections of order at most four and implements the exact all-triples
+multiplicity identity. The audit records a compact counterexample to the
+largest-mass triple rule.
+
+For TASK 23, run:
+
+```bash
+python3 research/covering/test_multiplicity_surplus.py
+python3 research/covering/task23_experiments.py
+```
+
+`multiplicity_surplus.py` evaluates the surplus both from its pointwise
+histogram and from intersection moments through order four. The audit records
+the divisor-aligned counterexample to surplus negativity.
+
+For TASK 24, run:
+
+```bash
+python3 research/covering/test_localized_certificate.py
+python3 research/covering/task24_experiments.py
+```
+
+`localized_certificate.py` partitions the lcm grid into four transition
+fibers of a canonically selected anchor and evaluates the quadratic
+low-multiplicity certificate in histogram and moment forms.
+
+For TASK 25, run:
+
+```bash
+python3 research/covering/test_phase_refinement.py
+python3 research/covering/task25_experiments.py
+```
+
+The refinement audit distinguishes joint transition fibers of up to four
+anchors, one-anchor short transition words, and coarse reduced-coordinate
+bins. Fiber counts are bounded independently of the lcm period.
+
+For TASK 26, run:
+
+```bash
+python3 research/covering/test_four_anchor.py
+python3 research/covering/task26_experiments.py
+```
+
+The audit reconstructs the complete four-anchor fiber histogram of the
+13-label counterexample on its canonical lcm period and stores all phase
+records and quadratic values.

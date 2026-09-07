@@ -1,0 +1,1783 @@
+{
+  "status": "DISPROVED universal largest-mass transition-fiber quadratic certificate",
+  "period_policy": "All fibers use the canonical lcm grid, never qW.",
+  "exhaustive_scope": "gcd-one subsets of {1,...,10}, sizes 3,...,6, with defined canonical grid",
+  "exhaustive_configuration_count": 442,
+  "certified_count": 289,
+  "missed_safe_count": 153,
+  "first_missed_safe_certificate": {
+    "velocities": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "q": 5,
+    "lcm_grid_period": 100,
+    "anchor_velocity": 1,
+    "anchor_phase_v_H_a_c_rho": [
+      1,
+      100,
+      1,
+      80,
+      19
+    ],
+    "safe_class_count": 4,
+    "certified": false,
+    "fibers": {
+      "00": {
+        "size": 60,
+        "histogram": [
+          4,
+          38,
+          18,
+          0,
+          0
+        ],
+        "quadratic": -20
+      },
+      "01": {
+        "size": 1,
+        "histogram": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "quadratic": 0
+      },
+      "10": {
+        "size": 1,
+        "histogram": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "quadratic": -2
+      },
+      "11": {
+        "size": 38,
+        "histogram": [
+          0,
+          20,
+          9,
+          2,
+          7
+        ],
+        "quadratic": -22
+      }
+    }
+  },
+  "required": [
+    {
+      "velocities": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "q": 5,
+      "lcm_grid_period": 100,
+      "anchor_velocity": 1,
+      "anchor_phase_v_H_a_c_rho": [
+        1,
+        100,
+        1,
+        80,
+        19
+      ],
+      "safe_class_count": 4,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 60,
+          "histogram": [
+            4,
+            38,
+            18,
+            0,
+            0
+          ],
+          "quadratic": -20
+        },
+        "01": {
+          "size": 1,
+          "histogram": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 0
+        },
+        "10": {
+          "size": 1,
+          "histogram": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "quadratic": -2
+        },
+        "11": {
+          "size": 38,
+          "histogram": [
+            0,
+            20,
+            9,
+            2,
+            7
+          ],
+          "quadratic": -22
+        }
+      }
+    },
+    {
+      "velocities": [
+        1,
+        4,
+        5,
+        6,
+        9
+      ],
+      "q": 6,
+      "lcm_grid_period": 108,
+      "anchor_velocity": 4,
+      "anchor_phase_v_H_a_c_rho": [
+        4,
+        27,
+        1,
+        9,
+        4
+      ],
+      "safe_class_count": 6,
+      "certified": true,
+      "fibers": {
+        "00": {
+          "size": 68,
+          "histogram": [
+            5,
+            43,
+            20,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -35
+        },
+        "01": {
+          "size": 4,
+          "histogram": [
+            1,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 5
+        },
+        "10": {
+          "size": 4,
+          "histogram": [
+            0,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "quadratic": -7
+        },
+        "11": {
+          "size": 32,
+          "histogram": [
+            0,
+            14,
+            6,
+            7,
+            2,
+            3
+          ],
+          "quadratic": -52
+        }
+      }
+    },
+    {
+      "velocities": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "q": 7,
+      "lcm_grid_period": 245,
+      "anchor_velocity": 1,
+      "anchor_phase_v_H_a_c_rho": [
+        1,
+        245,
+        1,
+        210,
+        34
+      ],
+      "safe_class_count": 6,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 175,
+          "histogram": [
+            6,
+            109,
+            60,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -204
+        },
+        "01": {
+          "size": 1,
+          "histogram": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 0
+        },
+        "10": {
+          "size": 1,
+          "histogram": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -4
+        },
+        "11": {
+          "size": 68,
+          "histogram": [
+            0,
+            26,
+            19,
+            6,
+            4,
+            4,
+            9
+          ],
+          "quadratic": -152
+        }
+      }
+    },
+    {
+      "velocities": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        18
+      ],
+      "q": 7,
+      "lcm_grid_period": 882,
+      "anchor_velocity": 1,
+      "anchor_phase_v_H_a_c_rho": [
+        1,
+        882,
+        1,
+        756,
+        125
+      ],
+      "safe_class_count": 22,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 630,
+          "histogram": [
+            22,
+            369,
+            189,
+            50,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -924
+        },
+        "01": {
+          "size": 1,
+          "histogram": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 0
+        },
+        "10": {
+          "size": 1,
+          "histogram": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -4
+        },
+        "11": {
+          "size": 250,
+          "histogram": [
+            0,
+            82,
+            105,
+            12,
+            16,
+            22,
+            13
+          ],
+          "quadratic": -676
+        }
+      }
+    },
+    {
+      "velocities": [
+        1,
+        4,
+        6,
+        7,
+        10,
+        11
+      ],
+      "q": 7,
+      "lcm_grid_period": 539,
+      "anchor_velocity": 1,
+      "anchor_phase_v_H_a_c_rho": [
+        1,
+        539,
+        1,
+        462,
+        76
+      ],
+      "safe_class_count": 10,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 385,
+          "histogram": [
+            10,
+            231,
+            104,
+            40,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -596
+        },
+        "01": {
+          "size": 1,
+          "histogram": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 0
+        },
+        "10": {
+          "size": 1,
+          "histogram": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -4
+        },
+        "11": {
+          "size": 152,
+          "histogram": [
+            0,
+            56,
+            53,
+            22,
+            6,
+            2,
+            13
+          ],
+          "quadratic": -388
+        }
+      }
+    },
+    {
+      "velocities": [
+        1,
+        5,
+        7,
+        8,
+        9,
+        13
+      ],
+      "q": 7,
+      "lcm_grid_period": 637,
+      "anchor_velocity": 1,
+      "anchor_phase_v_H_a_c_rho": [
+        1,
+        637,
+        1,
+        546,
+        90
+      ],
+      "safe_class_count": 34,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 455,
+          "histogram": [
+            34,
+            251,
+            128,
+            42,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -560
+        },
+        "01": {
+          "size": 1,
+          "histogram": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 0
+        },
+        "10": {
+          "size": 1,
+          "histogram": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -6
+        },
+        "11": {
+          "size": 180,
+          "histogram": [
+            0,
+            58,
+            54,
+            41,
+            6,
+            8,
+            13
+          ],
+          "quadratic": -530
+        }
+      }
+    },
+    {
+      "velocities": [
+        1,
+        6,
+        7,
+        15,
+        16,
+        18
+      ],
+      "q": 7,
+      "lcm_grid_period": 882,
+      "anchor_velocity": 1,
+      "anchor_phase_v_H_a_c_rho": [
+        1,
+        882,
+        1,
+        756,
+        125
+      ],
+      "safe_class_count": 58,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 630,
+          "histogram": [
+            58,
+            327,
+            174,
+            71,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -774
+        },
+        "01": {
+          "size": 1,
+          "histogram": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 0
+        },
+        "10": {
+          "size": 1,
+          "histogram": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -6
+        },
+        "11": {
+          "size": 250,
+          "histogram": [
+            0,
+            92,
+            56,
+            57,
+            30,
+            2,
+            13
+          ],
+          "quadratic": -754
+        }
+      }
+    },
+    {
+      "velocities": [
+        1,
+        7,
+        8,
+        10,
+        17,
+        18
+      ],
+      "q": 7,
+      "lcm_grid_period": 882,
+      "anchor_velocity": 1,
+      "anchor_phase_v_H_a_c_rho": [
+        1,
+        882,
+        1,
+        756,
+        125
+      ],
+      "safe_class_count": 52,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 630,
+          "histogram": [
+            52,
+            367,
+            148,
+            63,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -658
+        },
+        "01": {
+          "size": 1,
+          "histogram": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 0
+        },
+        "10": {
+          "size": 1,
+          "histogram": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -6
+        },
+        "11": {
+          "size": 250,
+          "histogram": [
+            0,
+            82,
+            48,
+            69,
+            28,
+            10,
+            13
+          ],
+          "quadratic": -814
+        }
+      }
+    },
+    {
+      "velocities": [
+        2,
+        5,
+        6,
+        7,
+        11,
+        16
+      ],
+      "q": 7,
+      "lcm_grid_period": 784,
+      "anchor_velocity": 5,
+      "anchor_phase_v_H_a_c_rho": [
+        5,
+        784,
+        5,
+        672,
+        111
+      ],
+      "safe_class_count": 54,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 556,
+          "histogram": [
+            53,
+            264,
+            196,
+            37,
+            6,
+            0,
+            0
+          ],
+          "quadratic": -724
+        },
+        "01": {
+          "size": 5,
+          "histogram": [
+            1,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -2
+        },
+        "10": {
+          "size": 5,
+          "histogram": [
+            0,
+            1,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -20
+        },
+        "11": {
+          "size": 218,
+          "histogram": [
+            0,
+            91,
+            48,
+            30,
+            28,
+            8,
+            13
+          ],
+          "quadratic": -572
+        }
+      }
+    },
+    {
+      "velocities": [
+        2,
+        5,
+        7,
+        8,
+        9,
+        13
+      ],
+      "q": 7,
+      "lcm_grid_period": 637,
+      "anchor_velocity": 2,
+      "anchor_phase_v_H_a_c_rho": [
+        2,
+        637,
+        2,
+        546,
+        90
+      ],
+      "safe_class_count": 30,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 454,
+          "histogram": [
+            30,
+            246,
+            132,
+            46,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -624
+        },
+        "01": {
+          "size": 2,
+          "histogram": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 0
+        },
+        "10": {
+          "size": 2,
+          "histogram": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -10
+        },
+        "11": {
+          "size": 179,
+          "histogram": [
+            0,
+            62,
+            57,
+            37,
+            2,
+            8,
+            13
+          ],
+          "quadratic": -494
+        }
+      }
+    },
+    {
+      "velocities": [
+        2,
+        6,
+        7,
+        8,
+        10,
+        13
+      ],
+      "q": 7,
+      "lcm_grid_period": 637,
+      "anchor_velocity": 2,
+      "anchor_phase_v_H_a_c_rho": [
+        2,
+        637,
+        2,
+        546,
+        90
+      ],
+      "safe_class_count": 8,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 454,
+          "histogram": [
+            8,
+            294,
+            102,
+            50,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -660
+        },
+        "01": {
+          "size": 2,
+          "histogram": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 0
+        },
+        "10": {
+          "size": 2,
+          "histogram": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -8
+        },
+        "11": {
+          "size": 179,
+          "histogram": [
+            0,
+            64,
+            68,
+            6,
+            22,
+            6,
+            13
+          ],
+          "quadratic": -464
+        }
+      }
+    },
+    {
+      "velocities": [
+        2,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "q": 7,
+      "lcm_grid_period": 588,
+      "anchor_velocity": 11,
+      "anchor_phase_v_H_a_c_rho": [
+        11,
+        588,
+        11,
+        504,
+        83
+      ],
+      "safe_class_count": 20,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 410,
+          "histogram": [
+            18,
+            250,
+            107,
+            34,
+            1,
+            0,
+            0
+          ],
+          "quadratic": -530
+        },
+        "01": {
+          "size": 11,
+          "histogram": [
+            2,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "quadratic": -4
+        },
+        "10": {
+          "size": 11,
+          "histogram": [
+            0,
+            2,
+            6,
+            1,
+            1,
+            1,
+            0
+          ],
+          "quadratic": -40
+        },
+        "11": {
+          "size": 156,
+          "histogram": [
+            0,
+            44,
+            58,
+            33,
+            7,
+            1,
+            13
+          ],
+          "quadratic": -476
+        }
+      }
+    },
+    {
+      "velocities": [
+        2,
+        7,
+        9,
+        13,
+        15,
+        16
+      ],
+      "q": 7,
+      "lcm_grid_period": 784,
+      "anchor_velocity": 9,
+      "anchor_phase_v_H_a_c_rho": [
+        9,
+        784,
+        9,
+        672,
+        111
+      ],
+      "safe_class_count": 62,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 552,
+          "histogram": [
+            60,
+            279,
+            161,
+            44,
+            8,
+            0,
+            0
+          ],
+          "quadratic": -596
+        },
+        "01": {
+          "size": 9,
+          "histogram": [
+            2,
+            3,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -8
+        },
+        "10": {
+          "size": 9,
+          "histogram": [
+            0,
+            2,
+            2,
+            2,
+            3,
+            0,
+            0
+          ],
+          "quadratic": -38
+        },
+        "11": {
+          "size": 214,
+          "histogram": [
+            0,
+            62,
+            80,
+            24,
+            33,
+            2,
+            13
+          ],
+          "quadratic": -670
+        }
+      }
+    },
+    {
+      "velocities": [
+        3,
+        5,
+        7,
+        9,
+        12,
+        15
+      ],
+      "q": 7,
+      "lcm_grid_period": 735,
+      "anchor_velocity": 3,
+      "anchor_phase_v_H_a_c_rho": [
+        3,
+        245,
+        1,
+        140,
+        34
+      ],
+      "safe_class_count": 38,
+      "certified": true,
+      "fibers": {
+        "00": {
+          "size": 525,
+          "histogram": [
+            37,
+            272,
+            174,
+            42,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -726
+        },
+        "01": {
+          "size": 3,
+          "histogram": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 6
+        },
+        "10": {
+          "size": 3,
+          "histogram": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -8
+        },
+        "11": {
+          "size": 204,
+          "histogram": [
+            0,
+            79,
+            62,
+            14,
+            32,
+            4,
+            13
+          ],
+          "quadratic": -540
+        }
+      }
+    },
+    {
+      "velocities": [
+        3,
+        5,
+        7,
+        11,
+        12,
+        17
+      ],
+      "q": 7,
+      "lcm_grid_period": 833,
+      "anchor_velocity": 3,
+      "anchor_phase_v_H_a_c_rho": [
+        3,
+        833,
+        3,
+        714,
+        118
+      ],
+      "safe_class_count": 40,
+      "certified": true,
+      "fibers": {
+        "00": {
+          "size": 593,
+          "histogram": [
+            39,
+            356,
+            134,
+            34,
+            30,
+            0,
+            0
+          ],
+          "quadratic": -686
+        },
+        "01": {
+          "size": 3,
+          "histogram": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 6
+        },
+        "10": {
+          "size": 3,
+          "histogram": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -10
+        },
+        "11": {
+          "size": 234,
+          "histogram": [
+            0,
+            57,
+            95,
+            61,
+            2,
+            6,
+            13
+          ],
+          "quadratic": -782
+        }
+      }
+    },
+    {
+      "velocities": [
+        3,
+        7,
+        8,
+        11,
+        13,
+        15
+      ],
+      "q": 7,
+      "lcm_grid_period": 735,
+      "anchor_velocity": 8,
+      "anchor_phase_v_H_a_c_rho": [
+        8,
+        735,
+        8,
+        630,
+        104
+      ],
+      "safe_class_count": 52,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 518,
+          "histogram": [
+            50,
+            252,
+            179,
+            37,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -638
+        },
+        "01": {
+          "size": 8,
+          "histogram": [
+            2,
+            2,
+            3,
+            1,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -6
+        },
+        "10": {
+          "size": 8,
+          "histogram": [
+            0,
+            2,
+            1,
+            4,
+            1,
+            0,
+            0
+          ],
+          "quadratic": -34
+        },
+        "11": {
+          "size": 201,
+          "histogram": [
+            0,
+            72,
+            33,
+            72,
+            7,
+            4,
+            13
+          ],
+          "quadratic": -622
+        }
+      }
+    },
+    {
+      "velocities": [
+        3,
+        7,
+        8,
+        11,
+        15,
+        18
+      ],
+      "q": 7,
+      "lcm_grid_period": 882,
+      "anchor_velocity": 11,
+      "anchor_phase_v_H_a_c_rho": [
+        11,
+        882,
+        11,
+        756,
+        125
+      ],
+      "safe_class_count": 30,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 620,
+          "histogram": [
+            29,
+            384,
+            138,
+            69,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -792
+        },
+        "01": {
+          "size": 11,
+          "histogram": [
+            1,
+            6,
+            3,
+            1,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -12
+        },
+        "10": {
+          "size": 11,
+          "histogram": [
+            0,
+            2,
+            4,
+            4,
+            1,
+            0,
+            0
+          ],
+          "quadratic": -46
+        },
+        "11": {
+          "size": 240,
+          "histogram": [
+            0,
+            84,
+            48,
+            72,
+            19,
+            4,
+            13
+          ],
+          "quadratic": -754
+        }
+      }
+    },
+    {
+      "velocities": [
+        3,
+        7,
+        10,
+        11,
+        13,
+        16
+      ],
+      "q": 7,
+      "lcm_grid_period": 784,
+      "anchor_velocity": 3,
+      "anchor_phase_v_H_a_c_rho": [
+        3,
+        784,
+        3,
+        672,
+        111
+      ],
+      "safe_class_count": 52,
+      "certified": true,
+      "fibers": {
+        "00": {
+          "size": 558,
+          "histogram": [
+            51,
+            261,
+            224,
+            22,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -722
+        },
+        "01": {
+          "size": 3,
+          "histogram": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 2
+        },
+        "10": {
+          "size": 3,
+          "histogram": [
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -12
+        },
+        "11": {
+          "size": 220,
+          "histogram": [
+            0,
+            89,
+            38,
+            38,
+            36,
+            6,
+            13
+          ],
+          "quadratic": -620
+        }
+      }
+    },
+    {
+      "velocities": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13
+      ],
+      "q": 8,
+      "lcm_grid_period": 832,
+      "anchor_velocity": 1,
+      "anchor_phase_v_H_a_c_rho": [
+        1,
+        832,
+        1,
+        728,
+        103
+      ],
+      "safe_class_count": 14,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 624,
+          "histogram": [
+            14,
+            323,
+            219,
+            68,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -1541
+        },
+        "01": {
+          "size": 1,
+          "histogram": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 0
+        },
+        "10": {
+          "size": 1,
+          "histogram": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -5
+        },
+        "11": {
+          "size": 206,
+          "histogram": [
+            0,
+            84,
+            77,
+            16,
+            4,
+            6,
+            4,
+            15
+          ],
+          "quadratic": -617
+        }
+      }
+    },
+    {
+      "velocities": [
+        2,
+        7,
+        8,
+        9,
+        11,
+        13,
+        15
+      ],
+      "q": 8,
+      "lcm_grid_period": 960,
+      "anchor_velocity": 7,
+      "anchor_phase_v_H_a_c_rho": [
+        7,
+        960,
+        7,
+        840,
+        119
+      ],
+      "safe_class_count": 36,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 714,
+          "histogram": [
+            35,
+            380,
+            242,
+            31,
+            26,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -1447
+        },
+        "01": {
+          "size": 7,
+          "histogram": [
+            1,
+            4,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -6
+        },
+        "10": {
+          "size": 7,
+          "histogram": [
+            0,
+            1,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -40
+        },
+        "11": {
+          "size": 232,
+          "histogram": [
+            0,
+            71,
+            79,
+            50,
+            11,
+            2,
+            4,
+            15
+          ],
+          "quadratic": -930
+        }
+      }
+    },
+    {
+      "velocities": [
+        1,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        16,
+        17
+      ],
+      "q": 11,
+      "lcm_grid_period": 2057,
+      "anchor_velocity": 1,
+      "anchor_phase_v_H_a_c_rho": [
+        1,
+        2057,
+        1,
+        1870,
+        186
+      ],
+      "safe_class_count": 18,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 1683,
+          "histogram": [
+            18,
+            815,
+            640,
+            178,
+            32,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -8008
+        },
+        "01": {
+          "size": 1,
+          "histogram": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 0
+        },
+        "10": {
+          "size": 1,
+          "histogram": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -8
+        },
+        "11": {
+          "size": 372,
+          "histogram": [
+            0,
+            134,
+            141,
+            44,
+            12,
+            4,
+            4,
+            4,
+            6,
+            2,
+            21
+          ],
+          "quadratic": -2292
+        }
+      }
+    },
+    {
+      "velocities": [
+        1,
+        4,
+        6,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        18
+      ],
+      "q": 11,
+      "lcm_grid_period": 2178,
+      "anchor_velocity": 1,
+      "anchor_phase_v_H_a_c_rho": [
+        1,
+        2178,
+        1,
+        1980,
+        197
+      ],
+      "safe_class_count": 74,
+      "certified": false,
+      "fibers": {
+        "00": {
+          "size": 1782,
+          "histogram": [
+            74,
+            951,
+            532,
+            150,
+            46,
+            4,
+            4,
+            21,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -6982
+        },
+        "01": {
+          "size": 1,
+          "histogram": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": 0
+        },
+        "10": {
+          "size": 1,
+          "histogram": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quadratic": -14
+        },
+        "11": {
+          "size": 394,
+          "histogram": [
+            0,
+            122,
+            98,
+            121,
+            18,
+            2,
+            4,
+            2,
+            2,
+            4,
+            21
+          ],
+          "quadratic": -3018
+        }
+      }
+    }
+  ]
+}

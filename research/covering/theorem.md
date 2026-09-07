@@ -1100,9 +1100,185 @@ $$
 
 so every primitive bad period $qb_i$, every centered arc, and every normalized lattice problem is unchanged. In the unnormalized residue circle $qW'=cqW$, all blocks are merely repeated $c$ times. The absolute number of integer representatives grows by $c$, but their density and the existence of a safe class do not change.
 
-**Proof.** The identity $\|(t/c)(cv_i)\|=\|tv_i\|$ proves (45) including the exact threshold. The displayed equality of the $b_i$ proves invariance of the finite periods. Equivalently, gcd normalization sends $cV$ back to $V$. □
+This statement needs a careful distinction concerning “resolution.”  The two
+sets of **time coordinates**
+
+$$
+ \left\{{x\over qW}:0\le x<qW\right\},\qquad
+ \left\{{x\over qcW}:0\le x<qcW\right\}              \tag{45a}
+$$
+
+are not equal; the second really has $c$ times as many real numbers.  What is
+unchanged is their image in runner phase space.  At the $x$th point of the
+second grid,
+
+$$
+ \left({x\over qcW}cv_i\pmod1\right)_{i=1}^N
+ =\left({xv_i\over qW}\pmod1\right)_{i=1}^N.          \tag{45b}
+$$
+
+The right side has period $qW$ in $x$ when $V$ is gcd-normalized.  Hence, as
+$0\le x<cqW$, every old phase vector occurs exactly $c$ times; no intermediate
+phase vector is added.  Thus it would be inaccurate to say that the raw set
+of time points is unchanged.  The correct assertion is that the set of
+**simultaneous runner positions**, and therefore safe-point existence, is
+unchanged.
+
+For example, for $V=(1,3)$ one has $qW=9$. Scaling by $2$ produces the 18
+time coordinates $x/18$, but the positions of the scaled runners $(2,6)$ are
+
+$$
+ (2x/18,6x/18)=(x/9,x/3)\pmod1.
+$$
+
+The entries for $x=9,\ldots,17$ repeat those for $x=0,\ldots,8$. By contrast,
+refining the denominator while **not** scaling the velocities would indeed
+insert new phase vectors; that is a different operation from common scaling.
+
+**Proof.** The identity $\|(t/c)(cv_i)\|=\|tv_i\|$ proves (45) including the exact threshold. The displayed equality of the $b_i$ proves invariance of the finite periods.  Equation (45b) proves the stronger phase-image statement directly.  Finally,
+$\operatorname{lcm}_i(qb_i)=q\operatorname{lcm}_i(W/v_i)=qW$ because
+$\gcd_i(v_i)=1$, so this phase word has precisely the asserted common period.
+Equivalently, gcd normalization sends $cV$ back to $V$. □
+
+The same distinction applies to the canonical two-direction grid.  Its raw
+ambient length changes from $L=qW/d$ to $cL$, while $b_i$ and $d$ do not
+change.  Membership is periodic with period $L$, and the change of base point
+from $W$ to $cW$ translates the $z$-word by $(c-1)W/d$ (an integer because
+$d\mid W$).  The enlarged canonical grid therefore consists of $c$ translated
+copies of the original membership word, not a finer phase-space sampling.
 
 Thus multiplying all velocities to “create more lattice points” cannot strengthen the attack: it creates $c$ copies of the same quotient information. Multiplying only selected velocities is not this invariance; it changes the LRC instance and needs a separate reduction, which is presently unavailable.
+
+## Proposition 35a (refining time with fixed velocities) — **PROVED**
+
+There is a different operation that does create new phase vectors: keep $V$
+fixed and refine the finite time mesh to
+
+$$
+ G_c=\left\{{x\over cqW}:0\le x<cqW\right\}.          \tag{45c}
+$$
+
+Nevertheless, for every positive integer $c$,
+
+$$
+ \boxed{G_c\text{ contains an LRC-safe time}
+ \iff G_1\text{ contains an LRC-safe time}.}           \tag{45d}
+$$
+
+**Proof.** Since $G_1\subseteq G_c$ via $x/(qW)=(cx)/(cqW)$, the reverse-to-
+forward implication is immediate. Conversely, a safe point of $G_c$ is a
+safe real time. For fixed $i$, the feasible set
+$\{t:\|tv_i\|\ge1/q\}$ is closed and has endpoints
+
+$$
+ {qk+1\over qv_i},\qquad {qk+q-1\over qv_i}.
+$$
+
+Because $v_i\mid W$, all these endpoints lie in $G_1$. The common feasible
+set is a finite union of closed intervals and isolated points whose endpoints
+come from those individual endpoint sets. If it is nonempty, it therefore
+contains a point of $G_1$ (and if it is the whole circle, any point of $G_1$
+does). Thus a safe refined-grid point cannot be the first existential witness
+missed by $G_1$. □
+
+So time refinement may still be useful as an **analytic or computational
+device**: it can sample the interiors of safe/bad components, approximate
+their measures, or provide averaged inequalities. It gives no stronger
+existence statement, because the endpoint grid $G_1$ is already complete.
+Likewise, the continuous reparametrization $t\mapsto ct$ is surjective on
+$\mathbb R/\mathbb Z$ and by itself cannot change existence. Any proposed
+benefit from a finer mesh must therefore be quantitative (for example, a
+uniform margin or measure bound), not merely “a new point appeared.”
+
+## Theorem 35b (quantitative margin approximation) — **PROVED**
+
+This is precisely where time refinement can help. Define the LRC margin
+
+$$
+ \mu_V(t)=\min_i\|tv_i\|-{1\over q},qquad
+ \Delta(V)=\max_{t\in\mathbb R/\mathbb Z}\mu_V(t),      \tag{45e}
+$$
+
+and let $\Delta_c(V)=\max_{t\in G_c}\mu_V(t)$. If
+$v_{\max}=\max_i v_i$, then
+
+$$
+ \boxed{\Delta(V)-{v_{\max}\over2cqW}
+ \le\Delta_c(V)\le\Delta(V).}                         \tag{45f}
+$$
+
+Consequently, a positive value computed on any refined grid is a rigorous
+positive-margin LRC certificate. Conversely, if $\Delta(V)=\delta>0$, every
+integer
+
+$$
+ c>{v_{\max}\over2qW\delta}                            \tag{45g}
+$$
+
+guarantees $\Delta_c(V)>0$.
+
+**Proof.** Distance to the nearest integer is 1-Lipschitz on the circle, so
+$t\mapsto\|tv_i\|$ is $v_i$-Lipschitz and their pointwise minimum is
+$v_{\max}$-Lipschitz. Choose a maximizer $t_*$, which exists by compactness,
+and a nearest point $s\in G_c$. Its circular distance from $t_*$ is at most
+$1/(2cqW)$. Hence
+$\mu_V(s)\ge\mu_V(t_*)-v_{\max}/(2cqW)$, proving the lower bound. The upper
+bound follows from $G_c\subset\mathbb R/\mathbb Z$, and (45g) makes the lower
+bound positive. □
+
+This yields a valid research route: seek a uniform or structure-dependent
+lower bound for $\Delta(V)$, then choose a certified finite resolution using
+(45g). There is, however, a sharp obstruction to a universally **positive**
+margin theorem. For $V=(1,2)$, $q=3$, one has
+
+$$
+ \max_t\min(\|t\|,\|2t\|)=1/3,qquad\Delta(1,2)=0.     \tag{45h}
+$$
+
+Indeed, on $[0,1/2]$, the first distance is $t$, while the second is
+$\min(2t,1-2t)$; their minimum is at most $1/3$, with equality at $t=1/3$.
+Thus a margin strategy for all configurations must allow the equality case
+and either classify zero-margin extremizers or prove a dichotomy
+$\Delta(V)>0$ versus an explicitly solvable rigid family. A claim of a
+universal bound $\Delta(V)\ge\delta_N>0$ is already **DISPROVED** for $N=2$.
+
+## Corollary 35c (refinement never makes the $(1,2)$ margin positive) —
+**PROVED**
+
+For $V=(1,2)$ one has $W=2$, $q=3$, and for every integer $c\ge1$,
+
+$$
+ \boxed{\Delta_c(1,2)=0.}                              \tag{45i}
+$$
+
+In particular, arbitrarily fine grids do not merely fail to guarantee a
+positive margin eventually: this fixed configuration has exactly zero best
+margin at **every** refinement.
+
+**Proof.** By symmetry it suffices to take $0\le t\le1/2$. For
+$0\le t\le1/4$,
+
+$$
+ \min(\|t\|,\|2t\|)=\min(t,2t)=t\le1/4.
+$$
+
+For $1/4\le t\le1/2$ it equals $\min(t,1-2t)$, whose maximum is attained when
+$t=1-2t$, namely at $t=1/3$, with value $1/3$. Hence
+$\mu_{(1,2)}(t)\le0$ for every real $t$. On the other hand,
+
+$$
+ {1\over3}={2c\over6c}\in G_c
+$$
+
+because $cqW=6c$, and its margin is zero. Therefore
+$0\le\Delta_c(1,2)\le0$. □
+
+This also clarifies the role of the approximation error in (45f). That error
+is an upper bound on how much a grid can miss a **pre-existing positive**
+continuous margin; it is not a mechanism that creates margin. Refinement can
+make $\Delta_c(V)$ approach $\Delta(V)$ from below, but it can never exceed
+$\Delta(V)$. Thus no choice of $c$ can turn a zero-margin configuration into
+a positive-margin one.
 
 ## Theorem 36 (exact cyclic-component recursion) — **PROVED**
 
@@ -1480,3 +1656,680 @@ The narrow next task is no longer another exact table. It is to compress (65)
 without losing the sign relevant to $R_{ijk}(u,0)$: prove a quantitative bound
 on triple all-safe entries from the divisor-compatible centered arcs, or find
 a concrete canonical grid where all-safe mass vanishes.
+
+---
+
+# TASK 21 audit: quantitative triple all-safe mass
+
+## Theorem 47 (complements of three centered multiplier arcs) — **PROVED**
+
+For three labels $i,j,k$, write
+
+$$
+ I_p=[-\rho_p,\rho_p]\pmod {H_p},\qquad
+ y_p(z)=a_p(z-c_p)\pmod {H_p}.                         \tag{69}
+$$
+
+The all-safe set on the canonical cyclic grid $\mathbb Z/L\mathbb Z$ is
+exactly
+
+$$
+ \boxed{S_{ijk}=\bigcap_{p\in\{i,j,k\}}
+ \{z:y_p(z)\notin I_p\}.}                             \tag{70}
+$$
+
+If $s_p=\min(H_p,2\rho_p+1)$ and $J_{pq}=|A_p\cap A_q|$, then
+
+$$
+ |S_{ijk}|=L-L\sum_p{s_p\over H_p}
+              +J_{ij}+J_{ik}+J_{jk}-J_{ijk},           \tag{71}
+$$
+
+where every intersection is given by the pairwise-compatible generalized
+CRT conditions in (65). In particular the following bounds require no
+triple-cell enumeration:
+
+$$
+ \boxed{|S_{ijk}|\ge
+ \max\left(0,L-L\sum_p{s_p\over H_p}\right),}          \tag{72}
+$$
+
+and
+
+$$
+ \boxed{|S_{ijk}|\ge\max\left(0,L-L\sum_p{s_p\over H_p}
+ +\sum_{p<r}J_{pr}-\min_{p<r}J_{pr}\right).}           \tag{73}
+$$
+
+**Proof.** Theorem 38 says $z\in A_p$ exactly when $y_p(z)\in I_p$;
+taking three complements proves (70). Inclusion--exclusion proves (71).
+The union bound gives (72). For (73), note that
+$J_{ijk}\le\min(J_{ij},J_{ik},J_{jk})$ in (71). All lifts use the lcm
+period because $H_p\mid L$; $qW$ is not involved. □
+
+Formula (71) is exact enumeration rewritten. Bounds (72)--(73), by contrast,
+are uniform inequalities: (72) uses only one-strip masses and (73) only
+one- and two-strip masses.
+
+## Corollary 48 (a divisor-aligned positive range) — **PROVED**
+
+Suppose $g_p=\gcd(d,qb_p)$ divides $b_p$ for each of three selected labels.
+Then
+
+$$
+ {s_p\over H_p}={2(b_p/g_p)-1\over q(b_p/g_p)}<{2\over q}. \tag{74}
+$$
+
+Consequently, if $q\ge7$,
+
+$$
+ \boxed{|S_{ijk}|>L(1-6/q)\ge L/7>0.}                 \tag{75}
+$$
+
+**Proof.** Put $B_p=b_p/g_p\in\mathbb Z_{>0}$. Equations (52)--(53) give
+$H_p=qB_p$ and $\rho_p=B_p-1$, hence $s_p=2B_p-1<H_p$ and (74). Sum the
+three strict inequalities in (72). □
+
+The divisibility assumption in Corollary 48 is substantive. It is checked,
+not presumed, by the implementation; no proof that it holds for every label
+of every canonical construction is claimed. Thus (75) is not silently
+promoted to an unconditional canonical-grid theorem. For $q\le6$, even three
+densities below $2/q$ do not give a positive union bound, although (73) can.
+
+## Why triple mass alone does not control all runners — **PROVED limitation**
+
+Let $T=\{i,j,k\}$ and define on $S_T$ the multiplicity of the remaining bad
+strips by
+
+$$
+ m_T(z)=\sum_{r\notin T}1_{A_r}(z).                    \tag{76}
+$$
+
+The precise extra first-moment hypothesis sufficient to lift a triple gap to
+a global gap is
+
+$$
+ \boxed{\sum_{z\in S_T}m_T(z)<|S_T|,}                 \tag{77}
+$$
+
+equivalently $\sum_{r\notin T}|A_r\cap S_T|<|S_T|$.
+Indeed, (77) forces some $z\in S_T$ to have $m_T(z)=0$. Without a restriction
+of this kind, positive triple mass alone says nothing: arbitrary additional
+sets can cover all of $S_T$. Condition (77) is sufficient rather than claimed
+necessary; the exact necessary-and-sufficient condition is
+$\min_{z\in S_T}m_T(z)=0$.
+
+## Computational audit — **VERIFIED**
+
+`test_triple_safe.py` independently compares (71) with direct membership and
+checks (72)--(75) on 263 triples. The deterministic adversarial audit uses
+only $L=q\operatorname{lcm}(v_*,v^\dagger)$, never $qW$. It checks
+$(1,3,4,5)$, all 19 TASK 14 obstructions, the applicable powers-of-two, odd,
+consecutive and translated families in the unit test, and every defined
+canonical construction from gcd-one subsets of $\{1,\ldots,10\}$ of sizes
+three through six. Among 442 exhaustive configurations and the 20 required
+records, no zero all-safe triple occurs. The smallest observed normalized
+triple-safe mass is $1/14$. These are finite verifications, not a proof of
+universal positivity.
+
+## TASK 21 outcome and narrow barrier
+
+Triple all-safe mass now has two genuine lower bounds, and the
+divisor-aligned range $q\ge7$ forces a surviving triple gap. This still does
+not prevent the other $N-3$ runners from covering that gap. The narrow next
+problem is to bound the restricted incidences in (77), exploiting the same
+divisor-compatible phases rather than replacing them by arbitrary subsets.
+
+---
+
+# TASK 22 audit: restricted incidence on a triple-safe set
+
+## Theorem 49 (four-label CRT formula) — **PROVED**
+
+Fix a triple $T=\{i,j,k\}$ and a label $r\notin T$. For every nonempty set of
+labels $U$, let $J_U=|\bigcap_{u\in U}A_u|$, evaluated on the canonical period
+$L$ by the pairwise gcd compatibility conditions of the generalized CRT.
+Then
+
+$$
+ \boxed{|A_r\cap S_T|=J_{\{r\}}-
+ \sum_{p\in T}J_{\{r,p\}}+
+ \sum_{\{p,s\}\subset T}J_{\{r,p,s\}}-J_{\{r,i,j,k\}}.} \tag{78}
+$$
+
+In particular, the left side of (77) is an exact sum of labelled CRT terms of
+order at most four and can be computed modulo the lcm of the participating
+$H$'s, never modulo $qW$.
+
+**Proof.** Since $S_T=\bigcap_{p\in T}A_p^c$, multiply $1_{A_r}$ by
+$\prod_{p\in T}(1-1_{A_p})$, expand, and sum over $z\bmod L$. Each resulting
+intersection has the asserted generalized-CRT description by Theorem 44. □
+
+This is an exact identity, not a uniform inequality. It exposes explicitly
+that pair and triple data alone omit the final four-label term.
+
+## Theorem 50 (exact averaging over all triples) — **PROVED**
+
+Let $m(z)=\sum_{i=1}^N1_{A_i}(z)$. Summing over all labelled triples gives
+
+$$
+ \boxed{\sum_{|T|=3}|S_T|=
+ \sum_{z\bmod L}{N-m(z)\choose3},}                    \tag{79}
+$$
+
+and
+
+$$
+ \boxed{\sum_{|T|=3}\sum_{r\notin T}|A_r\cap S_T|=
+ \sum_{z\bmod L}m(z){N-m(z)\choose3}.}                \tag{80}
+$$
+
+Here ${h\choose3}=0$ for $h<3$, covering all endpoint cases. Hence averaging
+forces at least one triple satisfying (77) whenever
+
+$$
+ \sum_z(m(z)-1){N-m(z)\choose3}<0.                    \tag{81}
+$$
+
+**Proof.** At a point of bad multiplicity $m$, precisely the
+${N-m\choose3}$ triples chosen from its safe labels contain the point in
+$S_T$. For each such triple all $m$ bad labels lie outside it, so the point is
+counted $m{N-m\choose3}$ times on the left of (80). Summing pointwise proves
+both identities and their difference proves the final assertion. □
+
+This averaging is exact but does not by itself overcome coverage. If the full
+system covers the grid, then $m(z)\ge1$ everywhere, so every summand in (81)
+is nonnegative. A strict averaged inequality therefore already certifies an
+uncovered point; it is not a new route to one without an independent
+multiplicity estimate.
+
+## Proposition 51 (largest-mass canonical triple) — **DISPROVED**
+
+Consider the phase-blind canonical rule selecting the three labels with
+largest lifted bad masses $L|A_i|/H_i$, breaking ties by input label order.
+This rule does not always satisfy (77). The smallest failure in the stated
+exhaustive audit is
+
+$$
+ V=(1,4,5,6,9),\qquad q=6,qquad L=108.               \tag{82}
+$$
+
+It selects $T=(1,4,5)$, for which
+
+$$
+ |S_T|=24,qquad |A_6\cap S_T|=12,qquad
+ |A_9\cap S_T|=12.                                    \tag{83}
+$$
+
+Thus the two sides of (77) are equal, not strict. A compact reproducible CRT
+certificate consists of the records $(v,H,a,c,\rho)$
+
+$$
+ (1,108,1,90,17),\ (4,27,1,9,4),\ (5,108,5,90,17),
+ \ (6,18,1,0,2),\ (9,12,1,6,1).                       \tag{84}
+$$
+
+**Proof.** Substitution of (84) into (69), followed by (78), gives (83).
+These are finite integer computations on $\mathbb Z/108\mathbb Z$ and are
+independently checked by direct membership in `test_restricted_incidence.py`.
+Equality disproves the proposed strict conclusion. □
+
+This does not assert that (82) is an LRC counterexample, nor even that its
+canonical grid is covered. It disproves only this explicitly stated selection
+rule and first-moment certificate.
+
+## Computational audit — **VERIFIED**
+
+The exact formula (78) and direct membership agree in 63 test cases, including
+all triples of $(1,3,4,5)$, the smallest TASK 14 obstruction, and applicable
+powers-of-two, odd, consecutive, and translated families. Identities
+(79)--(80) are checked independently. The deterministic audit covers all 20
+required configurations and 442 gcd-one subsets of $\{1,\ldots,10\}$ of
+sizes three through six with a defined canonical grid. The largest-mass rule
+fails on 71 exhaustive inputs and succeeds strictly on only four of the 20
+required inputs. These finite counts are **VERIFIED**, not universal claims.
+
+## TASK 22 outcome and narrow barrier
+
+Restricted incidence is now exactly reduced to four-label CRT data, while a
+natural phase-blind canonical choice is disproved. All-triple averaging yields
+the exact multiplicity weights but becomes nonnegative under hypothetical
+coverage. The narrow unresolved issue is therefore not triple selection by
+mass: it is whether the divisor-compatible phases force enough
+multiplicity-zero or constrain the multiplicity surplus in (81).
+
+---
+
+# TASK 23 audit: phase-sensitive multiplicity surplus
+
+## Theorem 52 (intersection polynomial for the surplus) — **PROVED**
+
+For $0\le k\le4$ define the $k$th intersection moment
+
+$$
+ M_k=\sum_{\substack{U\subseteq\{1,\ldots,N\}\\|U|=k}}
+ \left|\bigcap_{i\in U}A_i\right|,qquad M_0=L.        \tag{85}
+$$
+
+Put $C_h={N-h\choose3}$, with $C_h=0$ when $N-h<3$. Then the surplus in
+TASK 23 has the exact expansion
+
+$$
+ \boxed{\Sigma=\sum_{k=0}^4\gamma_kM_k,}              \tag{86}
+$$
+
+where
+
+$$
+ \begin{aligned}
+ \gamma_0&=-C_0,&\gamma_1&=C_0,\\
+ \gamma_2&=C_2-C_0,&
+ \gamma_3&=2C_3-3C_2+C_0,\\
+ \gamma_4&=3C_4-8C_3+6C_2-C_0.
+ \end{aligned}                                        \tag{87}
+$$
+
+Thus intersections of order at most four determine $\Sigma$ exactly; no
+higher-order table is needed for this statistic.
+
+**Proof.** For every integer $m$, Newton's finite-difference formula expands
+$f(m)=(m-1){N-m\choose3}$ as
+$\sum_{k=0}^4\Delta^kf(0){m\choose k}$. Its five finite differences are
+exactly (87). Pointwise,
+${m(z)\choose k}$ counts the $k$-subsets of bad labels at $z$, so
+$\sum_z{m(z)\choose k}=M_k$. Summing the Newton expansion proves (86). □
+
+## Corollary 53 (zero mass versus overlap surplus) — **PROVED**
+
+Writing $h_j=|\{z:m(z)=j\}|$, one has
+
+$$
+ \boxed{\Sigma=-{N\choose3}h_0+
+ \sum_{j=2}^{N-3}(j-1){N-j\choose3}h_j.}              \tag{88}
+$$
+
+Multiplicity one contributes exactly zero, multiplicities two through
+$N-3$ contribute positively, and larger multiplicities have no safe triple
+and hence zero weight. Therefore $\Sigma<0$ is precisely a quantitative
+dominance of uncovered classes over the indicated overlap surplus.
+
+**Proof.** Separate the $j=0,1$, $2\le j\le N-3$, and $j>N-3$ terms in the
+defining histogram sum. Their signs and zero cases follow immediately. □
+
+This explains the barrier in Theorem 50: even a grid with uncovered points
+can have positive $\Sigma$ if overlap multiplicities are sufficiently large.
+
+## Proposition 54 (divisor alignment does not make the surplus negative) —
+**DISPROVED criterion**
+
+The condition $g_i\mid b_i$ for every label does not imply $\Sigma<0$. Take
+
+$$
+ V=(1,2,3,4,5,7),\quad q=7,\quad L=245.               \tag{89}
+$$
+
+All six labels are divisor-aligned. Its exact multiplicity histogram is
+
+$$
+ (h_0,h_1,\ldots,h_6)=(6,136,80,6,4,4,9),            \tag{90}
+$$
+
+and (88) gives $\Sigma=212>0$. Compact phase records $(v,H,a,c,\rho)$ are
+
+$$
+\begin{aligned}
+ &(1,245,1,210,34),(2,245,2,210,34),\\
+ &(3,245,3,210,34),(4,245,4,210,34),\\
+ &(5,49,1,14,6),(7,35,1,0,4).
+\end{aligned}                                         \tag{91}
+$$
+
+**Proof.** Each corresponding reduced gcd is respectively
+$12,6,4,3,12,12$, dividing $b_i=420,210,140,105,84,60$. Substitution of
+(91) into (69) on $\mathbb Z/245\mathbb Z$ gives (90); (88) then gives 212.
+The independent intersection calculation (86) gives the same integer. □
+
+There are six uncovered classes in (90), so (89) is not an LRC
+counterexample. It disproves only the proposed implication from divisor
+alignment to negative surplus. In particular, negative surplus is too strong
+to be a necessary signature of a successful canonical grid.
+
+## Computational audit — **VERIFIED**
+
+Histogram evaluation and the independent order-four intersection polynomial
+agree on 35 inputs. The deterministic audit includes $(1,3,4,5)$, all TASK 14
+obstructions, the TASK 22 certificate, and 387 gcd-one subsets of
+$\{1,\ldots,10\}$ of sizes four through six with defined canonical grids.
+Among these, 38 fully divisor-aligned systems have nonnegative surplus; (89)
+is the first in lexicographic exhaustive order. Every computation uses $L$,
+never $qW$.
+
+## TASK 23 outcome and narrow barrier
+
+The surplus is completely determined by intersections through order four,
+and its multiplicity-zero/overlap decomposition is exact. Plain divisor
+alignment cannot force its negativity. A useful next theorem must retain more
+than alignment: it must control where low multiplicities occur, or use a
+localized/weighted statistic that is not overwhelmed by harmless high-overlap
+classes while still forcing $h_0>0$.
+
+---
+
+# TASK 24 audit: localized low-multiplicity certificate
+
+## Theorem 55 (transition-fiber quadratic certificate) — **PROVED**
+
+Choose an anchor label $a$ by largest lifted bad mass, breaking ties by label
+order, before inspecting any safe point. Partition $\mathbb Z/L\mathbb Z$
+into the four labelled transition fibers
+
+$$
+ E_{\epsilon\eta}=\{z:(1_{A_a}(z),1_{A_a}(z+1))
+ = (\epsilon,\eta)\},\qquad(\epsilon,\eta)\in\{0,1\}^2. \tag{92}
+$$
+
+For any such fiber define
+
+$$
+ \boxed{Q(E)=\sum_{z\in E}(1-m(z))(N-m(z)).}           \tag{93}
+$$
+
+Then
+
+$$
+ \boxed{Q(E)>0\Longrightarrow E\text{ contains a class with }m(z)=0.} \tag{94}
+$$
+
+Moreover, with localized moments
+
+$$
+ M_1(E)=\sum_i|E\cap A_i|,qquad
+ M_2(E)=\sum_{i<j}|E\cap A_i\cap A_j|,
+$$
+
+one has the bounded-order formula
+
+$$
+ \boxed{Q(E)=N|E|-N M_1(E)+2M_2(E).}                  \tag{95}
+$$
+
+After expanding the two anchor conditions defining $E$, (95) uses labelled
+shifted-arc CRT intersections of order at most four.
+
+**Proof.** The polynomial $(1-m)(N-m)$ equals $N$ at $m=0$, vanishes at
+$m=1,N$, and is negative for $2\le m\le N-1$. Therefore a positive sum
+requires a multiplicity-zero point, proving (94). Since
+$m^2=m+2{m\choose2}$, pointwise expansion gives
+$(1-m)(N-m)=N-Nm+2{m\choose2}$, which sums to (95). Each transition fiber is
+an intersection of either an anchor arc or its complement at $z$ and at
+$z+1$. Expanding the complements and then the terms of $M_2(E)$ introduces
+at most two additional bad arcs, hence at most four simultaneous shifted-arc
+congruences. Generalized CRT applies exactly as in Theorem 44. □
+
+The weight in (93) completely suppresses multiplicities one and $N$, rather
+than giving every overlap a positive contribution as (88) can. This is a
+rigorous sufficient certificate, not a necessary condition for safety.
+
+## Proposition 56 (four transition fibers are too coarse) — **DISPROVED
+universal criterion**
+
+The assertion that every safe canonical grid has $Q(E)>0$ on at least one
+largest-mass anchor transition fiber is false. The required configuration
+
+$$
+ V=(1,3,4,5),\qquad q=5,qquad L=100                 \tag{96}
+$$
+
+has four safe classes. The canonical anchor is velocity $1$, with phase
+record $(v,H,a,c,\rho)=(1,100,1,80,19)$. In state order
+$00,01,10,11$, the fiber sizes, multiplicity histograms, and quadratic values
+are
+
+$$
+\begin{array}{c|c|c|c}
+00&60&(4,38,18,0,0)&-20\\
+01&1 &(0,1,0,0,0)&0\\
+10&1 &(0,0,1,0,0)&-2\\
+11&38&(0,20,9,2,7)&-22.
+\end{array}                                           \tag{97}
+$$
+
+Thus none of the four fibers certifies the already existing safe classes.
+
+**Proof.** Reconstruct $A_1$ from the displayed phase record and the other
+three strips from their LRC data. Direct lcm-period membership gives (97),
+while the independent moment formula (95) gives the same four values. Since
+all values are nonpositive, (96) disproves the proposed universal criterion. □
+
+This failure also shows that the quadratic downweighting does not rescue the
+TASK 23 obstruction as a universal method: it misses both (96) and the safe
+TASK 23 example $(1,2,3,4,5,7)$. The implication (94) remains valid.
+
+## Computational audit — **VERIFIED**
+
+The histogram and localized-moment implementations of (95) agree on 45
+inputs. The deterministic audit checks $(1,3,4,5)$, all TASK 14 obstructions,
+both TASK 22--23 certificates, and 442 gcd-one subsets of
+$\{1,\ldots,10\}$ of sizes three through six with a defined canonical grid.
+The criterion certifies 289 and misses 153 safe grids. The first missed system
+in the exhaustive ordering is (96). All fibers are evaluated on $L$, never
+$qW$.
+
+## TASK 24 outcome and narrow barrier
+
+A genuinely phase-defined localized statistic with a rigorous bounded-order
+certificate is now available, but the four transition types aggregate safe
+and double-covered locations too coarsely. The next narrow problem is to find
+a nontrivial bounded-complexity refinement of the phase fibers—strictly
+coarser than singleton reconstruction—that separates these populations, or
+to prove that every fixed-complexity phase partition can fail.
+
+---
+
+# TASK 25 audit: bounded-complexity phase refinement
+
+## Theorem 57 (fixed-anchor transition refinement) — **PROVED**
+
+Fix $k\ge1$ independently of $L$ and choose the $k$ labels of largest lifted
+bad mass, breaking ties by label order. For each chosen anchor retain the
+before/after pair $(1_{A_i}(z),1_{A_i}(z+1))$. Their joint values partition
+$\mathbb Z/L\mathbb Z$ into at most
+
+$$
+ \boxed{4^k}                                           \tag{98}
+$$
+
+phase-defined fibers. This choice uses no global safe-point information. On
+each fiber use the quadratic $Q(E)$ of (93). Positivity still implies a safe
+class, and $Q(E)$ is expressible using shifted-arc CRT intersections of order
+at most
+
+$$
+ \boxed{2k+2.}                                         \tag{99}
+$$
+
+**Proof.** Each anchor supplies four possible transition pairs, proving
+(98). A fiber fixes membership in $A_i$ at $z$ and $z+1$ for every anchor.
+Writing zero conditions as complements expands its indicator into products
+of at most $2k$ shifted bad-arc indicators. Formula (95) introduces at most
+two further unshifted bad arcs, giving (99). The sign proof of Theorem 55 is
+pointwise and is unaffected by refining the fiber. □
+
+Thus $k=4$ gives at most 256 fibers and CRT order at most ten, both uniform in
+the possibly enormous lcm period. This is not singleton reconstruction: the
+fiber bound does not depend on $L$.
+
+## Proposition 58 (least refinement for the three critical records) —
+**VERIFIED / not universal**
+
+Under the deterministic largest-mass anchor rule:
+
+* $(1,3,4,5)$ is not certified for $k=1$ but is certified for $k=2$;
+* the TASK 22 record $(1,4,5,6,9)$ is already certified for $k=1$;
+* the TASK 23 record $(1,2,3,4,5,7)$ is not certified for
+  $k=1,2,3$ but is certified for $k=4$.
+
+These are exact finite evaluations on their canonical lcm grids. They show
+that four anchors are genuinely needed by this rule on the named records;
+they do not prove that four anchors always suffice.
+
+## Other bounded candidate classes — **PROVED definitions / VERIFIED audit**
+
+Two distinct refinements were audited rather than conflated with (98).
+
+1. A radius-$r$ short-word fiber records one canonical anchor at offsets
+   $-r,\ldots,r$. It has at most $2^{2r+1}$ fibers and its quadratic uses CRT
+   order at most $2r+3$ after complement expansion.
+2. A $B$-bin phase fiber divides the reduced affine coordinate
+   $a_i(z-c_i)\bmod H_i$ of one canonical anchor into $B$ fixed consecutive
+   bins. It has at most $B$ fibers and its quadratic uses one bin constraint
+   together with intersections of at most two bad arcs.
+
+Both definitions are phase-based, fixed before safe points are examined, and
+uniformly bounded independently of $L$. Neither candidate is universally
+successful on the audited range: radius one and two first miss
+$(1,3,4,5)$; four bins first miss $(1,2,3,5)$; and eight bins first miss
+$(1,6,7,10)$.
+
+## Computational audit — **VERIFIED**
+
+Independent tests check the fiber bounds and the rigorous sign implication on
+45 required/seeded inputs. In the exhaustive 442-input TASK 24 scope, the
+one-, two-, and three-anchor rules certify respectively 289, 414, and 440
+inputs. The up-to-four-anchor rule (using all labels when $N<4$) certifies all
+442. It also certifies all 148 seeded admissible inputs of sizes seven through
+nine with velocities below 46. No universal conclusion is drawn: this is
+finite evidence, and a larger counterexample may exist. All computations use
+the canonical lcm period, never $qW$.
+
+## TASK 25 outcome and narrow barrier
+
+Four transition anchors are the first tested uniformly bounded refinement
+that handles every TASK 22--24 critical record and every configuration in the
+current exhaustive and seeded audits. TASK 26 must separately recheck all
+TASK 14 obstructions. The remaining narrow question is
+whether the $k=4$ certificate follows from the LRC divisor/phase constraints,
+or whether a larger canonical system defeats it. Exact reconstruction alone
+is excluded; a proof must control at most 256 fibers using order-ten CRT data.
+
+---
+
+# TASK 26 audit: four-anchor certificate
+
+## Theorem 59 (direct phase/CRT expression) — **PROVED**
+
+Let $a_1,\ldots,a_4$ be the four largest-mass anchors. For a transition
+pattern
+
+$$
+ \sigma=(\sigma_{r,s})_{1\le r\le4,\ s\in\{0,1\}}
+ \in\{0,1\}^8,
+$$
+
+define
+
+$$
+ E_\sigma=\{z:1_{A_{a_r}}(z+s)=\sigma_{r,s}
+ \text{ for every }r,s\}.                              \tag{100}
+$$
+
+Writing $X_i(z)=1_{A_i}(z)$, every fiber quadratic is exactly
+
+$$
+ \boxed{Q(E_\sigma)=\sum_{z\bmod L}1_{E_\sigma}(z)
+ \left(N-N\sum_iX_i(z)+2\sum_{i<j}X_i(z)X_j(z)\right).} \tag{101}
+$$
+
+In (100), each positive condition is the centered phase constraint
+
+$$
+ a_{a_r}(z+s-c_{a_r})\in[-\rho_{a_r},\rho_{a_r}]
+ \pmod {H_{a_r}},                                      \tag{102}
+$$
+
+and each zero condition is its complement. Expanding the complements in
+(101) gives a signed sum of generalized-CRT intersections involving at most
+the eight shifted anchor arcs and two unshifted arcs. Thus every one of the at
+most 256 values is determined directly from $(H_i,a_i,c_i,\rho_i)$ by CRT
+histograms of order at most ten.
+
+**Proof.** Formula (101) is (95) written pointwise. Equation (102) is Theorem
+38 after replacing $z$ by $z+s$. Expanding the eight binary conditions gives
+products of at most eight shifted indicators; the constant, linear, and
+quadratic terms in (101) add respectively zero, one, or two indicators.
+Generalized CRT applies to every resulting centered modular-arc intersection.
+□
+
+This is an exact bounded-order expression, not a positivity inequality.
+
+## Proposition 60 (universal four-anchor positivity) — **DISPROVED**
+
+The four-largest-mass transition rule can fail even on a canonical grid with
+many safe classes. A counterexample is
+
+$$
+ V=(1,5,6,7,8,11,13),\qquad q=8.                      \tag{103}
+$$
+
+Its canonical lcm period is $L=832$. The four anchors are
+
+$$
+ (1,5,7,11),                                          \tag{104}
+$$
+
+there are 40 realized transition fibers, and
+
+$$
+ \boxed{\max_\sigma Q(E_\sigma)=0}                    \tag{105}
+$$
+
+although the full system has 14 safe classes. Hence no fiber satisfies the
+sufficient positivity condition.
+
+The complete compact phase records $(v,H,a,c,\rho)$ are
+
+$$
+\begin{aligned}
+&(1,832,1,728,103),(5,832,5,728,103),\\
+&(6,416,3,312,51),(7,832,7,728,103),\\
+&(8,104,1,0,12),(11,832,11,728,103),\\
+&(13,64,1,24,7).
+\end{aligned}                                         \tag{106}
+$$
+
+**Proof.** Substitution of (106) into (100)--(102) yields the 40 histograms
+stored in `task26_results.json`; direct membership independently gives the
+same histograms and 14 zero-multiplicity classes. Evaluating (101) on every
+histogram gives maximum zero, proving the failure of strict positivity. □
+
+This configuration is not an LRC counterexample—it has 14 safe
+classes. It is a counterexample only to the proposed four-anchor certificate.
+(103) is already one of the mandatory TASK 14 obstructions; the earlier TASK
+25 summary failed to call out this required-family failure and is corrected
+above. Every single deletion except removal of velocity 7 retains the
+canonical hypothesis and is certified by four anchors; after removing 7 no
+$q=7$-divisible velocity remains, so the construction is undefined. This is a
+local deletion-minimality certificate, not a claim of globally smallest
+possible failure.
+
+For this example, one through four anchors all fail, while five anchors
+certify it with maximum quadratic value 51. Thus the obstruction is genuinely
+at the proposed fixed level four rather than a failure of the implementation
+to detect any refinement.
+
+## Computational audit — **VERIFIED**
+
+An independent test reconstructs all 40 fiber histograms, verifies that they
+partition all 832 classes, checks every quadratic from the histogram, and
+checks the 14 safe classes directly. The complete mandatory audit finds 21 of
+22 TASK 14/TASK 22--24 records certified; (103) is the unique failure. No scan
+of $qW$ is used.
+
+## TASK 26 outcome and narrow barrier
+
+The attractive fixed four-anchor conjecture is conclusively false. Increasing
+to five repairs the first counterexample but merely shifts the question. The
+narrow next problem is whether any absolute anchor count can work, or whether
+one can construct LRC-derived failures requiring arbitrarily many phase
+anchors. A useful theorem must explain anchor complexity structurally rather
+than select the next constant from experiments.
